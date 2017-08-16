@@ -1,0 +1,52 @@
+@import "__vars.scss";
+@import "_h.scss";
+
+.swiper-container {
+    width: 100%;
+    height: 500px;
+}
+
+.swiper-inner:before{
+    content: '';
+    background: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: 20;
+}
+
+.swiper-inner{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pagination__button-next, .pagination__button-prev {
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+}
+
+.pagination__button-prev{
+    left: 50px;
+    right: auto;
+}
+
+.pagination__button-next{
+    right: 50px;
+    left: auto;
+}
+
+.slide-content{
+    padding-top: 144px;
+    position: relative;
+    z-index: 50;
+}
+
+.slide-text{
+    color: $white;
+    margin-bottom: 50px;
+    font-size: 20px;
+}

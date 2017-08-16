@@ -1,0 +1,56 @@
+.fixture-description {
+  color: #f22c2c;
+  font-size: 1.25rem;
+  margin-bottom: 100px;
+  margin-top: 50px; }
+
+.scroll-button {
+  padding: 10px 50px;
+  margin-bottom: 70px; }
+
+.fixture-list-outer {
+  display: flex;
+  margin-bottom: 105px; }
+
+.fixture-item {
+  border: solid 2px #e6e6e6;
+  padding: 5px 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-end;
+  align-items: center; }
+
+.fixture-item__bullet {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 200px;
+  border: none;
+  background: #e1e2e6;
+  flex: 0 0 20px;
+  margin-right: 20px; }
+
+.fixture-item__bullet_yellow {
+  background-color: #fecd08; }
+
+.fixture-item__description {
+  flex: 0 0 250px; }
+
+.fixture-item__title {
+  margin-bottom: 10px; }
+
+.fixture-item__title_for {
+  color: #999999; }
+
+.fixture-img {
+  display: block;
+  flex: 0 0 30%;
+  max-height: 59px;
+  max-width: 152px; }
+
+.fixture-list {
+  flex: 0 0 500px; }
+
+.fixture-house {
+  flex: 0 0 545px;
+  margin-left: 45px; }

@@ -1,0 +1,11 @@
+@import "__viewport.scss";
+
+p,span,a,button,{
+    font-family: 'Roboto', 'Open Sans', 'Arial', sans-serif;
+}
+
+.img-responsive{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}

@@ -1,0 +1,38 @@
+@mixin font-face($family, $path, $weight: normal, $style: normal) {
+    @font-face {
+        font-family: "#{$family}";
+        src: url('#{$path}.eot');
+        src: url('#{$path}.eot?#iefix') format('embedded-opentype'),
+            url('#{$path}.woff2') format('woff2'),
+            url('#{$path}.woff') format('woff'),
+            url('#{$path}.ttf') format('truetype');
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+@include font-face("Futura", '../fonts/futura/futura_medium', normal);
+@include font-face("Futura", '../fonts/futura/futura_bold', bold);
+
+@include font-face("Roboto", '../fonts/roboto/Roboto-Regular', normal);
+@include font-face("Roboto", '../fonts/roboto/Roboto-Bold', bold);
+@include font-face("Roboto", '../fonts/roboto/Roboto-BlackItalic', bold,italic);
+
+
+$font-basic: "Roboto", sans-serif;
+
+@mixin font-size {
+    font-size: 18px;
+
+    @include mobile {
+        font-size: 14px;
+    }
+}
+
+@mixin font-size-s {
+    font-size: 16px;
+
+    @include mobile {
+        font-size: 13px;
+    }
+}
