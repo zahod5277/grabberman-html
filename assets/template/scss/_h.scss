@@ -1,0 +1,93 @@
+@import "__vars";
+@import "__fonts";
+@import "__viewport.scss";
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-family: 'Futura';
+    line-height: 1.3em;
+    letter-spacing: 1.4px;
+    margin-top: 0.8em;
+    margin-bottom: 0.4em;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+@mixin h1 {
+    font-size: 90px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    line-height: 1.08em;
+    color: $black;
+    @include mq('tablet', max){
+        font-size: 36px;
+        letter-spacing: 0.7px;
+        margin-bottom: 36px;
+    }
+}
+
+@mixin h2 {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    line-height: 65px;
+    color:$white;
+    @include mq('tablet', max){
+        font-size: 32px;
+        letter-spacing: 0.5px;
+        color:$white;
+    }
+  
+}
+
+@mixin h3 {
+    font-size: 40px;
+    letter-spacing: 0.8px;
+    line-height: 55px;
+    letter-spacing: 0.8px;
+    @include mq('tablet', max){
+        font-size: 24px;
+        letter-spacing: 0.5px;
+    }
+}
+
+@mixin h4 {
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    @include mq('tablet', max){
+        font-size: 12px;
+    }
+}
+
+
+h1, .h1 {
+    @include h1;
+}
+
+h2, .h2 {
+    @include h2;
+}
+
+h3, .h3 {
+    @include h3;
+}
+
+h4, .h4 {
+    @include h4;
+}
+
+h5, .h5 {
+    @include h4;
+}
+
+h6, .h6 {
+    @include h4;
+}

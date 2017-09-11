@@ -1,0 +1,12 @@
+@import "__viewport.scss";
+@import "__vars.scss";
+
+p,span,a,button,{
+    font-family: 'Roboto', 'Open Sans', 'Arial', sans-serif;
+}
+
+p{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.5px;
+}

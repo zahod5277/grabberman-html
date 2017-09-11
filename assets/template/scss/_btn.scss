@@ -1,0 +1,67 @@
+@import "__vars.scss";
+@import "__fonts.scss";
+
+.button{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    display: inline-block;
+    letter-spacing: 1.1px;
+    text-decoration: none;
+    outline: none;
+    border:none;
+    color: $white;
+    cursor: pointer;
+    transition: 0.5s ease all;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+}
+
+.button_rectangle{
+    padding: 17px 39px;
+    @include mq('desktop',max){
+        padding: 17px 25px;
+        font-size: 11px;
+    }
+}
+
+.button_square{
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+    border-radius: 200px;
+    cursor: pointer;
+    position: relative;
+}
+
+.button_square-lg{
+    width: 80px;
+    height: 80px;
+}
+
+.button_red{
+    background: $red;
+}
+
+.button_red:hover{
+    background: $redhover;
+}
+
+.button_black{
+    background: $black;
+}
+
+.button_black:hover{
+    background: $red;
+}
+
+/*не знаю пока куда это определить*/
+.ico_arrow_next{
+    padding-left: 50px;
+    position: relative;
+    top:5px;
+    @include mq('tablet-wide',max){
+        padding-left: 25px;
+        top:2px;
+    }
+}

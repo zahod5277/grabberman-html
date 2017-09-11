@@ -1,0 +1,63 @@
+@media only screen and (max-width: 1023px) {
+  .fixture {
+    padding: 50px 0px; } }
+
+.fixture-description {
+  color: #f22c2c;
+  font-size: 1.25rem;
+  margin-bottom: 100px;
+  margin-top: 50px; }
+
+.scroll-button {
+  padding: 10px 50px;
+  margin-bottom: 70px; }
+  @media only screen and (max-width: 1023px) {
+    .scroll-button {
+      display: none; } }
+
+.fixture-list-outer {
+  display: flex;
+  margin-bottom: 105px; }
+  @media only screen and (max-width: 1023px) {
+    .fixture-list-outer {
+      flex-wrap: wrap; } }
+
+@media only screen and (min-width: 1024px) {
+  .fixture-list {
+    flex: 0 0 500px; } }
+
+@media only screen and (max-width: 1023px) {
+  .fixture-list {
+    flex: 0 0 100%;
+    order: 2;
+    margin-top: 20px; } }
+
+.fixture-house {
+  position: relative; }
+  @media only screen and (min-width: 1024px) {
+    .fixture-house {
+      flex: 0 0 545px;
+      margin-left: 45px; } }
+  @media only screen and (max-width: 1023px) {
+    .fixture-house {
+      flex: 0 0 100%;
+      order: 1; } }
+
+.fixture-house__dot {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  position: absolute;
+  background: #008945;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.2s ease all; }
+
+.fixture-hover {
+  transform: scale(1.1, 1.1); }
+
+.fixture__main-text {
+  max-width: 900px;
+  margin-top: 105px;
+  margin-bottom: 200px; }

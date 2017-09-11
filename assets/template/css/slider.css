@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "Futura";
+  src: url("../fonts/futura/futura_medium.eot");
+  src: url("../fonts/futura/futura_medium.eot?#iefix") format("embedded-opentype"), url("../fonts/futura/futura_medium.woff2") format("woff2"), url("../fonts/futura/futura_medium.woff") format("woff"), url("../fonts/futura/futura_medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Futura";
+  src: url("../fonts/futura/futura_bold.eot");
+  src: url("../fonts/futura/futura_bold.eot?#iefix") format("embedded-opentype"), url("../fonts/futura/futura_bold.woff2") format("woff2"), url("../fonts/futura/futura_bold.woff") format("woff"), url("../fonts/futura/futura_bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Regular.eot");
+  src: url("../fonts/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Bold.eot");
+  src: url("../fonts/roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-BlackItalic.eot");
+  src: url("../fonts/roboto/Roboto-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-BlackItalic.woff2") format("woff2"), url("../fonts/roboto/Roboto-BlackItalic.woff") format("woff"), url("../fonts/roboto/Roboto-BlackItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Futura';
+  line-height: 1.3em;
+  letter-spacing: 1.4px;
+  margin-top: 0.8em;
+  margin-bottom: 0.4em; }
+  h1:first-child, .h1:first-child,
+  h2:first-child, .h2:first-child,
+  h3:first-child, .h3:first-child,
+  h4:first-child, .h4:first-child,
+  h5:first-child, .h5:first-child,
+  h6:first-child, .h6:first-child {
+    margin-top: 0; }
+
+h1, .h1 {
+  font-size: 90px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  line-height: 1.08em;
+  color: #231f20; }
+  @media only screen and (max-width: 767px) {
+    h1, .h1 {
+      font-size: 36px;
+      letter-spacing: 0.7px;
+      margin-bottom: 36px; } }
+
+h2, .h2 {
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  line-height: 65px;
+  color: #fff; }
+  @media only screen and (max-width: 767px) {
+    h2, .h2 {
+      font-size: 32px;
+      letter-spacing: 0.5px;
+      color: #fff; } }
+
+h3, .h3 {
+  font-size: 40px;
+  letter-spacing: 0.8px;
+  line-height: 55px;
+  letter-spacing: 0.8px; }
+  @media only screen and (max-width: 767px) {
+    h3, .h3 {
+      font-size: 24px;
+      letter-spacing: 0.5px; } }
+
+h4, .h4 {
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  font-weight: bold;
+  letter-spacing: 0.7px; }
+  @media only screen and (max-width: 767px) {
+    h4, .h4 {
+      font-size: 12px; } }
+
+h5, .h5 {
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  font-weight: bold;
+  letter-spacing: 0.7px; }
+  @media only screen and (max-width: 767px) {
+    h5, .h5 {
+      font-size: 12px; } }
+
+h6, .h6 {
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  font-weight: bold;
+  letter-spacing: 0.7px; }
+  @media only screen and (max-width: 767px) {
+    h6, .h6 {
+      font-size: 12px; } }
+
+.swiper-container {
+  width: 100%;
+  height: calc( 100vh - 120px - 100px); }
+  @media (orientation: landscape) and (max-width: 1023px) {
+    .swiper-container {
+      height: calc( 100vh - 120px); } }
+
+.swiper-inner:before {
+  content: '';
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: 20; }
+
+.swiper-inner {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.pagination__button-next, .pagination__button-prev {
+  position: absolute;
+  top: 50%;
+  margin-top: -22px; }
+
+.pagination__button-prev {
+  left: 50px;
+  right: auto; }
+  @media only screen and (max-width: 767px) {
+    .pagination__button-prev {
+      left: 57%;
+      top: 74%; } }
+
+.pagination__button-next {
+  right: 50px;
+  left: auto; }
+  @media only screen and (max-width: 767px) {
+    .pagination__button-next {
+      right: 25px;
+      top: 74%; } }
+
+@media only screen and (max-width: 767px) {
+  .slide-heading {
+    line-height: 2.25rem;
+    font-size: 2rem;
+    letter-spacing: 0.7px;
+    margin-bottom: 36px;
+    width: 40%;
+    display: block; } }
+
+@media (orientation: landscape) and (max-width: 1023px) {
+  .slide-heading {
+    margin-bottom: 16px; } }
+
+.slide-content {
+  padding: 144px 20px 0px 20px;
+  position: relative;
+  z-index: 50; }
+  @media only screen and (min-width: 1440px) {
+    .slide-content {
+      padding-top: 249px; } }
+  @media (orientation: landscape) and (max-width: 1023px) {
+    .slide-content {
+      padding: 20px; } }
+
+.slide-text {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 20px; }
+  @media only screen and (max-width: 767px) {
+    .slide-text {
+      font-size: 0.875rem; } }
+  @media (orientation: landscape) and (max-width: 1023px) {
+    .slide-text {
+      margin-bottom: 20px; } }
+
+.pagination__bullet {
+  width: 16px;
+  height: 16px;
+  background: transparent;
+  border-radius: 50px;
+  border: white 2px solid;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.2s ease all;
+  margin-right: 20px; }
+
+.swiper-pagination {
+  bottom: 50px !important;
+  left: -50px !important;
+  text-align: right !important; }
+  @media only screen and (max-width: 1023px) {
+    .swiper-pagination {
+      display: none; } }
+
+.pagination__bullet:hover {
+  border: 2px solid transparent;
+  background: #f22c2c; }
+
+.pagination__bullet--active {
+  border: 2px solid transparent;
+  background: #f22c2c; }

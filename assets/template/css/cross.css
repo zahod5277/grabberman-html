@@ -1,0 +1,58 @@
+.cross {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  padding: 19px 19px;
+  border-radius: 100%; }
+
+.cross__l:first-child, .cross__l:last-child {
+  display: block;
+  position: relative;
+  width: 140%;
+  height: 2px;
+  margin-left: -20%;
+  transition: color .3s; }
+
+.cross__l:first-child {
+  transform: translate3d(0, 1px, 0) rotate(45deg); }
+
+.cross__l:last-child {
+  transform: translate3d(0, -1px, 0) rotate(-45deg); }
+
+.cross__l::before {
+  display: block;
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: currentColor;
+  transition: .25s; }
+
+.cross--s {
+  height: 40px;
+  width: 40px;
+  padding: 15px 15px; }
+
+.page:not(.page--navbar-opened) .cross[data-nav-close],
+.cross--hidden {
+  transition: .4s;
+  pointer-events: none; }
+  .page:not(.page--navbar-opened) .cross[data-nav-close] .cross__l::before,
+  .cross--hidden .cross__l::before {
+    transform: scaleX(0); }
+  .page:not(.page--navbar-opened) .cross[data-nav-close] .cross__l:first-child::before,
+  .cross--hidden .cross__l:first-child::before {
+    transition: opacity 0.3s, transform 0.25s 0s; }
+  .page:not(.page--navbar-opened) .cross[data-nav-close] .cross__l:last-child::before,
+  .cross--hidden .cross__l:last-child::before {
+    transition: opacity 0.3s, transform 0.25s 0.1s; }
+
+.page--navbar-opened .cross[data-nav-close] .cross__l:first-child::before {
+  transition: opacity 0.3s, transform 0.25s 0.3s; }
+
+.page--navbar-opened .cross[data-nav-close] .cross__l:last-child::before {
+  transition: opacity 0.3s, transform 0.25s 0.4s; }

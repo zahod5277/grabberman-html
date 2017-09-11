@@ -1,0 +1,51 @@
+@import "__vars";
+@import "__viewport.scss";
+
+.fixture-item{
+    border: solid 2px #e6e6e6;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-end;
+    align-items: center;
+    cursor:pointer;
+    transition: 0.2s ease all;
+}
+
+.fixture-item__bullet{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 200px;
+    border:none;
+    background: $light-grey;
+    flex: 0 0 20px;
+    margin-right: 20px;
+}
+
+.fixture-item__bullet_yellow{
+    background-color: $yellow;
+}
+
+.fixture-item__description{
+    flex: 0 0 250px;
+    @include mq('tablet-wide',max){
+        flex: 0 0 50%
+    }
+    
+}
+
+.fixture-item__title{
+    margin-bottom: 10px;
+}
+
+.fixture-item__title_for{
+    color:$dark-grey;
+}
+
+.fixture-item__img{
+    display: block;
+    flex: 0 0 30%;
+    max-height: 59px;
+    max-width: 152px;
+}

@@ -1,0 +1,127 @@
+@import "__vars.scss";
+@import "__viewport.scss";
+
+footer{
+    background-color: $black;
+}
+
+.footer-container{
+    padding: 100px 0px 66px 0px;
+    display: flex;
+    @include mq('tablet-wide',max){
+        flex-wrap: wrap;
+        padding-top: 60px
+    }
+}
+
+.footer-text__heading{
+    font-family: 'Roboto', sans-serif;
+    color:$dark-grey;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+.footer-text__paragraph{
+    color:$white;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    margin-bottom: 30px;
+}
+
+.footer-text__paragraph span{
+    display: block;
+}
+
+.footer-workhours{
+    margin-top: 28px;
+    color:$dark-grey;
+    font-family: 'Roboto', sans-serif;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+}
+
+footer{
+    position: relative;
+}
+
+
+.footer-proff-choice{
+    padding: 8px 40px;
+    color:$white;
+    background: $black;
+}
+
+.footer-proff-choice--mobile{
+    padding: 8px 20px;
+}
+
+.footer__text-block{
+    flex: 0 0 20%;
+    margin-right: 5%;
+    max-height: 300px;
+    @include mq('tablet-wide',max){
+        flex: 0 0 100%;
+        margin-right: 0px;
+    }
+}
+
+.footer__text-block:nth-child(4){
+    margin-right: 0px;
+}
+
+.footer__text-block_pinnedlogo{
+    position: relative;
+    display: table;
+    top: -150px;
+    min-height: 400px;
+    width: 9000px;
+    @include mq('tablet-wide',max){
+        display:none;
+    }
+}
+
+.footer-logo-red-inner{
+    background: $red;
+    padding: 40px;
+    min-height: 360px;
+}
+
+.footer-logo-img{
+    position: absolute;
+    bottom: 40px;
+}
+
+.copyright{
+    color: $white;
+    padding-bottom: 66px;
+    font-size: 0.875rem;
+}
+
+.politics{
+    padding-left: 30px;
+}
+
+.politics,.politics a{
+    color:$dark-grey;
+    text-decoration: none;
+}
+
+.devby{
+    float:right;
+}
+
+.devby-ico{
+    padding-left: 8px;
+}
+
+.footer-mobile-logo{
+    @include mq('tablet-wide', min){
+        display: none;
+    }
+}
+
+.footer-mobile-logo-red-inner{
+    background: $red;
+    padding: 190px 20px 20px 20px;
+}
+

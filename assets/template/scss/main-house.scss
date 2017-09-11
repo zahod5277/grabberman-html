@@ -1,0 +1,76 @@
+@import "__vars.scss";
+@import "__viewport.scss";
+
+.fixture{
+    @include mq('tablet-wide',max){
+        padding: 50px 0px;
+    }
+}
+
+.fixture-description{
+    color:$red;
+    font-size: 1.25rem;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.scroll-button{
+    padding: 10px 50px;
+    margin-bottom: 70px;
+    @include mq('tablet-wide',max){
+        display: none;
+    }
+}
+
+.fixture-list-outer{
+    display: flex;
+    margin-bottom: 105px;
+    @include mq('tablet-wide', max){
+        flex-wrap: wrap;
+    }
+}
+
+.fixture-list{
+    @include mq('tablet-wide', min){
+        flex: 0 0 500px;
+    }
+    @include mq('tablet-wide', max){
+        flex: 0 0 100%;
+        order: 2;
+        margin-top: 20px;
+    }
+}
+
+.fixture-house{
+    position: relative;
+    @include mq('tablet-wide', min){
+        flex: 0 0 545px;
+        margin-left: 45px;
+    }
+    @include mq('tablet-wide', max){
+        flex: 0 0 100%;
+        order: 1;
+    }
+}
+
+.fixture-house__dot{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border:2px solid $white;
+    position: absolute;
+    background: #008945;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: 0.2s ease all;
+}
+
+.fixture-hover{
+    transform: scale(1.1,1.1);
+}
+
+.fixture__main-text{
+    max-width: 900px;
+    margin-top: 105px;
+    margin-bottom: 200px;
+}

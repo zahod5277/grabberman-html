@@ -1,0 +1,15 @@
+@import "__vars.scss";
+@import "__viewport.scss";
+
+.form-control{
+    padding: 17px 39px;
+    font-size: 1rem;
+    border-radius: 0px;
+    border: 1px solid $black;
+    display: block;
+    margin-right: 20px;
+}
+
+.form-control_inline{
+    display: inline-block;
+}

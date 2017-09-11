@@ -1,0 +1,24 @@
+@import "__viewport.scss";
+
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+body{
+    overflow-x: hidden;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased
+}
+
+.no-scroll{
+    overflow-y: hidden;
+}
+
+.img-responsive{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}

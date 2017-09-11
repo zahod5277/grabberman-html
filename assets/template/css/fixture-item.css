@@ -1,0 +1,40 @@
+.fixture-item {
+  border: solid 2px #e6e6e6;
+  padding: 5px 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-end;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease all; }
+
+.fixture-item__bullet {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 200px;
+  border: none;
+  background: #e1e2e6;
+  flex: 0 0 20px;
+  margin-right: 20px; }
+
+.fixture-item__bullet_yellow {
+  background-color: #fecd08; }
+
+.fixture-item__description {
+  flex: 0 0 250px; }
+  @media only screen and (max-width: 1023px) {
+    .fixture-item__description {
+      flex: 0 0 50%; } }
+
+.fixture-item__title {
+  margin-bottom: 10px; }
+
+.fixture-item__title_for {
+  color: #999999; }
+
+.fixture-item__img {
+  display: block;
+  flex: 0 0 30%;
+  max-height: 59px;
+  max-width: 152px; }

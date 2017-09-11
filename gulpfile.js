@@ -1,7 +1,7 @@
 // npm install gulp-svgstore gulp-rename gulp-svgmin gulp-inject path gulp-uglify gulp-cssnano gulp-rigger gulp-cheerio
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    templatePath = 'public_html/assets/template/',
+    templatePath = 'assets/template/',
     concat = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
     cleanCSS = require('gulp-clean-css'),
     rigger = require('gulp-rigger'),
@@ -42,9 +42,9 @@ gulp.task('svgstore', function () {
     }
 
     return gulp
-        .src('public_html/core/elements/chunks/common/svg/svg.sprite.ch.html')
+        .src('/core/elements/chunks/common/svg/svg.sprite.ch.html')
         .pipe(inject(svgs, { transform: fileContents }))
-        .pipe(gulp.dest('public_html/core/elements/chunks/common/'));
+        .pipe(gulp.dest('/core/elements/chunks/common/'));
 });
 
 gulp.task('sass', function(){ // Создаем таск Sass
@@ -56,7 +56,7 @@ gulp.task('sass', function(){ // Создаем таск Sass
 gulp.task('scripts', function() {
     gulp.src([templatePath + 'libs/libs.js']) //Найдем наш main файл
         .pipe(rigger()) //Прогоним через rigger
-//        .pipe(uglify()) //Сожмем наш js
+        .pipe(uglify()) //Сожмем наш js
         .pipe(gulp.dest(templatePath + 'js')); //Выплюнем готовый файл в build
 
     return gulp.src([
