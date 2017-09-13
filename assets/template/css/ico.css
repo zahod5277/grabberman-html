@@ -1,0 +1,21 @@
+.ico--mail {
+  top: 2px;
+  position: relative; }
+
+.ico_arrow_next {
+  padding-left: 50px;
+  position: relative;
+  top: 4px; }
+  @media only screen and (max-width: 1023px) {
+    .ico_arrow_next {
+      padding-left: 25px;
+      top: 2px; } }
+  @media only screen and (max-width: 1247px) {
+    .ico_arrow_next {
+      padding-left: 25px;
+      position: relative;
+      top: 5px; } }
+  @media only screen and (max-width: 1023px) {
+    .ico_arrow_next {
+      padding-left: 10px;
+      top: 2px; } }

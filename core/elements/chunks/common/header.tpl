@@ -1,7 +1,7 @@
 <header class="header">
     <div class="header-phone">
         <span class="header-phone__item header-phone__item_first">
-            <i class="ico">
+            <i class="ico ico--mail">
                 <svg class="svg-symbol svg-symbol--icon_mail">
                 <use xlink:href="#svg-symbol--icon_mail" />
                 </svg> 

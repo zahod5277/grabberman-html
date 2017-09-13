@@ -1,4 +1,5 @@
 @import "__viewport.scss";
+@import "__vars.scss";
 .container{
     margin: auto;
     @include mq('tablet-wide', min){

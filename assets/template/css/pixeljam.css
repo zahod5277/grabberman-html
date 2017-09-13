@@ -1,0 +1,39 @@
+.can {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 15px; }
+
+.can__cap {
+  position: absolute;
+  display: inline-block;
+  top: 5px;
+  width: 12px;
+  height: 3px;
+  margin-bottom: 0px;
+  background-color: #fff;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: translateZ(0) rotate(0deg);
+  transform: translateZ(0) rotate(0deg);
+  transition: .4s ease-out .2s; }
+
+.can__body {
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: #f22c2c; }
+
+.shine--bg {
+  -webkit-animation: b 10s infinite;
+  animation: b 10s infinite; }
+
+.can:hover .can__cap, .page--can-opened .can__cap, a:hover .can__cap {
+  -webkit-transform: translate3d(3px, -5px, 0) rotate(22deg);
+  transform: translate3d(3px, -5px, 0) rotate(22deg);
+  -webkit-transform-origin: right;
+  transform-origin: right;
+  transition: .3s; }

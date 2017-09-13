@@ -42,9 +42,9 @@ gulp.task('svgstore', function () {
     }
 
     return gulp
-        .src('/core/elements/chunks/common/svg/svg.sprite.ch.html')
+        .src('core/elements/chunks/common/svg/svg.sprite.ch.html')
         .pipe(inject(svgs, { transform: fileContents }))
-        .pipe(gulp.dest('/core/elements/chunks/common/'));
+        .pipe(gulp.dest('core/elements/chunks/common/'));
 });
 
 gulp.task('sass', function(){ // Создаем таск Sass

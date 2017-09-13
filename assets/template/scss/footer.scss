@@ -26,6 +26,7 @@ footer{
     font-size: 1rem;
     line-height: 1.625rem;
     margin-bottom: 30px;
+    letter-spacing: .03rem;
 }
 
 .footer-text__paragraph span{
@@ -52,7 +53,7 @@ footer{
 }
 
 .footer-proff-choice--mobile{
-    padding: 8px 20px;
+    padding: 8px 0px;
 }
 
 .footer__text-block{
@@ -88,7 +89,7 @@ footer{
 
 .footer-logo-img{
     position: absolute;
-    bottom: 40px;
+    bottom: 50px;
 }
 
 .copyright{
@@ -99,6 +100,10 @@ footer{
 
 .politics{
     padding-left: 30px;
+    @include mq('tablet-wide', max){
+        display: block;
+        padding: 0px;
+    }
 }
 
 .politics,.politics a{
@@ -108,6 +113,9 @@ footer{
 
 .devby{
     float:right;
+    @include mq('tablet-wide', max){
+        float:none;
+    }
 }
 
 .devby-ico{
@@ -120,8 +128,15 @@ footer{
     }
 }
 
+.footer-mobile-logo-img{
+    width: 60%;
+}
+
 .footer-mobile-logo-red-inner{
     background: $red;
     padding: 190px 20px 20px 20px;
+    @include mq('tablet-wide',max){
+        padding: 190px 0px 20px 0px;
+    }
 }
 

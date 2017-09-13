@@ -19,7 +19,8 @@ footer {
   color: #fff;
   font-size: 1rem;
   line-height: 1.625rem;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  letter-spacing: .03rem; }
 
 .footer-text__paragraph span {
   display: block; }
@@ -40,7 +41,7 @@ footer {
   background: #231f20; }
 
 .footer-proff-choice--mobile {
-  padding: 8px 20px; }
+  padding: 8px 0px; }
 
 .footer__text-block {
   flex: 0 0 20%;
@@ -71,7 +72,7 @@ footer {
 
 .footer-logo-img {
   position: absolute;
-  bottom: 40px; }
+  bottom: 50px; }
 
 .copyright {
   color: #fff;
@@ -80,6 +81,10 @@ footer {
 
 .politics {
   padding-left: 30px; }
+  @media only screen and (max-width: 1023px) {
+    .politics {
+      display: block;
+      padding: 0px; } }
 
 .politics, .politics a {
   color: #999999;
@@ -87,6 +92,9 @@ footer {
 
 .devby {
   float: right; }
+  @media only screen and (max-width: 1023px) {
+    .devby {
+      float: none; } }
 
 .devby-ico {
   padding-left: 8px; }
@@ -95,6 +103,12 @@ footer {
   .footer-mobile-logo {
     display: none; } }
 
+.footer-mobile-logo-img {
+  width: 60%; }
+
 .footer-mobile-logo-red-inner {
   background: #f22c2c;
   padding: 190px 20px 20px 20px; }
+  @media only screen and (max-width: 1023px) {
+    .footer-mobile-logo-red-inner {
+      padding: 190px 0px 20px 0px; } }

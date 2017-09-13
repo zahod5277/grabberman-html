@@ -65,6 +65,7 @@
   transform: translate(0px, -100px);
   transition: 0.5s ease all;
   min-height: 100vh;
+  height: 100vh;
   overflow-y: scroll; }
 
 .mobile-menu--active .mobile-menu-level1 {
@@ -77,8 +78,11 @@
   line-height: 2.625rem;
   letter-spacing: 1.1px;
   position: relative;
-  width: 90%;
+  width: 105%;
   display: block; }
+  @media (orientation: landscape) and (max-width: 1247px) {
+    .mobile-menu-level1__item > a {
+      width: 103%; } }
 
 .mobile-menu-collapse {
   position: absolute;

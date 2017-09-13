@@ -1,0 +1,26 @@
+@import "__vars.scss";
+@import "__viewport.scss";
+
+.ico--mail{
+    top: 2px;
+    position: relative;
+}
+
+.ico_arrow_next{
+    padding-left: 50px;
+    position: relative;
+    top:4px;
+    @include mq('tablet-wide',max){
+        padding-left: 25px;
+        top:2px;
+    }
+    @include mq('desktop',max){
+        padding-left: 25px;
+        position: relative;
+        top: 5px;
+    }
+    @include mq('tablet-wide',max){
+        padding-left: 10px;
+        top:2px;
+    }
+}

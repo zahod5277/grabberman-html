@@ -24,7 +24,7 @@
 
 @media only screen and (min-width: 1024px) {
   .fixture-list {
-    flex: 0 0 500px; } }
+    flex: 0 0 50%; } }
 
 @media only screen and (max-width: 1023px) {
   .fixture-list {
@@ -36,7 +36,7 @@
   position: relative; }
   @media only screen and (min-width: 1024px) {
     .fixture-house {
-      flex: 0 0 545px;
+      flex: 0 0 50%;
       margin-left: 45px; } }
   @media only screen and (max-width: 1023px) {
     .fixture-house {
@@ -49,13 +49,21 @@
   height: 20px;
   border: 2px solid #fff;
   position: absolute;
-  background: #008945;
   border-radius: 50px;
   cursor: pointer;
   transition: 0.2s ease all; }
 
+.fixture-house__dot--yellow {
+  background-color: #fecd08; }
+
+.fixture-house__dot--brown {
+  background-color: #9e5323; }
+
 .fixture-hover {
   transform: scale(1.1, 1.1); }
+
+i.fixture-hover {
+  transform: scale(1.3, 1.3); }
 
 .fixture__main-text {
   max-width: 900px;

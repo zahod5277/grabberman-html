@@ -40,6 +40,7 @@
     transform: translate(0px,-100px);
     transition: 0.5s ease all;
     min-height: 100vh;
+    height: 100vh;
     overflow-y: scroll;
 }
 
@@ -54,8 +55,11 @@
     line-height: 2.625rem;
     letter-spacing: 1.1px;
     position: relative;
-    width: 90%;
+    width: 105%;
     display: block;
+    @include mq-landscape('desktop', max){
+        width: 103%;
+    }
 }
 
 .mobile-menu-collapse{

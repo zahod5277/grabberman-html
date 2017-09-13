@@ -7,9 +7,15 @@
     margin-bottom: 15px;
     display: flex;
     align-items: flex-end;
+    justify-content: flex-end;
     align-items: center;
     cursor:pointer;
     transition: 0.2s ease all;
+    @include mq('tablet-wide', max){
+        display: block;
+        text-align: right;
+        position: relative;
+    }
 }
 
 .fixture-item__bullet{
@@ -21,26 +27,50 @@
     background: $light-grey;
     flex: 0 0 20px;
     margin-right: 20px;
-}
-
-.fixture-item__bullet_yellow{
-    background-color: $yellow;
+    @include mq('tablet-wide', max){
+        display: inline-block;
+        margin-right: 0px;
+        position: absolute;
+        top:33%;
+        left: 3%;
+    }
 }
 
 .fixture-item__description{
-    flex: 0 0 250px;
+    flex: 0 0 62%;
     @include mq('tablet-wide',max){
-        flex: 0 0 50%
+        display: inline-block;
+        width: 52%;
+        margin-right: 3%;
+        margin-left: 3%;
+        text-align: left;
+        vertical-align: top;
     }
-    
+
 }
 
 .fixture-item__title{
     margin-bottom: 10px;
+    @include mq('tablet-wide', max){
+        font-size: 14px;
+        line-height: 18px;
+    }
+    @include mq('phone-wide', max){
+        font-size: 10px;
+        line-height: 14px;
+    }
 }
 
 .fixture-item__title_for{
     color:$dark-grey;
+    @include mq('tablet-wide', max){
+        font-size: 14px;
+        line-height: 18px;
+    }
+    @include mq('phone-wide', max){
+        font-size: 10px;
+        line-height: 14px;
+    }
 }
 
 .fixture-item__img{
@@ -48,4 +78,36 @@
     flex: 0 0 30%;
     max-height: 59px;
     max-width: 152px;
+    @include mq('tablet-wide', max){
+        display: inline-block;
+        width: 30%;
+    }
+}
+
+.fixture-item__bullet--yellow{
+    background-color: $yellow;
+}
+
+.fixture-item--bullet--brown{
+    background-color: #9e5323;
+}
+
+.fixture-item__bullet--grey{
+    background-color: #999999;
+}
+
+.fixture-item__bullet--red{
+    background-color: #f22c2c;
+}
+
+.fixture-item__bullet--blue{
+    background-color: #0169a9;
+}
+
+.fixture-item__bullet--green{
+    background-color: #008945
+}
+
+.fixture-item__bullet--aqua{
+    background-color: #34acc4;
 }

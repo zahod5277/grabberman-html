@@ -18,12 +18,23 @@
   fill: #fff;
   position: absolute;
   top: 25px; }
+  @media only screen and (max-width: 1023px) {
+    .svg-symbol--icon_arrow_left,
+    .svg-symbol--icon_arrow_right,
+    .svg-symbol--icon_arrow_bottom {
+      top: 14px; } }
 
 .svg-symbol--icon_arrow_left {
   left: 24px; }
+  @media only screen and (max-width: 1023px) {
+    .svg-symbol--icon_arrow_left {
+      left: 14px; } }
 
 .svg-symbol--icon_arrow_right {
   right: 24px; }
+  @media only screen and (max-width: 1023px) {
+    .svg-symbol--icon_arrow_right {
+      right: 14px; } }
 
 .svg-symbol--icon_arrow_bottom {
   width: 15px;
