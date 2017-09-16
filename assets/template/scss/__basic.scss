@@ -7,7 +7,7 @@
 }
 
 body{
-    overflow-x: hidden;
+    
     font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased
@@ -25,4 +25,16 @@ body{
 
 .black-bg{
     background-color: $black;
+}
+
+.black-bg .text{
+    color: $white;
+}
+
+.red-bg{
+    background-color: $red;
+}
+
+.red-bg .text{
+    color: $white;
 }

@@ -1,22 +1,15 @@
 <header class="header">
     <div class="header-phone">
-        <span class="header-phone__item header-phone__item_first">
-            <i class="ico ico--mail">
-                <svg class="svg-symbol svg-symbol--icon_mail">
-                <use xlink:href="#svg-symbol--icon_mail" />
-                </svg> 
-            </i>
-            <a href="mailto:info@grabberman.ru">info@grabberman.ru</a>
-        </span>
         <span class="header-phone__item">
-            <i class="ico">
+            <i class="ico ico--phone">
                 <svg class="svg-symbol svg-symbol--icon_phone">
                 <use xlink:href="#svg-symbol--icon_phone" />
                 </svg>
             </i>
-            8 800 333-19-53
+            8 (800) 707 76 45
         </span>
-        <span class="header-phone__item">+7 812 385-57-47</span>
+        <span class="header-phone__item">+7 (499) 322 49 43</span>
+        <span class="header-phone__item">+7 (812) 611 25 96</span>
     </div>
     <div class="logo">
         {if $_modx->resource.id==1}
@@ -38,7 +31,7 @@
         ])}
     </div>
     <div class="header-phones-cta">
-        <a class="button button_rectangle button_red" href="#callback">
+        <a class="button button--rectangle button--red" href="#callback">
             Обратный звонок
         </a>
     </div>

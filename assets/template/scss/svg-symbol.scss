@@ -2,62 +2,18 @@
 @import "__viewport.scss";
 
 .svg-symbol--icon_phone {
-    width: 13px;
-    height: 14px;
     fill: $red;
-    margin-right: 10px;
 }
 
 .svg-symbol--icon_mail{
-    width: 13px;
-    height: 14px;
     fill: $red;
-    margin-right: 10px;
-}
-
-.svg-symbol--icon_arrow_left,
-.svg-symbol--icon_arrow_right,
-.svg-symbol--icon_arrow_bottom{
-    width: 8px;
-    height: 12px;
-    fill:$white;
-    position: absolute;
-    top: 25px;
-    @include mq('tablet-wide',max){
-        top:14px;
-    }
-}
-
-.svg-symbol--icon_arrow_left{
-    left:24px;
-    @include mq('tablet-wide',max){
-        left: 14px;
-    }
-}
-
-.svg-symbol--icon_arrow_right{
-    right:24px;
-    @include mq('tablet-wide',max){
-        right: 14px;
-    }
 }
 
 .svg-symbol--icon_arrow_bottom{
-    width: 15px;
-    height: 12px;
-    fill: #fff;
-    position: absolute;
-    top: 36px;
-    left: 32px;
+    fill: $white;
 }
 
 .svg-symbol--icon_arrow_next{
-    width: 18px;
-    height: 18px;
     color:white;
     fill:white;
-    @include mq('tablet-wide',max){
-        width: 10px;
-        height: 10px;
-    }
 }

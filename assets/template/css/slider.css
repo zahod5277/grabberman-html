@@ -68,13 +68,11 @@ h2, .h2 {
   font-size: 60px;
   font-weight: bold;
   letter-spacing: 0.9px;
-  line-height: 65px;
-  color: #fff; }
+  line-height: 1.08; }
   @media only screen and (max-width: 767px) {
     h2, .h2 {
       font-size: 32px;
-      letter-spacing: 0.5px;
-      color: #fff; } }
+      letter-spacing: 0.5px; } }
 
 h3, .h3 {
   font-size: 40px;

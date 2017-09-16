@@ -1,0 +1,26 @@
+.product__image {
+  max-width: 500px; }
+
+.product__image img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.product__scheme-title {
+  margin-top: 48px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #999999; }
+
+.product__scheme {
+  margin-bottom: 50px; }
+
+.product__text-table-caption {
+  font-weight: bold;
+  border-bottom: 3px solid black;
+  padding-bottom: 13px;
+  text-transform: uppercase;
+  padding-left: 13px; }
+
+.product__text-table-outer {
+  margin-top: 95px; }

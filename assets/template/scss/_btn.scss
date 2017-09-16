@@ -15,17 +15,19 @@
     transition: 0.5s ease all;
     border: 1px solid transparent;
     text-transform: uppercase;
-}
-
-.button_rectangle{
-    padding: 17px 39px;
-    @include mq('desktop',max){
-        padding: 17px 25px;
+    @include mq('tablet',max){
         font-size: 11px;
     }
 }
 
-.button_square{
+.button--rectangle{
+    padding: 17px 39px;
+    @include mq('desktop',max){
+        padding: 18px 25px;
+    }
+}
+
+.button--square{
     width: 60px;
     height: 60px;
     z-index: 10;
@@ -38,23 +40,23 @@
     }
 }
 
-.button_square-lg{
+.button_square--lg{
     width: 80px;
     height: 80px;
 }
 
-.button_red{
+.button--red{
     background: $red;
 }
 
-.button_red:hover{
+.button--red:hover{
     background: $redhover;
 }
 
-.button_black{
+.button--black{
     background: $black;
 }
 
-.button_black:hover{
+.button--black:hover{
     background: $red;
 }

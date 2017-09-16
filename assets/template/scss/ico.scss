@@ -1,12 +1,63 @@
 @import "__vars.scss";
 @import "__viewport.scss";
 
-.ico--mail{
+.ico{
+    font-size: inherit;
+}
+
+.ico--mail svg{
     top: 2px;
     position: relative;
 }
 
-.ico_arrow_next{
+.ico--phone svg{
+    width: 13px;
+    height: 14px;
+    margin-right: 10px;
+}
+
+.ico--mail svg{
+    width: 13px;
+    height: 14px;
+    margin-right: 10px;
+}
+
+.ico--arrow-left svg{
+     left:24px;
+    @include mq('tablet-wide',max){
+        left: 14px;
+    }
+}
+
+.ico--arrow-right svg{
+    right:24px;
+    @include mq('tablet-wide',max){
+        right: 14px;
+    }
+}
+
+.ico--arrow-left svg,
+.ico--arrow-right svg,
+.ico--arrow-bottom svg{
+    width: 8px;
+    height: 12px;
+    fill:$white;
+    position: absolute;
+    top: 25px;
+    @include mq('tablet-wide',max){
+        top:14px;
+    }
+}
+
+.ico--arrow-bottom svg{
+    width: 15px;
+    height: 12px;
+    position: absolute;
+    top: 27px;
+    left: 22px;
+}
+
+.ico--arrow-next svg{
     padding-left: 50px;
     position: relative;
     top:4px;
@@ -23,4 +74,24 @@
         padding-left: 10px;
         top:2px;
     }
+}
+
+.ico--arrow-next svg{
+    width: 18px;
+    height: 18px;
+    
+    @include mq('tablet-wide',max){
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.ico-breadcrumbs{
+   padding-right: 15px;
+}
+
+.ico-breadcrumbs svg{
+    fill: $white;
+    width: 7px;
+    height: 10px;
 }

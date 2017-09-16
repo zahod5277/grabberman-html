@@ -36,12 +36,10 @@ h6, .h6 {
     font-size: 60px;
     font-weight: bold;
     letter-spacing: 0.9px;
-    line-height: 65px;
-    color:$white;
+    line-height: 1.08;
     @include mq('tablet', max){
         font-size: 32px;
         letter-spacing: 0.5px;
-        color:$white;
     }
   
 }

@@ -2,7 +2,12 @@
 @import "__viewport.scss";
 
 footer{
-    background-color: $black;
+    overflow-x: hidden;
+    background: white;  
+}
+
+footer .black-bg{
+    margin-top: 50px;
 }
 
 .footer-container{
@@ -60,10 +65,27 @@ footer{
     flex: 0 0 20%;
     margin-right: 5%;
     max-height: 300px;
+/*        flex: 0 0 23%;*/
     @include mq('tablet-wide',max){
         flex: 0 0 100%;
         margin-right: 0px;
     }
+}
+
+
+.footer__text-block--contacts{
+    flex: 0 0 35%;
+    @include mq('desktop',max){
+        flex: 0 0 41%;
+    }
+}
+
+.footer__text-block--empty{
+    flex: 0 0 5%;
+}
+
+.footer__text-block:nth-child(4){
+    margin-right: 0px;
 }
 
 .footer__text-block:nth-child(4){
@@ -73,9 +95,9 @@ footer{
 .footer__text-block_pinnedlogo{
     position: relative;
     display: table;
+    width: 9000px;
     top: -150px;
     min-height: 400px;
-    width: 9000px;
     @include mq('tablet-wide',max){
         display:none;
     }
@@ -90,6 +112,9 @@ footer{
 .footer-logo-img{
     position: absolute;
     bottom: 50px;
+    @include mq('desktop',max){
+        max-width: 224px;
+    }
 }
 
 .copyright{

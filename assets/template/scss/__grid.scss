@@ -21,3 +21,27 @@
         width: 90%;
     }
 }
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-xs-12{
+    width: 100%;
+}
+
+.col-lg-6{
+    @include mq('desktop', max-1){
+        flex: 0 0 100%;
+    }
+    @include mq('desktop', min){
+        flex: 0 0 48%;
+    }
+}
+
+.col-lg-6:nth-child(even){
+    @include mq('desktop', min){
+    }
+}

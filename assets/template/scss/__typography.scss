@@ -6,7 +6,54 @@ p,span,a,button,{
 }
 
 p{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+    font-size: 18px;
+    line-height: 28px;
     letter-spacing: 0.5px;
+    @include mq('tablet-wide',max){
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.4;
+    }
+}
+
+.text{
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    @include mq('tablet-wide',max){
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.4;
+    }
+}
+
+.text--red{
+    color: $red;
+}
+
+.text--white{
+    color: $white;
+}
+
+.text--l{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    @include mq('tablet-wide', max){
+        font-size: 15px;
+        line-height: 23px;
+        letter-spacing: 0.4px;
+    }
+
+}
+
+.text--s{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    @include mq('tablet-wide',max){
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.8px;
+    }
 }

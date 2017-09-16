@@ -1,21 +1,83 @@
-.ico--mail {
+.ico {
+  font-size: inherit; }
+
+.ico--mail svg {
   top: 2px;
   position: relative; }
 
-.ico_arrow_next {
+.ico--phone svg {
+  width: 13px;
+  height: 14px;
+  margin-right: 10px; }
+
+.ico--mail svg {
+  width: 13px;
+  height: 14px;
+  margin-right: 10px; }
+
+.ico--arrow-left svg {
+  left: 24px; }
+  @media only screen and (max-width: 1023px) {
+    .ico--arrow-left svg {
+      left: 14px; } }
+
+.ico--arrow-right svg {
+  right: 24px; }
+  @media only screen and (max-width: 1023px) {
+    .ico--arrow-right svg {
+      right: 14px; } }
+
+.ico--arrow-left svg,
+.ico--arrow-right svg,
+.ico--arrow-bottom svg {
+  width: 8px;
+  height: 12px;
+  fill: #fff;
+  position: absolute;
+  top: 25px; }
+  @media only screen and (max-width: 1023px) {
+    .ico--arrow-left svg,
+    .ico--arrow-right svg,
+    .ico--arrow-bottom svg {
+      top: 14px; } }
+
+.ico--arrow-bottom svg {
+  width: 15px;
+  height: 12px;
+  position: absolute;
+  top: 27px;
+  left: 22px; }
+
+.ico--arrow-next svg {
   padding-left: 50px;
   position: relative;
   top: 4px; }
   @media only screen and (max-width: 1023px) {
-    .ico_arrow_next {
+    .ico--arrow-next svg {
       padding-left: 25px;
       top: 2px; } }
   @media only screen and (max-width: 1247px) {
-    .ico_arrow_next {
+    .ico--arrow-next svg {
       padding-left: 25px;
       position: relative;
       top: 5px; } }
   @media only screen and (max-width: 1023px) {
-    .ico_arrow_next {
+    .ico--arrow-next svg {
       padding-left: 10px;
       top: 2px; } }
+
+.ico--arrow-next svg {
+  width: 18px;
+  height: 18px; }
+  @media only screen and (max-width: 1023px) {
+    .ico--arrow-next svg {
+      width: 10px;
+      height: 10px; } }
+
+.ico-breadcrumbs {
+  padding-right: 15px; }
+
+.ico-breadcrumbs svg {
+  fill: #fff;
+  width: 7px;
+  height: 10px; }

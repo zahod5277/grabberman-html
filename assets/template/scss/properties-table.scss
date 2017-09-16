@@ -1,0 +1,48 @@
+@import "__vars";
+@import "__viewport.scss";
+@import "__fonts.scss";
+
+.properties-table{
+    
+}
+
+.properties-table__item{
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 14px;
+}
+
+.properties-table thead tr{
+    border-bottom: none;
+}
+
+.properties-table th{
+    padding: 12px 0px;
+    color:$white;
+    text-align: center;
+    font-size: 12px;
+}
+
+.properties-table tr{
+    font-size: 16px;
+    border-bottom: 2px solid $light-grey;
+}
+
+.properties-table td{
+    padding: 15px 0px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.properties-table__button{
+    font-weight: bold;
+    text-transform: inherit;
+    padding: 19px 27px;
+    max-width: 300px;
+    color: black;
+    background: $white;
+    border: $light-grey 2px solid;
+    margin-right: 10px;
+}
