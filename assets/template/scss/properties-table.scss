@@ -12,6 +12,7 @@
     max-width: 100%;
     font-family: 'Roboto', sans-serif;
     margin-top: 14px;
+    display: none;
 }
 
 .properties-table thead tr{
@@ -45,4 +46,15 @@
     background: $white;
     border: $light-grey 2px solid;
     margin-right: 10px;
+    transition: 0.4s ease all;
+}
+
+.properties-table__button:hover{
+    background-color: $redhover;
+    color:$white;
+}
+
+.properties-table__button--active{
+    background-color: $redhover;
+    color:$white;
 }

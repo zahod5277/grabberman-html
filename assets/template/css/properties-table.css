@@ -38,7 +38,8 @@
   min-width: 100%;
   max-width: 100%;
   font-family: 'Roboto', sans-serif;
-  margin-top: 14px; }
+  margin-top: 14px;
+  display: none; }
 
 .properties-table thead tr {
   border-bottom: none; }
@@ -66,4 +67,13 @@
   color: black;
   background: #fff;
   border: #e1e2e6 2px solid;
-  margin-right: 10px; }
+  margin-right: 10px;
+  transition: 0.4s ease all; }
+
+.properties-table__button:hover {
+  background-color: #d61f1f;
+  color: #fff; }
+
+.properties-table__button--active {
+  background-color: #d61f1f;
+  color: #fff; }

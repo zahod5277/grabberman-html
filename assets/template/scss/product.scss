@@ -33,3 +33,42 @@
 .product__text-table-outer{
     margin-top: 95px;
 }
+
+.product__text-table-item{
+    margin-bottom: 80px;
+}
+
+.product__text-table-item ul{
+    list-style: none;
+    margin-top: 35px;
+    padding-left: 35px;
+    line-height: 28px;
+}
+
+.product__text-table-item li{
+    font-size: 18px;
+    display: flex;
+    margin-bottom: 23px;
+}
+
+.product__text-table-item ul li::before{
+    content: '';
+    width: 7px;
+    height: 10px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    flex: 0 0 2%;
+    background-image: url(../svg/icon_arrow_right_small.svg);
+    margin-right: 19px;
+    position: relative;
+    top: 8px;
+}
+
+.product__about-text{
+    margin-top: 200px;
+}
+
+.product__img-copyrights{
+    max-width: 266px;
+    height: auto;
+}

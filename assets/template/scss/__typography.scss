@@ -1,5 +1,6 @@
 @import "__viewport.scss";
 @import "__vars.scss";
+@import "__fonts.scss";
 
 p,span,a,button,{
     font-family: 'Roboto', 'Open Sans', 'Arial', sans-serif;
@@ -56,4 +57,8 @@ p{
         line-height: 18px;
         letter-spacing: 0.8px;
     }
+}
+
+ul{
+    font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
 }
