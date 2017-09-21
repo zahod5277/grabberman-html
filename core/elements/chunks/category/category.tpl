@@ -5,20 +5,14 @@
         </div>
     </div>
 </div>
-<div class="container flex-container radio__wrapper" id="productFilter">
-    <div class="radio col-md-6 col-lg-6">
-        <input class="radio__input" type="radio" name="payment" value="1" id="payment_1">
-        <label class="radio__label" for="payment_1">
-            Все саморезы
-        </label>
-    </div>
-    <div class="radio col-md-6 col-lg-6">
-        <input class="radio__input" type="radio" name="payment" value="3" id="payment_3">
-        <label class="radio__label" for="payment_3">
-            Для облицовки гипсокартоном 
-        </label>
-    </div>
-</div>
+            
+{$_modx->runSnippet('@FILE:snippets/getProductFilters.php',[
+    'tpl' => '@FILE:chunks/category/categoryFilter.row.tpl',
+    'category' => $_modx->resource.id,
+    'default' => '@FILE:chunks/category/allFixturesFilter.tpl',
+    'tplOuter' => '@FILE:chunks/category/categoryFilter.outer.tpl'
+])}
+
 <div class="container flex-container">
     {$_modx->runSnippet('msProducts',[
     'parents' => $_modx->resource.id,

@@ -24,7 +24,9 @@ var App = (function () {
         level1MenuItemActive: 'mobile-menu-level1--active',
         fixtureHandlerActive: 'fixture-hover',
         fixtureHandler: '[data-fixture]',
-        propertiesTableBtn: '.properties-table__button'
+        propertiesTableBtn: '.properties-table__button',
+        categoryRadio: '[name="fixtures"]',
+        productRow: '.product-row'
     };
 
     //Объект, содержащий публичное API
@@ -62,6 +64,7 @@ var App = (function () {
             App.smoothScroll();
             App.mainHouse();
             App.productTableViewToggle();
+            App.categoryFilter();
         },
 
         load: function () {
@@ -134,6 +137,18 @@ var App = (function () {
                $(this).addClass(activeClass);
                $('table[data-toggle]').hide();
                $('table[data-toggle="'+$(this).data('toggle')+'"]').show('fast');
+            });
+        },
+        categoryFilter: function(){
+            $(options.categoryRadio).on('change', function(){
+                var parent = $(this).data('parent');
+                console.log($(this).data('parent'));
+                if (parent == 0){
+                    $(options.productRow).show();
+                } else {
+                    $(options.productRow).hide();
+                    $(options.productRow+'[data-parent="'+parent+'"]').show();
+                }
             });
         },
         jQueryFunctions: function () {

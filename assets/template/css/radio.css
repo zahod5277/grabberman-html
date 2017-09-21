@@ -3,7 +3,8 @@
   margin-bottom: 82px; }
 
 .radio {
-  vertical-align: top; }
+  vertical-align: top;
+  margin-bottom: 19px; }
 
 .radio__input {
   opacity: 0;
