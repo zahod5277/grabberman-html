@@ -6,6 +6,10 @@ p,span,a,button,{
     font-family: 'Roboto', 'Open Sans', 'Arial', sans-serif;
 }
 
+strong{
+    font-weight:bold;
+}
+
 p{
     font-size: 18px;
     line-height: 28px;
@@ -15,6 +19,13 @@ p{
         line-height: 21px;
         letter-spacing: 0.4;
     }
+}
+
+label{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-family: 'Roboto', 'Open Sans', 'Arial', sans-serif;
 }
 
 .text{

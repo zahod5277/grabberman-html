@@ -1,15 +1,23 @@
-<div class="row ms2_product">
-    <div class="col-md-6">
-        
+<div class="col-xs-12 col-md-6 col-lg-6 product-row" data-parent="{$parent}" data-title="[[#[[+parent]].pagetitle]]">
         {if $thumb?}
-            <img src="{$image}" alt="{$pagetitle}" title="{$pagetitle}"/>
+            <div class="product-row__thumb">
+                <a href="{$uri}" title="{$pagetitle}">
+                    <img src="{$image}" alt="{$pagetitle}" title="{$pagetitle}"/>
+                </a>
+            </div>
         {else}
-            <img src="{'assets_url' | option}components/minishop2/img/web/ms2_small.png"
-                 srcset="{'assets_url' | option}components/minishop2/img/web/ms2_small@2x.png 2x"
-                 alt="{$pagetitle}" title="{$pagetitle}"/>
         {/if}
-    </div>
-    <div class="col-md-10">
-        {$pagetitle}
-    </div>
+        <div class="product-row__short-props">
+            <h4 class="product-row__article">
+                <strong>
+                    {$tv_article}
+                </strong>
+            </h4>
+            <h3 class="product-row__title">
+                <a href="{$uri}" title="{$pagetitle}">{$pagetitle}</a>
+            </h3>
+            {if $fixtureIcons?}
+            <img src="{$fixtureIcons}" alt="{$pagetitle}" class="product-row__scheme">
+            {/if}
+        </div>
 </div>

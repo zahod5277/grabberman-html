@@ -1,0 +1,76 @@
+@import "__vars";
+@import "__viewport";
+@import "__fonts";
+
+
+.product-row{
+    border: 2px solid $light-grey;
+    padding: 35px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    transition: 0.2s ease all;
+}
+
+.product-row:hover{
+    border-color:$black;
+}
+
+.product-row img{
+    max-width: 100%;
+}
+
+.product-row__thumb{
+    @include mq('tablet-wide',max-1){
+        flex: 0 0 100%;   
+    }
+    @include mq('tablet-wide',min){
+        flex: 0 0 150px;
+    }
+    @include mq('desktop',min){
+        flex: 0 0 200px;   
+    }
+    @include mq('desktop-wide',min){
+        flex: 0 0 250px;   
+    }
+}
+
+.product-row__short-props{
+    @include mq('tablet-wide',max){
+        flex: 0 0 100%;   
+    }
+    @include mq('tablet-wide',min){
+        flex: 0 0 240px;   
+        margin-left: 20px;
+    }
+    @include mq('desktop-wide',min){
+        flex: 0 0 260px;
+    }
+}
+
+.product-row__article{
+    font-size: 16px;
+    font-weight: bold;
+    color: $red;
+    font-family: 'Roboto';
+}
+
+.product-row__title{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 27px;
+    letter-spacing:1px;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+}
+
+.product-row__title a{
+    text-decoration: none;
+    color:$black;
+}
+
+.product-row__scheme{
+    @include mq('desktop',min){
+        margin-top: 70px;   
+    }
+}

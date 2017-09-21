@@ -32,6 +32,15 @@
     width: 100%;
 }
 
+.col-md-6{
+   @include mq('tablet-wide', max-1){
+        flex: 0 0 100%;
+    }
+    @include mq('tablet-wide', min){
+        flex: 0 0 48%;
+    } 
+}
+
 .col-lg-6{
     @include mq('desktop', max-1){
         flex: 0 0 100%;

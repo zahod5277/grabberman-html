@@ -20,6 +20,11 @@
         ])}
     </div>
     <div class="col-xs-12 col-lg-6 product__descrption">
+        {if $_modx->resource.article?}
+            <p class="text text-l text--red">
+                <strong>{$_modx->resource.article}</strong>
+            </p>
+        {/if}
         <h1 class="h3">{$_modx->resource.pagetitle}</h1>
         <p>{$_modx->resource.content}</p>
         <p class="text--s product__scheme-title">
@@ -45,10 +50,21 @@
         {if $value.value?}
             <div class="col-lg-6 product__text-table-item">
                 <p class="text product__text-table-caption">{$value.name}</p>
-                {$value.value|replace:'<p>':''|replace:'</p>':''}
+                <ul>
+                {var $vals = $value.value|nl2br}
+                {var $v = $vals|split:'<br />'}
+                {foreach $v as $val}
+                {if $val?!=''}
+                    <li>{$val}</li>
+                {/if}
+                {/foreach}
+                </ul>
             </div>
         {/if}
     {/foreach}
+</div>
+<div class="container">
+    {var $val = $_modx->resource.testTable|nl2br}
 </div>
 <div class="container">
     {*<h2>Таблицы продукта</h2>*}

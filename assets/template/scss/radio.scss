@@ -1,0 +1,42 @@
+@import "__vars";
+
+.radio__wrapper{
+    margin-top: 82px;
+    margin-bottom: 82px;
+}
+
+.radio{
+    vertical-align: top;
+}
+
+.radio__input{
+    opacity: 0;
+    width: 0;
+}
+
+.radio__label{
+    position: relative;
+    display: inline-block;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.radio__label:before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $black;
+    background-color: $white;
+    border-radius: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.radio__input:checked+ label:before{
+    background-color: $red;
+    box-shadow: 0 0 0 3px #fff inset;
+}

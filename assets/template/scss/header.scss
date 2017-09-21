@@ -57,7 +57,7 @@
 
 .header--sticky .main-menu__submenu{
     top:80px;
-    @include mq('desktop',max){
+    @include mq('desktop-wide',max){
         top:78px;
     }
 }
