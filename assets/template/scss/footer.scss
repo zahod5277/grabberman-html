@@ -4,11 +4,15 @@
 footer{
     overflow-x: hidden;
     background: white;
-    margin-top: 250px;
+    @include mq('tablet-wide',min){
+        margin-top: 250px;
+    }
 }
 
 footer .black-bg{
-    margin-top: 50px;
+    @include mq('tablet-wide',min){
+        margin-top: 50px;
+    }
 }
 
 .footer-container{
@@ -78,6 +82,9 @@ footer{
     flex: 0 0 35%;
     @include mq('desktop',max){
         flex: 0 0 41%;
+    }
+    @include mq('tablet-wide',max){
+        flex: 0 0 100%;
     }
 }
 

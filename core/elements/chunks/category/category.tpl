@@ -5,12 +5,19 @@
         </div>
     </div>
 </div>
-            
+
 {$_modx->runSnippet('@FILE:snippets/getProductFilters.php',[
     'tpl' => '@FILE:chunks/category/categoryFilter.row.tpl',
     'category' => $_modx->resource.id,
     'default' => '@FILE:chunks/category/allFixturesFilter.tpl',
     'tplOuter' => '@FILE:chunks/category/categoryFilter.outer.tpl'
+])}
+
+{$_modx->runSnippet('@FILE:snippets/getProductFilters.php',[
+    'tpl' => '@FILE:chunks/category/mobileCategoryFilter.row.tpl',
+    'category' => $_modx->resource.id,
+    'default' => '@FILE:chunks/category/mobileAllFixturesFilter.tpl',
+    'tplOuter' => '@FILE:chunks/category/mobileCategoryFilter.outer.tpl'
 ])}
 
 <div class="container flex-container">

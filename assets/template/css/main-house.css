@@ -68,4 +68,7 @@ i.fixture-hover {
 .fixture__main-text {
   max-width: 900px;
   margin-top: 105px;
-  margin-bottom: 200px; }
+  margin-bottom: 49px; }
+  @media only screen and (min-width: 1024px) {
+    .fixture__main-text {
+      margin-bottom: 200px; } }

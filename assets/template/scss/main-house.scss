@@ -84,5 +84,8 @@ i.fixture-hover{
 .fixture__main-text{
     max-width: 900px;
     margin-top: 105px;
-    margin-bottom: 200px;
+    margin-bottom: 49px;
+    @include mq('tablet-wide',min){
+        margin-bottom: 200px;   
+    }
 }

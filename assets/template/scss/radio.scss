@@ -1,8 +1,12 @@
 @import "__vars";
+@import "__viewport.scss";
 
 .radio__wrapper{
     margin-top: 82px;
     margin-bottom: 82px;
+    @include mq('tablet-wide', max){
+        display: none;
+    }
 }
 
 .radio{

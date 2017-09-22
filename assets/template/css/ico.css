@@ -74,10 +74,15 @@
       width: 10px;
       height: 10px; } }
 
-.ico-breadcrumbs {
+.ico--breadcrumbs {
   padding-right: 15px; }
 
-.ico-breadcrumbs svg {
+.ico--breadcrumbs svg {
   fill: #fff;
+  width: 7px;
+  height: 10px; }
+
+.ico--arrow-dropdown svg {
+  fill: #231f20;
   width: 7px;
   height: 10px; }

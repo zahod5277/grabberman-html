@@ -86,12 +86,20 @@
     }
 }
 
-.ico-breadcrumbs{
+.ico--breadcrumbs{
    padding-right: 15px;
 }
 
-.ico-breadcrumbs svg{
+.ico--breadcrumbs svg{
     fill: $white;
     width: 7px;
     height: 10px;
+}
+
+.ico--arrow-dropdown{}
+
+.ico--arrow-dropdown svg{
+    fill: $black;
+    width: 7px;
+    height:10px;
 }

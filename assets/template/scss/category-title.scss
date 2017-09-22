@@ -4,11 +4,16 @@
 
 .category-title{
     overflow-x: hidden;
-    margin-bottom: 80px;
+    @include mq('tablet-wide',min){
+        margin-bottom: 80px;
+    }
 }
 
 .category-title__inner{
     width: 100%;
+    @include mq('tablet-wide',max){
+        padding: 103px 20px 43px;
+    }
     @include mq('tablet-wide',min){
         padding: 212px 51px 78px;
         position: relative;

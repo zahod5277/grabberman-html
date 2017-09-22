@@ -8,8 +8,12 @@
     padding: 35px 20px;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 60px;
+    justify-content: space-between;
+    margin-bottom: 20px;
     transition: 0.2s ease all;
+    @include mq('table-wide',min){
+        margin-bottom: 60px;
+    }
 }
 
 .product-row:hover{
@@ -21,8 +25,11 @@
 }
 
 .product-row__thumb{
-    @include mq('tablet-wide',max-1){
-        flex: 0 0 100%;   
+    @include mq('tablet-wide',max){
+        flex: 0 0 40%;   
+    }
+    @include mq('phablet', max){
+        flex: 0 0 35%;
     }
     @include mq('tablet-wide',min){
         flex: 0 0 150px;
@@ -37,7 +44,10 @@
 
 .product-row__short-props{
     @include mq('tablet-wide',max){
-        flex: 0 0 100%;   
+        flex: 0 0 55%;   
+    }
+    @include mq('phablet', max){
+        flex: 0 0 60%;
     }
     @include mq('tablet-wide',min){
         flex: 0 0 240px;   

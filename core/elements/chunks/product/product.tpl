@@ -2,7 +2,7 @@
     <div class="breadcrumbs__inner red-bg">
         <div class="container">
             <p class="breadcrumbs__item text text--s">
-                <i class="ico ico-breadcrumbs">
+                <i class="ico ico--breadcrumbs">
                     <svg class="svg-symbol svg-symbol--icon_arrow_left">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-symbol--icon_arrow_left"></use>
                     </svg>
