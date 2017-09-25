@@ -63,12 +63,24 @@
   font-weight: bold;
   text-transform: inherit;
   padding: 19px 27px;
-  max-width: 300px;
   color: black;
   background: #fff;
   border: #e1e2e6 2px solid;
   margin-right: 10px;
   transition: 0.4s ease all; }
+  @media only screen and (min-width: 1024px) {
+    .properties-table__button {
+      max-width: 262px; } }
+  @media only screen and (min-width: 1440px) {
+    .properties-table__button {
+      max-width: 304px; } }
+  @media only screen and (max-width: 1023px) {
+    .properties-table__button {
+      width: 100%;
+      margin-bottom: 10px; } }
+
+.properties-table__button:nth-child(4) {
+  margin-right: 0px; }
 
 .properties-table__button:hover {
   background-color: #d61f1f;

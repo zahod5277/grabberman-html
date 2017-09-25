@@ -54,6 +54,9 @@
   @media only screen and (min-width: 1440px) {
     .header {
       padding: 10px 100px 0px 100px; } }
+  @media (orientation: landscape) and (max-width: 1023px) {
+    .header {
+      max-height: 55px; } }
 
 .header--sticky {
   align-items: center;
@@ -98,6 +101,9 @@
     .logo {
       width: 40%;
       margin-right: 0px; } }
+  @media (orientation: landscape) and (max-width: 1023px) {
+    .logo {
+      width: 20%; } }
 
 .main-menu-wrapper {
   font-family: "Roboto", sans-serif;
@@ -143,12 +149,12 @@
 
 .main-menu__submenu {
   position: absolute;
-  display: none;
+  visibility: hidden;
   top: 116px;
   left: 0px;
   background: #231f20;
   width: 100%;
-  transition: 0.1s ease all;
+  transition: 0.1s ease all 1s;
   opacity: 0; }
   @media only screen and (max-width: 1247px) {
     .main-menu__submenu {
@@ -156,7 +162,9 @@
 
 .main-menu__item:hover .main-menu__submenu {
   display: block;
-  opacity: 1; }
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s; }
 
 .main-menu__level-1 {
   display: flex;
@@ -184,10 +192,11 @@
 .main-menu__tip {
   font-size: 1rem;
   color: #999999;
-  padding-bottom: 14px;
-  line-height: 32px;
+  margin-bottom: 14px;
+  display: inline-block;
   letter-spacing: 1.2px;
-  padding-top: 30px; }
+  padding-top: 30px;
+  text-transform: capitalize; }
 
 .main-menu__submenu a {
   font-weight: 400;
@@ -218,7 +227,7 @@
   text-align: right;
   position: relative;
   top: -9px;
-  flex: 1 0 28%; }
+  flex: 1 0 27%; }
   @media only screen and (max-width: 1247px) {
     .header-phones-cta {
       flex: 1 0 18%; } }

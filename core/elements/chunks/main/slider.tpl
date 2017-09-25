@@ -7,9 +7,9 @@
                     <div class="container slide-content">
                         <h2 class="slide-heading text--white">Профессиональный крепёж</h2>
                         <p class="slide-text">50 лет продукция компании GRABBER Construction Products успешно применяется по всему миру</p>
-                        <button class="button button--rectangle button--red">
-                            Подробнее
-                            <i class="ico--arrow-next">
+                        <button class="button button--rectangle button--red main-slider__button-more">
+                            <span>Подробнее</span>
+                            <i class="ico--arrow-more">
                                 <svg class="svg-symbol svg-symbol--icon_arrow_next">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-symbol--icon_arrow_next"></use>
                             </svg>
@@ -23,9 +23,9 @@
                     <div class="container slide-content">
                         <h2 class="slide-heading text--white">Вам нужно качество? Ищите «G»</h2>
                         <p class="slide-text">Запатентованные решения компании GRABBER Construction Products гарантируют  удобство и надёжность применения, долговечность  эксплуатации</p>
-                        <button class="button button--rectangle button--red">
-                            Подробнее
-                            <i class="ico--arrow-next">
+                        <button class="button button--rectangle button--red main-slider__button-more">
+                            <span>Подробнее</span>
+                            <i class="ico--arrow-more">
                             <svg class="svg-symbol svg-symbol--icon_arrow_next">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-symbol--icon_arrow_next"></use>
                             </svg>
@@ -51,7 +51,6 @@
             </svg>
             </i>
         </button>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+        
     </div>
 </section>

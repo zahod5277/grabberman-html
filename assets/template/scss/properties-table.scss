@@ -41,12 +41,25 @@
     font-weight: bold;
     text-transform: inherit;
     padding: 19px 27px;
-    max-width: 300px;
     color: black;
     background: $white;
     border: $light-grey 2px solid;
     margin-right: 10px;
     transition: 0.4s ease all;
+    @include mq('tablet-wide',min){
+        max-width: 262px;
+    }
+    @include mq('desktop-wide',min){
+        max-width: 304px;
+    }
+    @include mq('tablet-wide',max){
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.properties-table__button:nth-child(4){
+    margin-right: 0px;
 }
 
 .properties-table__button:hover{

@@ -10,6 +10,12 @@ $buttonSpace: 100px;
     @include mq('tablet-wide', max){
         height: calc( 100vh - #{$headerH});
     }
+    @include mq-landscape('tablet-wide',max){
+        height: calc(100vh - 80px);
+    }
+    @include mq-landscape('tablet-small',max){
+        height: calc(100vh - 35px);
+    }
 }
 
 .swiper-inner:before{
@@ -48,6 +54,9 @@ $buttonSpace: 100px;
     @include mq('tablet-wide',max){
         right: 70px;
     }
+    @include mq-landscape('desktop', max){
+        bottom:15%;
+    }
 }
 
 .pagination__button-next{
@@ -59,27 +68,29 @@ $buttonSpace: 100px;
         top: unset;
         bottom:10%;
     }
+    @include mq-landscape('desktop', max){
+        bottom:15%;
+    }
 }
 
 .slide-heading{
-    width: 40%;
+    width: 100%;
     @include mq('tablet', max){
         line-height: 2.25rem;
-        font-size: 2rem;
+        font-size: 1.6rem;
         letter-spacing: 0.7px;
         margin-bottom: 36px;
-        width: 38%;
         display: block;
     }
     @include mq-landscape('tablet-wide',max){
-        width: 40%;
         line-height: 2.25rem;
-        font-size: 2rem;
+        font-size: 1.7rem;
         letter-spacing: 0.7px;
-    }
-    @include mq-landscape('tablet-wide',max){
         margin-bottom: 16px;
-        width: 80%;
+        width: 90%;
+    }
+    @include mq-landscape('tablet-small',max){
+        font-size: 1.7rem;
     }
 }
 
@@ -87,7 +98,7 @@ $buttonSpace: 100px;
     position: relative;
     z-index: 50;
     @include mq('desktop',max){
-        width: 830px;
+        width: 100%;
     }
     @include mq('tablet-small', max){
         padding: 20px;
@@ -117,6 +128,11 @@ $buttonSpace: 100px;
     @include mq-landscape('tablet-wide',max){
         margin-bottom: 20px;
     }
+}
+
+.main-slider__button-more{
+    display: flex;
+    align-items: end;
 }
 
 .pagination__bullet{

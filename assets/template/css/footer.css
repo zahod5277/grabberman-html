@@ -123,6 +123,10 @@ footer {
     .devby {
       float: none; } }
 
+.devby a {
+  text-decoration: none;
+  color: #fff; }
+
 .devby-ico {
   padding-left: 8px; }
 

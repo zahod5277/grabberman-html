@@ -56,12 +56,14 @@
                     </a>
                 </span>
                 <span class="devby">
-                    Разработано в
+                    <a target="_blank" href="http://pixeljam.ru/" rel="nofollow">
+                        Разработано в
                     <span class="can">
                         <i class="can__cap"></i>
                         <i class="can__body shine--bg"></i>
                     </span>
                     Pixeljam
+                    </a>
                 </span>
             </p>
         </div>

@@ -2,12 +2,14 @@
     <div class="breadcrumbs__inner red-bg">
         <div class="container">
             <p class="breadcrumbs__item text text--s">
-                <i class="ico ico--breadcrumbs">
-                    <svg class="svg-symbol svg-symbol--icon_arrow_left">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-symbol--icon_arrow_left"></use>
-                    </svg>
-                </i>
-                Деревянные конструкции в интерьере
+                <a href="{$_modx->resource.parent|url}">
+                    <i class="ico ico--breadcrumbs">
+                        <svg class="svg-symbol svg-symbol--icon_arrow_left">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-symbol--icon_arrow_left"></use>
+                        </svg>
+                    </i>
+                    [[#[[#[[*id]].parent]].pagetitle]]
+                </a>
             </p>
         </div>
     </div>
@@ -15,28 +17,44 @@
 
 <div class="container flex-container product">
     <div class="col-xs-12 col-lg-6">
+        <div class="product__mobile-heading">
+            {if $_modx->resource.tv_article?}
+                <p class="text text-l text--red">
+                    <strong>#{$_modx->resource.tv_article}</strong>
+                </p>
+            {/if}
+            <h1 class="h3">{$_modx->resource.pagetitle}</h1>
+        </div>
         {$_modx->runSnippet('!msGallery',[
             'tpl' => '@FILE:chunks/product/gallery.tpl'
         ])}
     </div>
     <div class="col-xs-12 col-lg-6 product__descrption">
-        {if $_modx->resource.article?}
-            <p class="text text-l text--red">
-                <strong>{$_modx->resource.article}</strong>
-            </p>
-        {/if}
-        <h1 class="h3">{$_modx->resource.pagetitle}</h1>
+        <div class="product__desktop-heading">
+            {if $_modx->resource.tv_article?}
+                <p class="text text-l text--red">
+                    <strong>#{$_modx->resource.tv_article}</strong>
+                </p>
+            {/if}
+            <h1 class="h3">{$_modx->resource.pagetitle}</h1>
+        </div>
         <p>{$_modx->resource.content}</p>
-        <p class="text--s product__scheme-title">
-            Схема самореза
-        </p>
-        <div class="product__scheme">
-            <img src="{$_modx->resource.fixtureScheme}" alt="Схема {$_modx->resource.pagetitle}">
+        {if $_modx->resource.fixtureScheme?}
+            <p class="text--s product__scheme-title">
+                Схема самореза
+            </p>
+            <div class="product__scheme">
+                <img class="img-responsive" src="{$_modx->resource.fixtureScheme}" alt="Схема {$_modx->resource.pagetitle}">
+            </div>
+        {/if}
+        {if $_modx->resource.fixtureIcons?}
+            <div class="product__scheme">
+                <img class="img-responsive" src="{$_modx->resource.fixtureIcons}" alt="Схема {$_modx->resource.pagetitle}">
+            </div>
+        {/if}
+        <div class="product__order-btn-outer">
+            <button class="button button--rectangle button--black product__order-btn">Заказать</button>
         </div>
-        <div class="product__scheme">
-            <img src="{$_modx->resource.fixtureIcons}" alt="Схема {$_modx->resource.pagetitle}">
-        </div>
-        <button class="button button--rectangle button--black">Заказать</button>
     </div>
 </div>
 <div class="container flex-container product__text-table-outer">
@@ -51,13 +69,13 @@
             <div class="col-lg-6 product__text-table-item">
                 <p class="text product__text-table-caption">{$value.name}</p>
                 <ul>
-                {var $vals = $value.value|nl2br}
-                {var $v = $vals|split:'<br />'}
-                {foreach $v as $val}
-                {if $val?!=''}
-                    <li>{$val}</li>
-                {/if}
-                {/foreach}
+                    {var $vals = $value.value|nl2br}
+                    {var $v = $vals|split:'<br />'}
+                    {foreach $v as $val}
+                        {if $val?!=''}
+                            <li>{$val}</li>
+                            {/if}
+                        {/foreach}
                 </ul>
             </div>
         {/if}

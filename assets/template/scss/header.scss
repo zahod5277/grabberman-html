@@ -22,6 +22,9 @@
     @include mq('desktop-wide',min){
         padding: 10px 100px 0px 100px;
     }
+    @include mq-landscape('tablet-wide',max){
+        max-height: 55px;
+    }
 }
 
 .header--sticky{
@@ -72,6 +75,9 @@
     @include mq('tablet-wide', max){
         width: 40%;
         margin-right: 0px;
+    }
+    @include mq-landscape('tablet-wide',max){
+        width: 20%;
     }
 }
 
@@ -125,12 +131,12 @@
 
 .main-menu__submenu{
     position: absolute;
-    display: none;
+    visibility: hidden;
     top:116px;
     left: 0px;
     background:$black;
     width: 100%;
-    transition: 0.1s ease all;
+    transition: 0.1s ease all 1s;
     opacity: 0;
     @include mq('desktop',max){
         top: 111px;
@@ -140,6 +146,8 @@
 .main-menu__item:hover .main-menu__submenu{
     display: block;
     opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
 }
 
 .main-menu__level-1{
@@ -171,10 +179,11 @@
 .main-menu__tip{
     font-size: 1rem;
     color:$dark-grey;
-    padding-bottom: 14px;
-    line-height: 32px;
+    margin-bottom: 14px;
+    display: inline-block;
     letter-spacing: 1.2px;
     padding-top: 30px;
+    text-transform: capitalize;
 }
 
 .main-menu__submenu a{
@@ -210,7 +219,7 @@
     text-align: right;
     position: relative;
     top: -9px;
-    flex: 1 0 28%;
+    flex: 1 0 27%;
     @include mq('desktop', max){
         flex: 1 0 18%;
     }

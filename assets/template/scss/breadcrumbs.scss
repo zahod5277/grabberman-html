@@ -8,7 +8,9 @@
 
 .breadcrumbs{
     overflow-x: hidden;
-    padding: 100px 0px;
+    @include mq('tablet-wide', min){
+        padding: 100px 0px;   
+    }
 }
 
 .breadcrumbs__inner{
@@ -18,13 +20,21 @@
     z-index: 250;
 }
 
+.breadcrumbs__inner a{
+    color:$white;
+    display: flex;
+    text-decoration: none;
+}
+
 .breadcrumbs__inner::after{
-    content: '';
-    position: absolute;
-    top: 0px;
-    right: -75%;
-    width: 100%;
-    background-color: #fff;
-    z-index: 500;
-    height: 88px;
+    @include mq('tablet-wide',min){
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: -75%;
+        width: 100%;
+        background-color: #fff;
+        z-index: 500;
+        height: 88px;   
+    }
 }

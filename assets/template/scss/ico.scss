@@ -57,26 +57,20 @@
     left: 22px;
 }
 
-.ico--arrow-next svg{
+.ico--arrow-more{
     padding-left: 50px;
-    position: relative;
-    top:4px;
     @include mq('tablet-wide',max){
         padding-left: 25px;
-        top:2px;
     }
     @include mq('desktop',max){
         padding-left: 25px;
-        position: relative;
-        top: 5px;
     }
     @include mq('tablet-wide',max){
         padding-left: 10px;
-        top:2px;
     }
 }
 
-.ico--arrow-next svg{
+.ico--arrow-more svg{
     width: 18px;
     height: 18px;
     

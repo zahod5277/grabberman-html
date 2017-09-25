@@ -3,8 +3,10 @@
   font-weight: bold; }
 
 .breadcrumbs {
-  overflow-x: hidden;
-  padding: 100px 0px; }
+  overflow-x: hidden; }
+  @media only screen and (min-width: 1024px) {
+    .breadcrumbs {
+      padding: 100px 0px; } }
 
 .breadcrumbs__inner {
   width: 100%;
@@ -12,12 +14,18 @@
   position: relative;
   z-index: 250; }
 
-.breadcrumbs__inner::after {
-  content: '';
-  position: absolute;
-  top: 0px;
-  right: -75%;
-  width: 100%;
-  background-color: #fff;
-  z-index: 500;
-  height: 88px; }
+.breadcrumbs__inner a {
+  color: #fff;
+  display: flex;
+  text-decoration: none; }
+
+@media only screen and (min-width: 1024px) {
+  .breadcrumbs__inner::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: -75%;
+    width: 100%;
+    background-color: #fff;
+    z-index: 500;
+    height: 88px; } }

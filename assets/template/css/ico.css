@@ -48,29 +48,23 @@
   top: 27px;
   left: 22px; }
 
-.ico--arrow-next svg {
-  padding-left: 50px;
-  position: relative;
-  top: 4px; }
+.ico--arrow-more {
+  padding-left: 50px; }
   @media only screen and (max-width: 1023px) {
-    .ico--arrow-next svg {
-      padding-left: 25px;
-      top: 2px; } }
+    .ico--arrow-more {
+      padding-left: 25px; } }
   @media only screen and (max-width: 1247px) {
-    .ico--arrow-next svg {
-      padding-left: 25px;
-      position: relative;
-      top: 5px; } }
+    .ico--arrow-more {
+      padding-left: 25px; } }
   @media only screen and (max-width: 1023px) {
-    .ico--arrow-next svg {
-      padding-left: 10px;
-      top: 2px; } }
+    .ico--arrow-more {
+      padding-left: 10px; } }
 
-.ico--arrow-next svg {
+.ico--arrow-more svg {
   width: 18px;
   height: 18px; }
   @media only screen and (max-width: 1023px) {
-    .ico--arrow-next svg {
+    .ico--arrow-more svg {
       width: 10px;
       height: 10px; } }
 

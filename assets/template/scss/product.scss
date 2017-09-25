@@ -5,6 +5,20 @@
     max-width:500px; 
 }
 
+.product__mobile-heading{
+    @include mq('tablet-wide',min){
+        display: none;
+    }
+    margin: 40px 0px;
+}
+
+
+.product__desktop-heading{
+    @include mq('tablet-wide',max){
+        display: none;
+    }
+}
+
 .product__image img{
     display: block;
     width: 100%;
@@ -20,6 +34,16 @@
 
 .product__scheme{
     margin-bottom: 50px;
+}
+
+.product__order-btn-outer{
+    @include mq('tablet-wide', max){
+        text-align: center;
+    }
+}
+
+.product__order-btn{
+    margin: 40px 0px;
 }
 
 .product__text-table-caption{
