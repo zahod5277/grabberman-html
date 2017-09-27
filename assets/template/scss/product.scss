@@ -21,8 +21,9 @@
 
 .product__image img{
     display: block;
-    width: 100%;
+    max-width: 300px;
     height: auto;
+    margin: auto;
 }
 
 .product__scheme-title{

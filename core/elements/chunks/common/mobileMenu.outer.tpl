@@ -11,4 +11,4 @@
         <p class="mobile-menu-info__item">8 800 333-19-53</p>
         <p class="mobile-menu-info__item">+7 (812) 333-19-53</p>
     </div>
-</nav
+</nav>

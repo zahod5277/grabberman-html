@@ -22,13 +22,20 @@ footer {
   color: #999999;
   font-size: 0.875rem;
   text-transform: uppercase; }
+  @media only screen and (max-width: 1023px) {
+    .footer-text__heading {
+      font-size: 10px;
+      margin-bottom: 15px;
+      line-height: 10px; } }
 
 .footer-text__paragraph {
   color: #fff;
   font-size: 1rem;
-  line-height: 1.625rem;
   margin-bottom: 30px;
   letter-spacing: .03rem; }
+  @media only screen and (max-width: 1023px) {
+    .footer-text__paragraph {
+      font-size: 14px; } }
 
 .footer-text__paragraph span {
   display: block; }
@@ -39,6 +46,9 @@ footer {
   font-family: 'Roboto', sans-serif;
   line-height: 26px;
   letter-spacing: 0.5px; }
+  @media only screen and (max-width: 1023px) {
+    .footer-workhours {
+      margin-bottom: 65px; } }
 
 footer {
   position: relative; }
@@ -105,6 +115,9 @@ footer {
   color: #fff;
   padding-bottom: 66px;
   font-size: 0.875rem; }
+  @media only screen and (max-width: 1023px) {
+    .copyright {
+      font-size: 12px; } }
 
 .politics {
   padding-left: 30px; }
@@ -121,7 +134,10 @@ footer {
   float: right; }
   @media only screen and (max-width: 1023px) {
     .devby {
-      float: none; } }
+      float: none;
+      margin-top: 40px;
+      display: block;
+      font-size: 12px; } }
 
 .devby a {
   text-decoration: none;

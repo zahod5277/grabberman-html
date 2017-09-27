@@ -60,12 +60,12 @@
 
 .header--sticky {
   align-items: center;
-  position: fixed;
   width: 100%;
   top: 0;
   left: 0; }
   @media only screen and (min-width: 1024px) {
     .header--sticky {
+      position: fixed;
       padding-top: 0px; } }
   @media only screen and (max-width: 1023px) {
     .header--sticky {
@@ -145,7 +145,7 @@
   letter-spacing: .03rem; }
   @media only screen and (min-width: 1440px) {
     .main-menu__item a {
-      font-weight: bold; } }
+      font-weight: 500; } }
 
 .main-menu__submenu {
   position: absolute;
@@ -154,7 +154,7 @@
   left: 0px;
   background: #231f20;
   width: 100%;
-  transition: 0.1s ease all 1s;
+  transition: 0.1s ease all .5s;
   opacity: 0; }
   @media only screen and (max-width: 1247px) {
     .main-menu__submenu {

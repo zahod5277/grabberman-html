@@ -31,9 +31,9 @@
         ])}
     </div>
     <div class="header-phones-cta">
-        <a class="button button--rectangle button--red" href="#callback">
+        <button class="button button--rectangle button--red" data-remodal-target="callback">
             Обратный звонок
-        </a>
+        </button>
     </div>
     <div class="mobile-menu">
         <button class="navbar__burger burger" data-navbar-open="">

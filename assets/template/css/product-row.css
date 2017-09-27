@@ -33,14 +33,16 @@
   font-weight: bold;
   font-style: italic; }
 
-.product-row {
+.product-row > a {
   border: 2px solid #e1e2e6;
   padding: 35px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 20px;
-  transition: 0.2s ease all; }
+  transition: 0.2s ease all;
+  color: #231f20;
+  text-decoration: none; }
 
 .product-row:hover {
   border-color: #231f20; }
@@ -99,10 +101,6 @@
   text-transform: uppercase;
   font-family: 'Roboto'; }
 
-.product-row__title a {
+.product-row__title {
   text-decoration: none;
   color: #231f20; }
-
-@media only screen and (min-width: 1248px) {
-  .product-row__scheme {
-    margin-top: 70px; } }

@@ -29,11 +29,11 @@
 
 .header--sticky{
     align-items: center;
-    position: fixed;
     width: 100%;
     top:0;
     left:0;
     @include mq('tablet-wide',min){
+        position: fixed;
         padding-top: 0px;
     }
     @include mq('tablet-wide', max){
@@ -125,7 +125,7 @@
     text-decoration: none;
     letter-spacing: .03rem;
     @include mq('desktop-wide',min){
-        font-weight: bold;
+        font-weight: 500;
     }
 }
 
@@ -136,7 +136,7 @@
     left: 0px;
     background:$black;
     width: 100%;
-    transition: 0.1s ease all 1s;
+    transition: 0.1s ease all .5s;
     opacity: 0;
     @include mq('desktop',max){
         top: 111px;

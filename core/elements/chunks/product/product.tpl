@@ -53,7 +53,7 @@
             </div>
         {/if}
         <div class="product__order-btn-outer">
-            <button class="button button--rectangle button--black product__order-btn">Заказать</button>
+            <button data-remodal-target="order" class="button button--rectangle button--black product__order-btn">Заказать</button>
         </div>
     </div>
 </div>

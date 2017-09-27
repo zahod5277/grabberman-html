@@ -6,7 +6,8 @@
   color: #f22c2c;
   font-size: 1.25rem;
   margin-bottom: 100px;
-  margin-top: 50px; }
+  margin-top: 50px;
+  max-width: 900px; }
 
 .scroll-button {
   padding: 10px 50px;

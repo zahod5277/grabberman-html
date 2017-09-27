@@ -19,63 +19,79 @@
             <div class="fixture-list-outer">
                 <div class="fixture-list">
                     <div class="fixture-item" data-fixture="wood">
-                        <i class="fixture-item__bullet fixture-item__bullet--yellow"></i>
-                        <div class="fixture-item__description">
-                            <p class="fixture-item__title">По дереву</p>
-                            <p class="fixture-item__title_for">Интерьер</p>
+                        <div class="fixture-list__description-outer">
+                            <i class="fixture-item__bullet fixture-item__bullet--yellow"></i>
+                            <div class="fixture-item__description">
+                                <p class="fixture-item__title">По дереву</p>
+                                <p class="fixture-item__title--for">Интерьер</p>
+                            </div>
                         </div>
                         <img src="assets/template/img/demos/fixture.jpg" alt="" class="fixture-item__img">
                     </div>
                     <div class="fixture-item">
-                        <i class="fixture-item__bullet fixture-item__bullet--grey"></i>
-                        <div class="fixture-item__description">
-                            <p class="fixture-item__title">Для террас</p>
-                            <p class="fixture-item__title_for">Decking</p>
+                        <div class="fixture-list__description-outer">
+                            <i class="fixture-item__bullet fixture-item__bullet--grey"></i>
+                            <div class="fixture-item__description">
+                                <p class="fixture-item__title">Для террас</p>
+                                <p class="fixture-item__title--for">Decking</p>
+                            </div>
                         </div>
                         <img src="assets/template/img/demos/fixture.jpg" alt="" class="fixture-item__img">
                     </div>
                     <div class="fixture-item">
-                        <i class="fixture-item__bullet fixture-item__bullet--red"></i>
-                        <div class="fixture-item__description">
-                            <p class="fixture-item__title">По толстому металлу</p>
-                            <p class="fixture-item__title_for">Кровля и металлосайдинг</p>
+                        <div class="fixture-list__description-outer">
+                            <i class="fixture-item__bullet fixture-item__bullet--red"></i>
+                            <div class="fixture-item__description">
+                                <p class="fixture-item__title">По толстому металлу</p>
+                                <p class="fixture-item__title--for">Кровля и металлосайдинг</p>
+                            </div>
                         </div>
                         <img src="assets/template/img/demos/fixture.jpg" alt="" class="fixture-item__img">
                     </div>
                     <div class="fixture-item" data-fixture="metal-thick">
-                        <i class="fixture-item__bullet fixture-item--bullet--brown"></i>
-                        <div class="fixture-item__description">
-                            <p class="fixture-item__title">По тонкому металлу</p>
-                            <p class="fixture-item__title_for">Экстерьер</p>
+                        <div class="fixture-list__description-outer">
+                            <i class="fixture-item__bullet fixture-item--bullet--brown"></i>
+                            <div class="fixture-item__description">
+                                <p class="fixture-item__title">По тонкому металлу</p>
+                                <p class="fixture-item__title--for">Экстерьер</p>
+                            </div>
                         </div>
                         <img src="assets/template/img/demos/fixture.jpg" alt="" class="fixture-item__img">
                     </div>
                     <div class="fixture-item">
-                        <i class="fixture-item__bullet fixture-item__bullet--blue"></i>
-                        <div class="fixture-item__description">
-                            <p class="fixture-item__title">Для сборки каркаса ЛСТК</p>
+                        <div class="fixture-list__description-outer">
+                            <i class="fixture-item__bullet fixture-item__bullet--blue"></i>
+                            <div class="fixture-item__description">
+                                <p class="fixture-item__title">Для сборки каркаса ЛСТК</p>
+                            </div>
                         </div>
                         <img src="assets/template/img/demos/fixture.jpg" alt="" class="fixture-item__img">
                     </div>
                     <div class="fixture-item">
-                        <i class="fixture-item__bullet fixture-item__bullet--green"></i>
-                        <div class="fixture-item__description">
-                            <p class="fixture-item__title">Для облицовки гипсокартоном</p>
+                        <div class="fixture-list__description-outer">
+                            <i class="fixture-item__bullet fixture-item__bullet--green"></i>
+                            <div class="fixture-item__description">
+                                <p class="fixture-item__title">Для облицовки гипсокартоном</p>
+                            </div>
                         </div>
                         <img src="assets/template/img/demos/fixture.jpg" alt="" class="fixture-item__img">
                     </div>
                     <div class="fixture-item">
-                        <i class="fixture-item__bullet fixture-item__bullet--aqua"></i>
-                        <div class="fixture-item__description">
-                            <p class="fixture-item__title">Для облицовки фиброцементных панелей</p>
+                        <div class="fixture-list__description-outer">
+                            <i class="fixture-item__bullet fixture-item__bullet--aqua"></i>
+                            <div class="fixture-item__description">
+                                <p class="fixture-item__title">Для облицовки фиброцементных панелей</p>
+                            </div>
                         </div>
                         <img src="assets/template/img/demos/fixture.jpg" alt="" class="fixture-item__img">
                     </div>
                     <div class="fixture-item">
-                        <i class="fixture-item__bullet"></i>
-                        <div class="fixture-item__description">
-                            <p class="fixture-item__title">Комплектующие</p>
-                            <p class="fixture-item__title_for">Биты, насадки, приспособления</p>
+                        <div class="fixture-list__description-outer">
+                            <i class="fixture-item__bullet"></i>
+                            <div class="fixture-item__description">
+                                <p class="fixture-item__title">Комплектующие</p>
+                                <p class="fixture-item__title--for">Биты, насадки, приспособления</p>
+                            </div>
                         </div>
                         <img src="assets/template/img/demos/fixture.jpg" alt="" class="fixture-item__img">
                     </div>

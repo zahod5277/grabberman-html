@@ -9,7 +9,7 @@
 }
 
 .mobile-menu--active .burger__l:first-child{
-    display: none;
+    visibility: hidden;
 }
 
 .mobile-menu--active .burger__l:nth-child(2){

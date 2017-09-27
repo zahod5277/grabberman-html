@@ -1,5 +1,5 @@
 <li>
     <a href="{$uri}" title="{$pagetitle}">
-        {$pagetitle}
+        {$menutitle}
     </a>
 </li>

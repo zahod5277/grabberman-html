@@ -29,14 +29,21 @@ footer .black-bg{
     color:$dark-grey;
     font-size: 0.875rem;
     text-transform: uppercase;
+    @include mq('tablet-wide', max){
+        font-size: 10px;
+        margin-bottom: 15px;
+        line-height: 10px;
+    }
 }
 
 .footer-text__paragraph{
     color:$white;
     font-size: 1rem;
-    line-height: 1.625rem;
     margin-bottom: 30px;
     letter-spacing: .03rem;
+    @include mq('tablet-wide', max){
+        font-size: 14px;
+    }
 }
 
 .footer-text__paragraph span{
@@ -49,6 +56,9 @@ footer .black-bg{
     font-family: 'Roboto', sans-serif;
     line-height: 26px;
     letter-spacing: 0.5px;
+    @include mq('tablet-wide', max){
+        margin-bottom: 65px;
+    }
 }
 
 footer{
@@ -129,6 +139,9 @@ footer{
     color: $white;
     padding-bottom: 66px;
     font-size: 0.875rem;
+    @include mq('tablet-wide',max){
+        font-size: 12px;
+    }
 }
 
 .politics{
@@ -148,6 +161,9 @@ footer{
     float:right;
     @include mq('tablet-wide', max){
         float:none;
+        margin-top: 40px;
+        display: block;
+        font-size: 12px;
     }
 }
 

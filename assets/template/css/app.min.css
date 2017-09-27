@@ -378,7 +378,9 @@ h6, .h6 {
   cursor: pointer;
   transition: 0.5s ease all;
   border: 1px solid transparent;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent; }
   @media only screen and (max-width: 767px) {
     .button {
       font-size: 11px; } }
@@ -432,7 +434,6 @@ body {
 
 .img-responsive {
   display: block;
-  width: 100%;
   max-width: 100%; }
 
 .black-bg {
@@ -550,7 +551,8 @@ body {
   margin-top: 20px; }
 
 .remodal-close {
-  right: 0 !important; }
+  right: 0 !important;
+  left: initial !important; }
 
 @font-face {
   font-family: "Futura";
@@ -614,12 +616,12 @@ body {
 
 .header--sticky {
   align-items: center;
-  position: fixed;
   width: 100%;
   top: 0;
   left: 0; }
   @media only screen and (min-width: 1024px) {
     .header--sticky {
+      position: fixed;
       padding-top: 0px; } }
   @media only screen and (max-width: 1023px) {
     .header--sticky {
@@ -699,7 +701,7 @@ body {
   letter-spacing: .03rem; }
   @media only screen and (min-width: 1440px) {
     .main-menu__item a {
-      font-weight: bold; } }
+      font-weight: 500; } }
 
 .main-menu__submenu {
   position: absolute;
@@ -708,7 +710,7 @@ body {
   left: 0px;
   background: #231f20;
   width: 100%;
-  transition: 0.1s ease all 1s;
+  transition: 0.1s ease all .5s;
   opacity: 0; }
   @media only screen and (max-width: 1247px) {
     .main-menu__submenu {
@@ -856,7 +858,7 @@ body {
     display: none; } }
 
 .mobile-menu--active .burger__l:first-child {
-  display: none; }
+  visibility: hidden; }
 
 .mobile-menu--active .burger__l:nth-child(2) {
   transform: rotate(45deg); }
@@ -966,14 +968,16 @@ body {
   position: relative;
   height: 52px;
   width: 52px;
-  padding: 14px 16px;
+  padding: 14px 10px;
   background-color: transparent;
   color: inherit;
   border: none;
   cursor: pointer;
   z-index: 1;
   display: block;
-  outline: none; }
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent; }
 
 .burger__pan {
   display: block;
@@ -994,15 +998,15 @@ body {
   margin: 4px 0;
   -webkit-flex-shrink: 0;
   flex-shrink: 0;
-  border-radius: 3px;
   overflow: hidden;
   -webkit-transition: color .3s,transform .2s;
   -moz-transition: color .3s,transform .2s;
   transition: color .3s,transform .2s;
   background: #fff; }
 
-.burger__l:first-child {
-  width: 128%; }
+.burger__l:nth-child(n+2) {
+  left: 10px;
+  width: 22px; }
 
 @font-face {
   font-family: "Futura";
@@ -1273,7 +1277,8 @@ h6, .h6 {
   color: #f22c2c;
   font-size: 1.25rem;
   margin-bottom: 100px;
-  margin-top: 50px; }
+  margin-top: 50px;
+  max-width: 900px; }
 
 .scroll-button {
   padding: 10px 50px;
@@ -1342,50 +1347,55 @@ i.fixture-hover {
 
 .fixture-item {
   border: solid 2px #e6e6e6;
-  padding: 5px 15px;
+  padding: 5px 0px;
   margin-bottom: 15px;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: baseline;
+  justify-content: space-between;
   align-items: center;
   cursor: pointer;
   transition: 0.2s ease all; }
   @media only screen and (max-width: 1023px) {
     .fixture-item {
-      display: block;
-      text-align: right;
-      position: relative; } }
+      display: flex;
+      position: relative;
+      flex-wrap: wrap;
+      justify-content: space-between; } }
+
+.fixture-list__description-outer {
+  flex: 0 0 60%;
+  text-align: left;
+  display: flex;
+  align-items: center; }
 
 .fixture-item__bullet {
-  display: block;
+  display: inline-block;
   width: 20px;
   height: 20px;
   border-radius: 200px;
   border: none;
   background: #e1e2e6;
   flex: 0 0 20px;
-  margin-right: 20px; }
+  margin: 0px 19px; }
   @media only screen and (max-width: 1023px) {
     .fixture-item__bullet {
       display: inline-block;
-      margin-right: 0px;
-      position: absolute;
-      top: 33%;
-      left: 3%; } }
+      vertical-align: middle; } }
 
 .fixture-item__description {
-  flex: 0 0 62%; }
+  display: inline-block; }
   @media only screen and (max-width: 1023px) {
     .fixture-item__description {
       display: inline-block;
-      width: 52%;
-      margin-right: 3%;
-      margin-left: 3%;
       text-align: left;
-      vertical-align: top; } }
+      vertical-align: middle;
+      max-width: 44%;
+      min-width: 44%; } }
 
 .fixture-item__title {
-  margin-bottom: 10px; }
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px; }
   @media only screen and (max-width: 1023px) {
     .fixture-item__title {
       font-size: 14px;
@@ -1395,14 +1405,15 @@ i.fixture-hover {
       font-size: 10px;
       line-height: 14px; } }
 
-.fixture-item__title_for {
-  color: #999999; }
+.fixture-item__title--for {
+  color: #999999;
+  font-size: 16px; }
   @media only screen and (max-width: 1023px) {
-    .fixture-item__title_for {
+    .fixture-item__title--for {
       font-size: 14px;
       line-height: 18px; } }
   @media only screen and (max-width: 479px) {
-    .fixture-item__title_for {
+    .fixture-item__title--for {
       font-size: 10px;
       line-height: 14px; } }
 
@@ -1414,7 +1425,11 @@ i.fixture-hover {
   @media only screen and (max-width: 1023px) {
     .fixture-item__img {
       display: inline-block;
-      width: 30%; } }
+      width: 30%;
+      vertical-align: middle;
+      margin-right: 19px;
+      flex: 0 0 30%;
+      text-align: right; } }
 
 .fixture-item__bullet--yellow {
   background-color: #fecd08; }
@@ -1461,13 +1476,20 @@ footer {
   color: #999999;
   font-size: 0.875rem;
   text-transform: uppercase; }
+  @media only screen and (max-width: 1023px) {
+    .footer-text__heading {
+      font-size: 10px;
+      margin-bottom: 15px;
+      line-height: 10px; } }
 
 .footer-text__paragraph {
   color: #fff;
   font-size: 1rem;
-  line-height: 1.625rem;
   margin-bottom: 30px;
   letter-spacing: .03rem; }
+  @media only screen and (max-width: 1023px) {
+    .footer-text__paragraph {
+      font-size: 14px; } }
 
 .footer-text__paragraph span {
   display: block; }
@@ -1478,6 +1500,9 @@ footer {
   font-family: 'Roboto', sans-serif;
   line-height: 26px;
   letter-spacing: 0.5px; }
+  @media only screen and (max-width: 1023px) {
+    .footer-workhours {
+      margin-bottom: 65px; } }
 
 footer {
   position: relative; }
@@ -1544,6 +1569,9 @@ footer {
   color: #fff;
   padding-bottom: 66px;
   font-size: 0.875rem; }
+  @media only screen and (max-width: 1023px) {
+    .copyright {
+      font-size: 12px; } }
 
 .politics {
   padding-left: 30px; }
@@ -1560,7 +1588,10 @@ footer {
   float: right; }
   @media only screen and (max-width: 1023px) {
     .devby {
-      float: none; } }
+      float: none;
+      margin-top: 40px;
+      display: block;
+      font-size: 12px; } }
 
 .devby a {
   text-decoration: none;
@@ -1670,8 +1701,9 @@ footer {
 
 .product__image img {
   display: block;
-  width: 100%;
-  height: auto; }
+  max-width: 300px;
+  height: auto;
+  margin: auto; }
 
 .product__scheme-title {
   margin-top: 48px;
@@ -1782,7 +1814,10 @@ footer {
   padding: 12px 0px;
   color: #fff;
   text-align: center;
-  font-size: 12px; }
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
 
 .properties-table tr {
   font-size: 16px;
@@ -1807,7 +1842,9 @@ footer {
       max-width: 262px; } }
   @media only screen and (min-width: 1440px) {
     .properties-table__button {
-      max-width: 304px; } }
+      max-width: 304px;
+      font-size: 16px;
+      min-height: 100px; } }
   @media only screen and (max-width: 1023px) {
     .properties-table__button {
       width: 100%;
@@ -1859,14 +1896,16 @@ footer {
   font-weight: bold;
   font-style: italic; }
 
-.product-row {
+.product-row > a {
   border: 2px solid #e1e2e6;
   padding: 35px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 20px;
-  transition: 0.2s ease all; }
+  transition: 0.2s ease all;
+  color: #231f20;
+  text-decoration: none; }
 
 .product-row:hover {
   border-color: #231f20; }
@@ -1925,13 +1964,9 @@ footer {
   text-transform: uppercase;
   font-family: 'Roboto'; }
 
-.product-row__title a {
+.product-row__title {
   text-decoration: none;
   color: #231f20; }
-
-@media only screen and (min-width: 1248px) {
-  .product-row__scheme {
-    margin-top: 70px; } }
 
 @font-face {
   font-family: "Futura";
@@ -2018,7 +2053,8 @@ footer {
   position: relative;
   display: inline-block;
   padding-left: 25px;
-  cursor: pointer; }
+  cursor: pointer;
+  font-weight: 500; }
 
 .radio__label:before {
   content: "";

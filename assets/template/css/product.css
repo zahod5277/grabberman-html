@@ -13,8 +13,9 @@
 
 .product__image img {
   display: block;
-  width: 100%;
-  height: auto; }
+  max-width: 300px;
+  height: auto;
+  margin: auto; }
 
 .product__scheme-title {
   margin-top: 48px;

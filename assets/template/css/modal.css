@@ -2,4 +2,5 @@
   margin-top: 20px; }
 
 .remodal-close {
-  right: 0 !important; }
+  right: 0 !important;
+  left: initial !important; }

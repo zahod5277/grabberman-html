@@ -3,54 +3,61 @@
 
 .fixture-item{
     border: solid 2px #e6e6e6;
-    padding: 5px 15px;
+    padding: 5px 0px;
     margin-bottom: 15px;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    align-items: baseline;
+    justify-content: space-between;
     align-items: center;
     cursor:pointer;
     transition: 0.2s ease all;
     @include mq('tablet-wide', max){
-        display: block;
-        text-align: right;
+        display: flex;
         position: relative;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 }
 
+.fixture-list__description-outer{
+    flex: 0 0 60%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
 .fixture-item__bullet{
-    display: block;
+    display: inline-block;
     width: 20px;
     height: 20px;
     border-radius: 200px;
     border:none;
     background: $light-grey;
     flex: 0 0 20px;
-    margin-right: 20px;
+    margin: 0px 19px;
     @include mq('tablet-wide', max){
         display: inline-block;
-        margin-right: 0px;
-        position: absolute;
-        top:33%;
-        left: 3%;
+        vertical-align: middle;
     }
 }
 
 .fixture-item__description{
-    flex: 0 0 62%;
+    display: inline-block;
     @include mq('tablet-wide',max){
         display: inline-block;
-        width: 52%;
-        margin-right: 3%;
-        margin-left: 3%;
         text-align: left;
-        vertical-align: top;
+        vertical-align: middle;
+        max-width: 44%;
+        min-width: 44%;
+
     }
 
 }
 
 .fixture-item__title{
-    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
     @include mq('tablet-wide', max){
         font-size: 14px;
         line-height: 18px;
@@ -61,8 +68,9 @@
     }
 }
 
-.fixture-item__title_for{
+.fixture-item__title--for{
     color:$dark-grey;
+    font-size: 16px;
     @include mq('tablet-wide', max){
         font-size: 14px;
         line-height: 18px;
@@ -81,6 +89,10 @@
     @include mq('tablet-wide', max){
         display: inline-block;
         width: 30%;
+        vertical-align: middle;
+        margin-right: 19px;
+        flex: 0 0 30%;
+        text-align: right;
     }
 }
 

@@ -3,7 +3,7 @@
 @import "__fonts";
 
 
-.product-row{
+.product-row>a{
     border: 2px solid $light-grey;
     padding: 35px 20px;
     display: flex;
@@ -11,8 +11,11 @@
     justify-content: space-between;
     margin-bottom: 20px;
     transition: 0.2s ease all;
+    color: $black;
+    text-decoration: none;
     @include mq('table-wide',min){
         margin-bottom: 60px;
+        max-height: 320px;
     }
 }
 
@@ -74,13 +77,12 @@
     font-family: 'Roboto';
 }
 
-.product-row__title a{
+.product-row__title{
     text-decoration: none;
     color:$black;
 }
 
 .product-row__scheme{
-    @include mq('desktop',min){
-        margin-top: 70px;   
+    @include mq('desktop',min){ 
     }
 }

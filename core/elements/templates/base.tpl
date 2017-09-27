@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     {block 'HEAD'}
         {include 'file:chunks/common/head.tpl'}
     {/block}
