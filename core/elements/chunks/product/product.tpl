@@ -85,6 +85,11 @@
     {var $val = $_modx->resource.testTable|nl2br}
 </div>
 <div class="container">
+    {if $.php.is_desktop()}
+            {var $device = 'desktop'}
+        {else}
+            {var $device = 'handle'}
+    {/if}
     {*<h2>Таблицы продукта</h2>*}
     <div class="properties-table">
         {var $propertiesTables = [
@@ -102,7 +107,7 @@
                 {else}
                     {var $class = ''}    
                 {/if}
-                <button class="button button--rectangle properties-table__button{$class}" data-toggle="{$propertiesTable}">
+                <button data-device="{$device}" class="button button--rectangle properties-table__button{$class}" data-toggle="{$propertiesTable}">
                     {$value.name}
                 </button>
             {/if}

@@ -2,4 +2,5 @@
 {block 'CONTENT'}
     {include 'file:chunks/product/product.tpl'}
     {include 'file:chunks/modal/order.tpl'}
+    {include 'file:chunks/modal/propertiesTableModal.tpl'}
 {/block}

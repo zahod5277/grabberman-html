@@ -1,0 +1,22 @@
+.properties-table-modal--opened {
+  padding: 0px !important; }
+
+.properties-table-modal {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  max-width: 100%;
+  vertical-align: top;
+  min-height: 100vh; }
+
+.properties-table-modal__content .properties-table__item {
+  display: table; }
+
+.properties-table-modal th {
+  padding: 12px 27px;
+  font-size: 8px;
+  font-weight: 500; }
+
+.properties-table-modal td {
+  font-size: 12px; }

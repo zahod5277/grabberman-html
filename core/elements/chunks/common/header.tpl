@@ -6,10 +6,10 @@
                 <use xlink:href="#svg-symbol--icon_phone" />
                 </svg>
             </i>
-            8 (800) 707 76 45
+            <a href="tel:88007077645">8 (800) 707 76 45</a>
         </span>
-        <span class="header-phone__item">+7 (499) 322 49 43</span>
-        <span class="header-phone__item">+7 (812) 611 25 96</span>
+        <span class="header-phone__item"><a href="tel:+74993224943">+7 (499) 322 49 43</a></span>
+        <span class="header-phone__item"><a href="tel:+78126112596">+7 (812) 611 25 96</a></span>
     </div>
     <div class="logo">
         {if $_modx->resource.id==1}
@@ -27,7 +27,8 @@
             'tplOuter' => '@FILE:chunks/common/mainMenu.outer.tpl',
             'tpl' => '@FILE:chunks/common/mainMenu.row.tpl',
             'tplInner' => '@FILE:chunks/common/mainMenu.inner.outer.tpl',
-            'tplInnerRow' => '@FILE:chunks/common/mainMenu.inner.row.tpl'
+            'tplInnerRow' => '@FILE:chunks/common/mainMenu.inner.row.tpl',
+            'templates' => '-4'
         ])}
     </div>
     <div class="header-phones-cta">
@@ -50,7 +51,8 @@
             'tplOuter' => '@FILE:chunks/common/mobileMenu.outer.tpl',
             'tpl' => '@FILE:chunks/common/mobileMenu.row.tpl',
             'tplInner' => '@FILE:chunks/common/mobileMenu.inner.outer.tpl',
-            'tplInnerRow' => '@FILE:chunks/common/mobileMenu.inner.row.tpl'
+            'tplInnerRow' => '@FILE:chunks/common/mobileMenu.inner.row.tpl',
+            'templates' => '-4'
         ])}
     </div>
 </header>

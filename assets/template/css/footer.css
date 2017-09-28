@@ -40,6 +40,10 @@ footer {
 .footer-text__paragraph span {
   display: block; }
 
+.footer-text__paragraph a {
+  color: #fff;
+  text-decoration: none; }
+
 .footer-workhours {
   margin-top: 28px;
   color: #999999;

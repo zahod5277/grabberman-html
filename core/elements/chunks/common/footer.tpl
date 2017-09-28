@@ -24,9 +24,9 @@
             <div class="footer__text-block footer__text-block--contacts">
                 <h3 class="footer-text__heading">Контакты</h3>
                 <p class="footer-text__paragraph">
-                    <span> 8 (800) 707 76 45 (звонок по России бесплатный)</span>
-                    <span>+7 (499) 322 49 43 (Москва) </span>
-                    <span>+7 (812) 611 25 96 (Санкт-Петербург)</span>
+                    <span> <a href="tel:88007077645">8 (800) 707 76 45</a> (звонок по России бесплатный)</span>
+                    <span><a href="tel:+74993224943">+7 (499) 322 49 43</a> (Москва) </span>
+                    <span><a href="tel:+78126112596">+7 (812) 611 25 96</a> (Санкт-Петербург)</span>
                 </p>
                 <p class="footer-text__paragraph">
                     <i class="ico ico--mail">

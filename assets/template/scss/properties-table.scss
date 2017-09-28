@@ -8,18 +8,18 @@
 
 .properties-table__item{
     width: 100%;
-    min-width: 100%;
-    max-width: 100%;
     font-family: 'Roboto', sans-serif;
     margin-top: 14px;
     display: none;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-.properties-table thead tr{
+.properties-table__item thead tr{
     border-bottom: none;
 }
 
-.properties-table th{
+.properties-table__item th{
     padding: 12px 0px;
     color:$white;
     text-align: center;
@@ -29,12 +29,12 @@
     letter-spacing: 1px;
 }
 
-.properties-table tr{
+.properties-table__item tr{
     font-size: 16px;
     border-bottom: 2px solid $light-grey;
 }
 
-.properties-table td{
+.properties-table__item td{
     padding: 15px 0px;
     font-size: 16px;
     text-align: center;

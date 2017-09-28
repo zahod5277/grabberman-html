@@ -3,4 +3,27 @@
 
 .remodal-close {
   right: 0 !important;
-  left: initial !important; }
+  left: initial !important;
+  top: 15px !important; }
+
+.remodal-close::before {
+  content: "" !important;
+  display: none !important; }
+
+.remodal-close span {
+  display: inline-block;
+  width: 25px;
+  height: 3px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background-color: #231f20; }
+
+.remodal-close span:nth-child(1) {
+  transform: rotate(-45deg); }
+
+.remodal-close span:nth-child(2) {
+  transform: rotate(45deg); }
+
+.remodal__content {
+  margin-top: 35px; }

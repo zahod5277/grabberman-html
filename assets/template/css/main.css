@@ -287,7 +287,8 @@ h2, .h2 {
   font-size: 60px;
   font-weight: bold;
   letter-spacing: 0.9px;
-  line-height: 1.08; }
+  line-height: 1.08;
+  font-weight: bold; }
   @media only screen and (max-width: 767px) {
     h2, .h2 {
       font-size: 32px;
@@ -296,11 +297,11 @@ h2, .h2 {
 h3, .h3 {
   font-size: 40px;
   letter-spacing: 0.8px;
-  line-height: 55px;
-  letter-spacing: 0.8px; }
+  font-weight: bold; }
   @media only screen and (max-width: 767px) {
     h3, .h3 {
       font-size: 24px;
+      line-height: 30px;
       letter-spacing: 0.5px; } }
 
 h4, .h4 {
@@ -552,7 +553,30 @@ body {
 
 .remodal-close {
   right: 0 !important;
-  left: initial !important; }
+  left: initial !important;
+  top: 15px !important; }
+
+.remodal-close::before {
+  content: "" !important;
+  display: none !important; }
+
+.remodal-close span {
+  display: inline-block;
+  width: 25px;
+  height: 3px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background-color: #231f20; }
+
+.remodal-close span:nth-child(1) {
+  transform: rotate(-45deg); }
+
+.remodal-close span:nth-child(2) {
+  transform: rotate(45deg); }
+
+.remodal__content {
+  margin-top: 35px; }
 
 @font-face {
   font-family: "Futura";
@@ -953,7 +977,8 @@ body {
   font-size: 0.75rem;
   font-family: 'Roboto', sans-serif;
   line-height: 1.125rem;
-  font-weight: bold; }
+  font-weight: bold;
+  text-decoration: none; }
 
 .mobile-menu-info__item:first-child {
   margin-bottom: 20px; }
@@ -1078,7 +1103,8 @@ h2, .h2 {
   font-size: 60px;
   font-weight: bold;
   letter-spacing: 0.9px;
-  line-height: 1.08; }
+  line-height: 1.08;
+  font-weight: bold; }
   @media only screen and (max-width: 767px) {
     h2, .h2 {
       font-size: 32px;
@@ -1087,11 +1113,11 @@ h2, .h2 {
 h3, .h3 {
   font-size: 40px;
   letter-spacing: 0.8px;
-  line-height: 55px;
-  letter-spacing: 0.8px; }
+  font-weight: bold; }
   @media only screen and (max-width: 767px) {
     h3, .h3 {
       font-size: 24px;
+      line-height: 30px;
       letter-spacing: 0.5px; } }
 
 h4, .h4 {
@@ -1494,6 +1520,10 @@ footer {
 .footer-text__paragraph span {
   display: block; }
 
+.footer-text__paragraph a {
+  color: #fff;
+  text-decoration: none; }
+
 .footer-workhours {
   margin-top: 28px;
   color: #999999;
@@ -1801,16 +1831,16 @@ footer {
 
 .properties-table__item {
   width: 100%;
-  min-width: 100%;
-  max-width: 100%;
   font-family: 'Roboto', sans-serif;
   margin-top: 14px;
-  display: none; }
+  display: none;
+  border-collapse: collapse;
+  border-spacing: 0; }
 
-.properties-table thead tr {
+.properties-table__item thead tr {
   border-bottom: none; }
 
-.properties-table th {
+.properties-table__item th {
   padding: 12px 0px;
   color: #fff;
   text-align: center;
@@ -1819,11 +1849,11 @@ footer {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
-.properties-table tr {
+.properties-table__item tr {
   font-size: 16px;
   border-bottom: 2px solid #e1e2e6; }
 
-.properties-table td {
+.properties-table__item td {
   padding: 15px 0px;
   font-size: 16px;
   text-align: center; }
@@ -1860,6 +1890,29 @@ footer {
 .properties-table__button--active {
   background-color: #d61f1f;
   color: #fff; }
+
+.properties-table-modal--opened {
+  padding: 0px !important; }
+
+.properties-table-modal {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  max-width: 100%;
+  vertical-align: top;
+  min-height: 100vh; }
+
+.properties-table-modal__content .properties-table__item {
+  display: table; }
+
+.properties-table-modal th {
+  padding: 12px 27px;
+  font-size: 8px;
+  font-weight: 500; }
+
+.properties-table-modal td {
+  font-size: 12px; }
 
 @font-face {
   font-family: "Futura";

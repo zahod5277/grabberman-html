@@ -50,6 +50,11 @@ footer .black-bg{
     display: block;
 }
 
+.footer-text__paragraph a{
+    color:$white;
+    text-decoration: none;
+}
+
 .footer-workhours{
     margin-top: 28px;
     color:$dark-grey;
