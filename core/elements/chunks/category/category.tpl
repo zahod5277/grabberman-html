@@ -24,7 +24,7 @@
     {$_modx->runSnippet('msProducts',[
     'parents' => $_modx->resource.id,
     'tpl' => '@FILE:chunks/category/product.row.tpl',
-    'includeTVs' => 'fixtureIcons, tv_article',
+    'includeTVs' => 'fixtureScheme, tv_article',
     'processTVs' => 1,
     'prepareTVs' => 1
 ])}

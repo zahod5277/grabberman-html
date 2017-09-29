@@ -8,6 +8,12 @@
   margin-bottom: 100px;
   margin-top: 50px;
   max-width: 900px; }
+  @media only screen and (max-width: 1023px) {
+    .fixture-description {
+      margin-top: 32px;
+      margin-bottom: 60px;
+      font-size: 15px;
+      font-weight: 500; } }
 
 .scroll-button {
   padding: 10px 50px;
@@ -21,7 +27,8 @@
   margin-bottom: 105px; }
   @media only screen and (max-width: 1023px) {
     .fixture-list-outer {
-      flex-wrap: wrap; } }
+      flex-wrap: wrap;
+      margin-bottom: 0px; } }
 
 @media only screen and (min-width: 1024px) {
   .fixture-list {
@@ -31,7 +38,7 @@
   .fixture-list {
     flex: 0 0 100%;
     order: 2;
-    margin-top: 20px; } }
+    margin-top: 32px; } }
 
 .fixture-house {
   position: relative; }
@@ -70,6 +77,9 @@ i.fixture-hover {
   max-width: 900px;
   margin-top: 105px;
   margin-bottom: 49px; }
+  @media only screen and (max-width: 1023px) {
+    .fixture__main-text {
+      margin-top: 65px; } }
   @media only screen and (min-width: 1024px) {
     .fixture__main-text {
       margin-bottom: 200px; } }

@@ -38,7 +38,7 @@
             {/if}
             <h1 class="h3">{$_modx->resource.pagetitle}</h1>
         </div>
-        <p>{$_modx->resource.content}</p>
+        <p>{$_modx->resource.content|notags}</p>
         {if $_modx->resource.fixtureScheme?}
             <p class="text--s product__scheme-title">
                 Схема самореза
@@ -53,7 +53,9 @@
             </div>
         {/if}
         <div class="product__order-btn-outer">
-            <button data-remodal-target="order" class="button button--rectangle button--black product__order-btn">Заказать</button>
+            <button data-remodal-target="order" class="button button--rectangle button--black product__order-btn">
+                Сделать заказ
+            </button>
         </div>
     </div>
 </div>

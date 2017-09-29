@@ -24,6 +24,11 @@
     -webkit-transform: translateZ(0) rotate(0deg);
     transform: translateZ(0) rotate(0deg);
     transition: .4s ease-out .2s;
+    @include mq('tablet-wide', max){
+        top: 2px;
+        width: 12px;
+        height: 2px;
+    }
 }
 
 .can__body{
@@ -31,6 +36,10 @@
     width: 12px;
     height: 8px;
     background-color: #f22c2c;
+    @include mq('tablet-wide', max){
+        width: 12px;
+        height: 8px;
+    }
 }
 
 .shine--bg{

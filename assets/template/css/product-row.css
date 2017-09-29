@@ -33,22 +33,29 @@
   font-weight: bold;
   font-style: italic; }
 
-.product-row > a {
+.product-row {
   border: 2px solid #e1e2e6;
-  padding: 35px 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 20px;
   transition: 0.2s ease all;
-  color: #231f20;
-  text-decoration: none; }
+  padding: 20px 10px; }
+  @media only screen and (max-width: 1023px) {
+    .product-row {
+      margin-bottom: 20px; } }
+  @media only screen and (min-width: 1024px) {
+    .product-row {
+      margin-bottom: 60px;
+      max-height: 320px;
+      padding: 35px 20px; } }
 
 .product-row:hover {
   border-color: #231f20; }
 
-.product-row img {
-  max-width: 100%; }
+.product-row > a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: #231f20;
+  text-decoration: none; }
 
 @media only screen and (max-width: 1023px) {
   .product-row__thumb {
@@ -69,6 +76,9 @@
 @media only screen and (min-width: 1440px) {
   .product-row__thumb {
     flex: 0 0 250px; } }
+
+.product-row__thumb img {
+  max-width: 100%; }
 
 @media only screen and (max-width: 1023px) {
   .product-row__short-props {
@@ -92,6 +102,9 @@
   font-weight: bold;
   color: #f22c2c;
   font-family: 'Roboto'; }
+  @media only screen and (max-width: 1023px) {
+    .product-row__article {
+      font-size: 10px; } }
 
 .product-row__title {
   font-size: 18px;
@@ -100,7 +113,25 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   font-family: 'Roboto'; }
+  @media only screen and (max-width: 1023px) {
+    .product-row__title {
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 18px;
+      margin-bottom: 10px; } }
 
 .product-row__title {
   text-decoration: none;
   color: #231f20; }
+  @media only screen and (min-width: 1024px) {
+    .product-row__title {
+      max-height: 108px;
+      height: 108px;
+      overflow: hidden; } }
+
+.product-row__scheme {
+  max-height: 120px;
+  max-width: 100%; }
+  @media only screen and (max-width: 1023px) {
+    .product-row__scheme {
+      max-width: 100px; } }

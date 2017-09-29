@@ -17,8 +17,8 @@
         <h3 class="product-row__title">
             {$pagetitle}
         </h3>
-        {if $fixtureIcons?}
-            <img src="{$fixtureIcons}" alt="{$pagetitle}" class="product-row__scheme">
+        {if $fixtureScheme?}
+            <img src="{$fixtureScheme}" alt="{$pagetitle}" class="product-row__scheme">
         {/if}
     </div>
     </a>

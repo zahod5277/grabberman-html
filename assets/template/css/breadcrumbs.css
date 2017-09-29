@@ -10,9 +10,15 @@
 
 .breadcrumbs__inner {
   width: 100%;
-  padding: 28px;
   position: relative;
-  z-index: 250; }
+  z-index: 250;
+  padding: 28px; }
+  @media only screen and (max-width: 1023px) {
+    .breadcrumbs__inner {
+      padding: 23px 21px; } }
+
+.breadcrumbs__inner .container {
+  margin: 0px; }
 
 .breadcrumbs__inner a {
   color: #fff;

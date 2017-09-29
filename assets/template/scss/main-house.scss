@@ -13,6 +13,12 @@
     margin-bottom: 100px;
     margin-top: 50px;
     max-width: 900px;
+    @include mq('tablet-wide',max){
+        margin-top: 32px;
+        margin-bottom: 60px;
+        font-size: 15px;
+        font-weight: 500;
+    }
 }
 
 .scroll-button{
@@ -28,6 +34,7 @@
     margin-bottom: 105px;
     @include mq('tablet-wide', max){
         flex-wrap: wrap;
+        margin-bottom: 0px;
     }
 }
 
@@ -38,7 +45,7 @@
     @include mq('tablet-wide', max){
         flex: 0 0 100%;
         order: 2;
-        margin-top: 20px;
+        margin-top: 32px;
     }
 }
 
@@ -86,7 +93,10 @@ i.fixture-hover{
     max-width: 900px;
     margin-top: 105px;
     margin-bottom: 49px;
+    @include mq('tablet-wide',max){
+        margin-top: 65px;
+    }
     @include mq('tablet-wide',min){
-        margin-bottom: 200px;   
+        margin-bottom: 200px;
     }
 }

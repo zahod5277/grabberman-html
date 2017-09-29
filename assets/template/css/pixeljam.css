@@ -20,12 +20,21 @@
   -webkit-transform: translateZ(0) rotate(0deg);
   transform: translateZ(0) rotate(0deg);
   transition: .4s ease-out .2s; }
+  @media only screen and (max-width: 1023px) {
+    .can__cap {
+      top: 2px;
+      width: 12px;
+      height: 2px; } }
 
 .can__body {
   display: inline-block;
   width: 12px;
   height: 8px;
   background-color: #f22c2c; }
+  @media only screen and (max-width: 1023px) {
+    .can__body {
+      width: 12px;
+      height: 8px; } }
 
 .shine--bg {
   -webkit-animation: b 10s infinite;
