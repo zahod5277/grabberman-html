@@ -68,11 +68,11 @@
 }
 
 .properties-table__button:hover{
-    background-color: $redhover;
-    color:$white;
+    border-color: $black;
 }
 
 .properties-table__button--active{
     background-color: $redhover;
     color:$white;
+    border: $redhover 2px solid;
 }

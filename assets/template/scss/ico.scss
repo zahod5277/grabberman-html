@@ -25,14 +25,14 @@
 .ico--arrow-left svg{
      left:24px;
     @include mq('tablet-wide',max){
-        left: 14px;
+        left: 18px;
     }
 }
 
 .ico--arrow-right svg{
     right:24px;
     @include mq('tablet-wide',max){
-        right: 14px;
+        right: 18px;
     }
 }
 
@@ -45,7 +45,7 @@
     position: absolute;
     top: 25px;
     @include mq('tablet-wide',max){
-        top:14px;
+        top:19px;
     }
 }
 

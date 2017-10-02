@@ -5,11 +5,10 @@
     background-color: $black;
     display: flex;
     align-items: baseline;
-    position: -webkit-sticky;
-    position: sticky;
     flex-wrap: wrap;
     top:0px;
     z-index: 500;
+    position: sticky;
     max-height: 120px; 
     transition: 0.2s ease all;
     @include mq('tablet-wide',max){
@@ -28,13 +27,11 @@
     }
 }
 
-.header--sticky{
+.sps--blw{
     align-items: center;
+    position: fixed;
     width: 100%;
-    top:0;
-    left:0;
     @include mq('tablet-wide',min){
-        position: fixed;
         padding-top: 0px;
     }
     @include mq('tablet-wide', max){
@@ -42,24 +39,24 @@
     }
 }
 
-.header--sticky .header-phone, .header--sticky .header-description{
+.sps--blw .header-phone, .header--sticky .header-description{
     display: none;
 }
 
-.header--sticky .header-phones-cta{
+.sps--blw .header-phones-cta{
     @include mq('tablet-wide', min){
         top:2px;
     }
 }
 
-.header--sticky .main-menu__level-1{
+.sps--blw .main-menu__level-1{
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding-top: 31px;
 }
 
-.header--sticky .main-menu__submenu{
+.sps--blw .main-menu__submenu{
     top:80px;
     @include mq('desktop-wide',max){
         top:78px;
@@ -119,15 +116,20 @@
 
 .main-menu__item:hover{
     border-bottom:2px solid $red;
+    cursor: default;
 }
 
-.main-menu__item a{
+.main-menu__item,.main-menu__item a{
     color: $white;
     text-decoration: none;
     letter-spacing: .03rem;
     @include mq('desktop-wide',min){
         font-weight: 500;
     }
+}
+
+.main-menu__item a{
+    cursor: pointer;
 }
 
 .main-menu__submenu{
@@ -149,6 +151,7 @@
     opacity: 1;
     visibility: visible;
     transition-delay: 0s;
+    z-index: 8000;
 }
 
 .main-menu__level-1{

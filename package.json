@@ -31,6 +31,7 @@
     "path": "^0.12.7",
     "remodal": "^1.1.1",
     "sass": "^1.0.0-beta.2",
+    "scrollpos-styler": "^0.7.0",
     "smooth-scroll": "^12.1.5",
     "swiper": "^3.4.2",
     "uglify": "^0.1.5"

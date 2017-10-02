@@ -37,11 +37,10 @@
   background-color: #231f20;
   display: flex;
   align-items: baseline;
-  position: -webkit-sticky;
-  position: sticky;
   flex-wrap: wrap;
   top: 0px;
   z-index: 500;
+  position: sticky;
   max-height: 120px;
   transition: 0.2s ease all; }
   @media only screen and (max-width: 1023px) {
@@ -59,36 +58,34 @@
     .header {
       max-height: 55px; } }
 
-.header--sticky {
+.sps--blw {
   align-items: center;
-  width: 100%;
-  top: 0;
-  left: 0; }
+  position: fixed;
+  width: 100%; }
   @media only screen and (min-width: 1024px) {
-    .header--sticky {
-      position: fixed;
+    .sps--blw {
       padding-top: 0px; } }
   @media only screen and (max-width: 1023px) {
-    .header--sticky {
+    .sps--blw {
       align-items: baseline; } }
 
-.header--sticky .header-phone, .header--sticky .header-description {
+.sps--blw .header-phone, .header--sticky .header-description {
   display: none; }
 
 @media only screen and (min-width: 1024px) {
-  .header--sticky .header-phones-cta {
+  .sps--blw .header-phones-cta {
     top: 2px; } }
 
-.header--sticky .main-menu__level-1 {
+.sps--blw .main-menu__level-1 {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding-top: 31px; }
 
-.header--sticky .main-menu__submenu {
+.sps--blw .main-menu__submenu {
   top: 80px; }
   @media only screen and (max-width: 1439px) {
-    .header--sticky .main-menu__submenu {
+    .sps--blw .main-menu__submenu {
       top: 78px; } }
 
 .logo {
@@ -138,15 +135,19 @@
       font-size: 0.875rem; } }
 
 .main-menu__item:hover {
-  border-bottom: 2px solid #f22c2c; }
+  border-bottom: 2px solid #f22c2c;
+  cursor: default; }
 
-.main-menu__item a {
+.main-menu__item, .main-menu__item a {
   color: #fff;
   text-decoration: none;
   letter-spacing: .03rem; }
   @media only screen and (min-width: 1440px) {
-    .main-menu__item a {
+    .main-menu__item, .main-menu__item a {
       font-weight: 500; } }
+
+.main-menu__item a {
+  cursor: pointer; }
 
 .main-menu__submenu {
   position: absolute;
@@ -165,7 +166,8 @@
   display: block;
   opacity: 1;
   visibility: visible;
-  transition-delay: 0s; }
+  transition-delay: 0s;
+  z-index: 8000; }
 
 .main-menu__level-1 {
   display: flex;

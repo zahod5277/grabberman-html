@@ -19,13 +19,13 @@
   left: 24px; }
   @media only screen and (max-width: 1023px) {
     .ico--arrow-left svg {
-      left: 14px; } }
+      left: 18px; } }
 
 .ico--arrow-right svg {
   right: 24px; }
   @media only screen and (max-width: 1023px) {
     .ico--arrow-right svg {
-      right: 14px; } }
+      right: 18px; } }
 
 .ico--arrow-left svg,
 .ico--arrow-right svg,
@@ -39,7 +39,7 @@
     .ico--arrow-left svg,
     .ico--arrow-right svg,
     .ico--arrow-bottom svg {
-      top: 14px; } }
+      top: 19px; } }
 
 .ico--arrow-bottom svg {
   width: 15px;

@@ -2,7 +2,7 @@ var App = (function () {
 
     //Тут можно определить приватные переменные и методы
     var options = {
-        stickyClass: 'header--sticky',
+        stickyClass: 'sps--blw',
         readyClass: 'page--ready',
         fadeInSpeed: 1500,
         swiperConfig: {
@@ -59,8 +59,8 @@ var App = (function () {
             App.jQueryFunctions();
             App.detectPageType();
             App.detectTouch();
-            App.sliderInit();
             App.stickyHeader();
+            App.sliderInit();
             App.mobileMenu();
             App.smoothScroll();
             App.mainHouse();
@@ -88,14 +88,10 @@ var App = (function () {
             }
         },
         stickyHeader: function () {
-            $(window).scroll(function () {
-                var offset = $(window).scrollTop();
-                if ($(window).scrollTop() >= 130) {
-                    $('header').addClass(options.stickyClass);
-                } else {
-                    $('header').removeClass(options.stickyClass);
-                }
-            });
+            var offset = $(window).scrollTop();
+            if ($(window).scrollTop() >= 130) {
+                $('header').addClass(options.stickyClass);
+            }
         },
 
         mobileMenu: function () {
@@ -105,7 +101,7 @@ var App = (function () {
                 $('body').toggleClass('no-scroll')
             });
             //Появление выпадающего меню с плюсиками
-            $(options.level1MenuItem + ' a').on('click', function (e) {
+            $(options.level1MenuItem).on('click', function (e) {
                 if ($(this).data('container') == 1) {
                     e.preventDefault();
                     $(this).toggleClass(options.level1MenuItemActive);

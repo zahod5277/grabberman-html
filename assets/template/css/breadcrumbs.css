@@ -17,8 +17,9 @@
     .breadcrumbs__inner {
       padding: 23px 21px; } }
 
-.breadcrumbs__inner .container {
-  margin: 0px; }
+@media only screen and (max-width: 1023px) {
+  .breadcrumbs__inner .container {
+    margin: 0px; } }
 
 .breadcrumbs__inner a {
   color: #fff;

@@ -88,9 +88,9 @@
   margin-right: 0px; }
 
 .properties-table__button:hover {
-  background-color: #d61f1f;
-  color: #fff; }
+  border-color: #231f20; }
 
 .properties-table__button--active {
   background-color: #d61f1f;
-  color: #fff; }
+  color: #fff;
+  border: #d61f1f 2px solid; }

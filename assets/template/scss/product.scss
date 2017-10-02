@@ -113,7 +113,7 @@
 }
 
 .product__about-text{
-    margin: 80px 0px;
+    margin: 80px auto;
     @include mq('tablet-wide', min){
         margin-top: 200px;
         margin-bottom: 0px;

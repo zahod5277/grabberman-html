@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header sps">
     <div class="header-phone">
         <span class="header-phone__item">
             <i class="ico ico--phone">

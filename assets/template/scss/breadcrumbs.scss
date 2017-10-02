@@ -24,7 +24,9 @@
 }
 
 .breadcrumbs__inner .container{
-    margin: 0px;
+    @include mq('tablet-wide',max){
+        margin: 0px;
+    }
 }
 
 

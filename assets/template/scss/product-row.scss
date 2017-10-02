@@ -46,10 +46,11 @@
     @include mq('desktop-wide',min){
         flex: 0 0 250px;   
     }
+    text-align: center;
 }
 
 .product-row__thumb img{
-    max-width: 100%;
+    max-width: 150px;
 }
 
 .product-row__short-props{

@@ -29,6 +29,7 @@ footer .black-bg{
     color:$dark-grey;
     font-size: 0.875rem;
     text-transform: uppercase;
+    margin-bottom: 20px;
     @include mq('tablet-wide', max){
         font-size: 10px;
         margin-bottom: 15px;
