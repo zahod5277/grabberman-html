@@ -1,0 +1,16 @@
+@import "__vars";
+@import "__viewport.scss";
+
+.product-article{
+    font-size: 18px;
+    font-weight: bold;
+    color: $red;
+    font-family: 'Roboto';
+}
+
+.product-article--catalog-article{
+    font-size: 16px;
+    @include mq('tablet-wide',max){
+        font-size: 10px;
+    }
+}

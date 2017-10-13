@@ -94,3 +94,6 @@
   background-color: #d61f1f;
   color: #fff;
   border: #d61f1f 2px solid; }
+
+.properties-table__button--active:hover {
+  border-color: #d61f1f; }

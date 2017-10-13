@@ -19,8 +19,8 @@
     <div class="col-xs-12 col-lg-6">
         <div class="product__mobile-heading">
             {if $_modx->resource.tv_article?}
-                <p class="text text-l text--red">
-                    <strong>#{$_modx->resource.tv_article}</strong>
+                <p class="product-article">
+                    #{$_modx->resource.tv_article}
                 </p>
             {/if}
             <h1 class="h3">{$_modx->resource.pagetitle}</h1>
@@ -32,8 +32,8 @@
     <div class="col-xs-12 col-lg-6 product__descrption">
         <div class="product__desktop-heading">
             {if $_modx->resource.tv_article?}
-                <p class="text text-l text--red">
-                    <strong>#{$_modx->resource.tv_article}</strong>
+                <p class="product-article">
+                    #{$_modx->resource.tv_article}
                 </p>
             {/if}
             <h1 class="h3">{$_modx->resource.pagetitle}</h1>

@@ -54,6 +54,9 @@
 }
 
 .product-row__short-props{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     @include mq('tablet-wide',max){
         flex: 0 0 55%;   
     }
@@ -66,16 +69,6 @@
     }
     @include mq('desktop-wide',min){
         flex: 0 0 260px;
-    }
-}
-
-.product-row__article{
-    font-size: 16px;
-    font-weight: bold;
-    color: $red;
-    font-family: 'Roboto';
-    @include mq('tablet-wide',max){
-        font-size: 10px;
     }
 }
 
@@ -105,7 +98,7 @@
 }
 
 .product-row__scheme{
-    @include mq('tablet-wide',max){ 
+    @include mq('phablet',max){ 
         max-width: 100px;
     }
     max-height: 120px;

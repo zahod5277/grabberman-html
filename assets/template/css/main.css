@@ -620,7 +620,7 @@ body {
   flex-wrap: wrap;
   top: 0px;
   z-index: 500;
-  position: sticky;
+  position: relative;
   max-height: 120px;
   transition: 0.2s ease all; }
   @media only screen and (max-width: 1023px) {
@@ -1869,6 +1869,18 @@ footer {
     .product__img-copyrights {
       margin-top: 80px; } }
 
+.product-article {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f22c2c;
+  font-family: 'Roboto'; }
+
+.product-article--catalog-article {
+  font-size: 16px; }
+  @media only screen and (max-width: 1023px) {
+    .product-article--catalog-article {
+      font-size: 10px; } }
+
 @font-face {
   font-family: "Futura";
   src: url("../fonts/futura/futura_medium.eot");
@@ -1965,6 +1977,9 @@ footer {
   background-color: #d61f1f;
   color: #fff;
   border: #d61f1f 2px solid; }
+
+.properties-table__button--active:hover {
+  border-color: #d61f1f; }
 
 .properties-table-modal--opened {
   padding: 0px !important; }
@@ -2069,31 +2084,23 @@ footer {
 .product-row__thumb img {
   max-width: 150px; }
 
-@media only screen and (max-width: 1023px) {
-  .product-row__short-props {
-    flex: 0 0 55%; } }
-
-@media only screen and (max-width: 559px) {
-  .product-row__short-props {
-    flex: 0 0 60%; } }
-
-@media only screen and (min-width: 1024px) {
-  .product-row__short-props {
-    flex: 0 0 240px;
-    margin-left: 20px; } }
-
-@media only screen and (min-width: 1440px) {
-  .product-row__short-props {
-    flex: 0 0 260px; } }
-
-.product-row__article {
-  font-size: 16px;
-  font-weight: bold;
-  color: #f22c2c;
-  font-family: 'Roboto'; }
+.product-row__short-props {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
   @media only screen and (max-width: 1023px) {
-    .product-row__article {
-      font-size: 10px; } }
+    .product-row__short-props {
+      flex: 0 0 55%; } }
+  @media only screen and (max-width: 559px) {
+    .product-row__short-props {
+      flex: 0 0 60%; } }
+  @media only screen and (min-width: 1024px) {
+    .product-row__short-props {
+      flex: 0 0 240px;
+      margin-left: 20px; } }
+  @media only screen and (min-width: 1440px) {
+    .product-row__short-props {
+      flex: 0 0 260px; } }
 
 .product-row__title {
   font-size: 18px;

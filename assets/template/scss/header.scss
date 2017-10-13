@@ -8,7 +8,7 @@
     flex-wrap: wrap;
     top:0px;
     z-index: 500;
-    position: sticky;
+    position: relative;
     max-height: 120px; 
     transition: 0.2s ease all;
     @include mq('tablet-wide',max){

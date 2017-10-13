@@ -1,0 +1,11 @@
+.product-article {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f22c2c;
+  font-family: 'Roboto'; }
+
+.product-article--catalog-article {
+  font-size: 16px; }
+  @media only screen and (max-width: 1023px) {
+    .product-article--catalog-article {
+      font-size: 10px; } }
