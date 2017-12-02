@@ -2,18 +2,24 @@
   border: solid 2px #e6e6e6;
   padding: 5px 0px;
   margin-bottom: 15px;
+  cursor: pointer;
+  transition: 0.2s ease all; }
+
+.fixture-item a {
+  text-decoration: none;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
-  transition: 0.2s ease all; }
+  color: inherit; }
   @media only screen and (max-width: 1023px) {
-    .fixture-item {
+    .fixture-item a {
       display: flex;
       position: relative;
       flex-wrap: wrap;
       justify-content: space-between; } }
+  .fixture-item a:hover {
+    color: inherit; }
 
 .fixture-list__description-outer {
   flex: 0 0 60%;
@@ -87,7 +93,10 @@
 .fixture-item__bullet--yellow {
   background-color: #fecd08; }
 
-.fixture-item--bullet--brown {
+.fixture-item__bullet--orange {
+  background-color: #ff9700; }
+
+.fixture-item__bullet--brown {
   background-color: #9e5323; }
 
 .fixture-item__bullet--grey {

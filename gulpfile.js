@@ -85,7 +85,7 @@ gulp.task('css', ['cssLibs'], function(){
         .pipe(gulp.dest(templatePath + 'css/')); // Выгружаем в папку app/js 
 });
 
-gulp.task('build', ['css', 'scripts']);
+gulp.task('build', ['sass', 'cssLibs','css', 'scripts']);
 
 //gulp.task('libs', ['libsConcat', 'libsMove']);
 //gulp.task('default', ['libs', 'svgstore']);

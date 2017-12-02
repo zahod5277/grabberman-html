@@ -1,0 +1,32 @@
+.fixture-item__bullet--yellow{
+    top:6%;
+    left:49%;
+}
+.fixture-item__bullet--orange{
+    top: 20%;
+    left: 23%;
+}
+.fixture-item__bullet--grey{
+    top: 31%;
+    left: 18%;
+}
+.fixture-item__bullet--red{
+    top: 38%;
+    left: 87%;
+}
+.fixture-item__bullet--brown{
+    top: 42%;
+    left: 89%;
+}
+.fixture-item__bullet--blue{
+    top: 35%;
+    left: 79%;
+}
+.fixture-item__bullet--green{
+    top: 46%;
+    left: 86%;
+}
+.fixture-item__bullet--aqua{
+    top: 47%;
+    left: 12%;
+}

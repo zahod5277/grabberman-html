@@ -75,6 +75,9 @@ footer {
     .footer__text-block {
       flex: 0 0 100%;
       margin-right: 0px; } }
+  @media only screen and (max-width: 1247px) {
+    .footer__text-block {
+      margin-right: 4%; } }
 
 .footer__text-block--contacts {
   flex: 0 0 35%; }
@@ -87,6 +90,9 @@ footer {
 
 .footer__text-block--empty {
   flex: 0 0 5%; }
+  @media only screen and (max-width: 1247px) {
+    .footer__text-block--empty {
+      flex: 0 0 0%; } }
 
 .footer__text-block:nth-child(4) {
   margin-right: 0px; }

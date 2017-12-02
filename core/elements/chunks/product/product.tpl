@@ -47,10 +47,15 @@
                 <img class="img-responsive" src="{$_modx->resource.fixtureScheme}" alt="Схема {$_modx->resource.pagetitle}">
             </div>
         {/if}
-        {if $_modx->resource.fixtureIcons?}
-            <div class="product__scheme">
-                <img class="img-responsive" src="{$_modx->resource.fixtureIcons}" alt="Схема {$_modx->resource.pagetitle}">
+        {if $_modx->resource.productIcons?}
+            {var $productIcons = $_modx->resource.productIcons|split:'||'}
+            {foreach $productIcons as $ico}
+            <div class="product__scheme-icon">
+                {var $spIco = $ico|split:'---'}
+                <img src="assets/template/svg/{$spIco['1']}.svg" alt="{$spIco['0']}">
+                <span class="product__scheme-text">{$spIco['0']}</span>
             </div>
+            {/foreach}
         {/if}
         <div class="product__order-btn-outer">
             <button data-remodal-target="order" class="button button--rectangle button--black product__order-btn">
@@ -92,7 +97,6 @@
         {else}
             {var $device = 'handle'}
     {/if}
-    {*<h2>Таблицы продукта</h2>*}
     <div class="properties-table">
         {var $propertiesTables = [
                 'sizeBoxWeight' => ['name' => 'Типоразмеры, количество в упаковке (вес)','value' => $_modx->resource.sizeBoxWeight],

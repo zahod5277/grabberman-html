@@ -91,6 +91,9 @@ footer{
         flex: 0 0 100%;
         margin-right: 0px;
     }
+    @include mq('desktop',max){
+        margin-right: 4%;
+    }
 }
 
 
@@ -106,6 +109,9 @@ footer{
 
 .footer__text-block--empty{
     flex: 0 0 5%;
+    @include mq('desktop',max){
+        flex: 0 0 0%;
+    }
 }
 
 .footer__text-block:nth-child(4){

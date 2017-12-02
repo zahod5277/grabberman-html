@@ -71,7 +71,7 @@
   @media only screen and (min-width: 1248px) {
     .product-row__thumb {
       flex: 0 0 200px; } }
-  @media only screen and (min-width: 1440px) {
+  @media only screen and (min-width: 1540px) {
     .product-row__thumb {
       flex: 0 0 250px; } }
 
@@ -92,7 +92,7 @@
     .product-row__short-props {
       flex: 0 0 240px;
       margin-left: 20px; } }
-  @media only screen and (min-width: 1440px) {
+  @media only screen and (min-width: 1540px) {
     .product-row__short-props {
       flex: 0 0 260px; } }
 
@@ -122,6 +122,6 @@
 .product-row__scheme {
   max-height: 120px;
   max-width: 100%; }
-  @media only screen and (max-width: 1023px) {
+  @media only screen and (max-width: 559px) {
     .product-row__scheme {
       max-width: 100px; } }

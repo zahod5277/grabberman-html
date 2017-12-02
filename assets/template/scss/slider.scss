@@ -78,6 +78,7 @@ $buttonSpace: 100px;
 
 .slide-heading{
     width: 100%;
+        font-size: 57px;
     @include mq('tablet', max){
         line-height: 2.25rem;
         font-size: 1.6rem;
@@ -101,7 +102,8 @@ $buttonSpace: 100px;
     position: relative;
     z-index: 50;
     @include mq('desktop',max){
-        width: 100%;
+        width: 80%;
+        margin:auto;
     }
     @include mq('tablet-small', max){
         padding: 20px;
@@ -119,6 +121,7 @@ $buttonSpace: 100px;
     }
     @include mq('tablet-wide', min){
         top:calc(50% - 95px);
+        width: 75%;
     }
 }
 
@@ -135,12 +138,15 @@ $buttonSpace: 100px;
 }
 
 .main-slider__button-more{
-    display: flex;
-    align-items: end;
     @include mq('tablet-wide', max){
         letter-spacing: 1.6px;
         max-height: 50px;
     }
+}
+
+.main-slider__button-more-inner{
+    display: flex;
+    align-items: center;
 }
 
 .pagination__bullet{
