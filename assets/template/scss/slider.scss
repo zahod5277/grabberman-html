@@ -1,8 +1,26 @@
 @import "__vars.scss";
 @import "_h.scss";
+@import "__viewport.scss";
 
 $headerH: 120px;
 $buttonSpace: 100px;
+
+.main-slider--first{
+    margin-top: $header-height;
+
+    &::before {
+        display: block;
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height:  $header-height;
+        background: $header-bg;
+        transform: translateY(-100%);
+        @include mq('tablet-wide',max){
+            height: 65px;
+        }
+    }
+}
 
 .swiper-container {
     width: 100%;
@@ -65,7 +83,7 @@ $buttonSpace: 100px;
 .pagination__button-next{
     right: 50px;
     left: auto;
-        @include mq('desktop', max){
+    @include mq('desktop', max){
         right: 20px;
         left:unset;
         top: unset;
@@ -78,7 +96,7 @@ $buttonSpace: 100px;
 
 .slide-heading{
     width: 100%;
-        font-size: 57px;
+    font-size: 57px;
     @include mq('tablet', max){
         line-height: 2.25rem;
         font-size: 1.6rem;
@@ -121,7 +139,8 @@ $buttonSpace: 100px;
     }
     @include mq('tablet-wide', min){
         top:calc(50% - 95px);
-        width: 75%;
+        /*        width: 75%;*/
+        width:800px;
     }
 }
 

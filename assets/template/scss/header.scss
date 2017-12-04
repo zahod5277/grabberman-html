@@ -1,103 +1,92 @@
 @import "__vars";
 @import "__viewport.scss";
 @import "__fonts.scss";
-.header{
-    background-color: $black;
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
-    top:0px;
-    z-index: 500;
-    position: sticky;
-    max-height: 120px; 
+
+.header {  
+ position: fixed;
+  top: 0;
+  width: 100%;
+  height: $header-height;
+  background: $header-bg;
+  color: white;
+  transition: .2s; 
+  z-index: 100;
+  @include mq('tablet-wide',max){
+      height: 65px;
+  }
+}
+
+.header--unpinned {
+  height: $header-height-fixed;
     @include mq('tablet-wide',max){
-        padding: 10px;
-        padding-top: 0px;
-        max-height: 65px;
-        justify-content: space-between;
-    }
-    @include mq('tablet-wide',min){
-        padding: 10px 50px 0px 50px;
-    }
-    @include mq('desktop-wide',min){
-        padding: 10px 100px 0px 100px;
-    }
-    @include mq-landscape('tablet-wide',max){
-        max-height: 55px;
-    }
+      height: 65px;
+  }
 }
 
-.sps--blw{
-    position: sticky;
-    width: 100%;
-    @include mq('tablet-wide',min){
-        padding-top: 0px;
-        max-height: 90px; 
-    }
-    @include mq('tablet-wide', max){
-        align-items: baseline;
-    }
+.header__wrapper {
+  padding: 0 2rem;
+  width: 100%;
+  height: 100%;
 }
-
-.sps--blw .header-phone, .header--sticky .header-description{
-    transform: translateY(-100px);
-}
-
-.sps--blw .header-phones-cta{
-    @include mq('tablet-wide', min){
-        transform: translateY(-15px);
-    }
-}
-
-.sps--blw .main-menu__level-1{
-    display: flex;
+.header__layout {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  @include mq('tablet-wide',max){
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
-    padding-top: 31px;
+    align-items: center;
+  }
 }
-
-.sps--blw .main-menu__submenu{
-    top:80px;
-    @include mq('desktop-wide',max){
-        top:78px;
-    }
+.header__logo-box {
+  display: flex;
+  align-items: center;
+  background: $black;  
+  width: 200px;
+  flex-shrink: 0;
 }
-
-.logo{
-    max-width: 234px;
-    width: 234px;
-    margin-right: 30px;
-    @include mq('desktop', max){
-        width: 200px;
-        margin-right: 30px;
-    }
-    @include mq('tablet-wide', max){
-        width: 40%;
-        margin-right: 0px;
-    }
-    @include mq-landscape('tablet-wide',max){
-        width: 20%;
-    }
+.header__logo {
+  width: 100%;
+  transform: translate3d(0,0,0); // лечит странный глюк с дерганьем лого
 }
-
-.logo img{
-    position: fixed;
-    top: 26px;
-    @include mq('tablet-wide', max){
-        max-width: 141px;
-        top: 15px;
-    }
+.header__bars {
+  flex-basis: 100%;
+  align-self: flex-end;
+  height: $header-height;
+  @include mq('tablet-wide', max){
+      display: none;
+  }
+} 
+.header__menu-bar {
+  display: flex;
+  width: 100%;
+  height: $header-height-fixed;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.main-menu-wrapper{
-    font-family: $font-basic;
-    flex: 0 0 50%;
-    @include mq('desktop', max){
-        flex: 0 0 54%;
-    }
-    @include mq('tablet-wide', max){
-        display: none;
-    }
+.header__menu {
+  padding: 0 30px;
+  width: 100%;
+  flex: 0 0 79%;
+}
+.header__menu-items{ // для примера!
+/*  background: #888;*/
+  width: 100%;
+  height: 20px;
+}
+.header__top-bar {
+  margin-top: 15px;
+  width: 100%;
+}
+.header__buttons {
+//  flex-basis: fill;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-outer {
+  height: $header-height;
+  background: $header-bg;
 }
 
 .header-description,.header-description a{
@@ -124,7 +113,7 @@
     }
 }
 
-.header-phone{
+.header__phone{
     margin-bottom: 7px;
     flex: 0 0 100%;
     text-align: right;
@@ -140,18 +129,18 @@
     }
 }
 
-.header-phone__item{
+.header__phone-item{
     padding-left: 20px;
 }
 
-.header-phone__item, .header-phone__item a{
+.header__phone-item, .header__phone-item a{
     font-size: 1em;
     color: $white;
     font-weight: bold;
     text-decoration: none;
 }
 
-.header-phone__item_first{
+.header__phone-item_first{
     padding-right: 40px;
 }
 

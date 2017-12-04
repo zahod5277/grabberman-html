@@ -2,7 +2,7 @@
     <a href="{$uri}" title="{$pagetitle}">
         {if $thumb?}
             <div class="product-row__thumb">
-                <img src="{$image}" alt="{$pagetitle}" title="{$pagetitle}"/>
+                <img src="{$image}" alt="{$pagetitle}" class="img img-responsive" title="{$pagetitle}"/>
             </div>
         {else}
         {/if}

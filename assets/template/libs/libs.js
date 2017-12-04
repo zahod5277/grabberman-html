@@ -4,4 +4,4 @@
 // ../../../node_modules/magnific-popup/dist/jquery.magnific-popup.min.js
 //= ../../../node_modules/smooth-scroll/dist/js/smooth-scroll.polyfills.min.js
 //= ../../../node_modules/remodal/dist/remodal.min.js
-//= ../../../node_modules/scrollpos-styler/scrollPosStyler.js
+//= ../../../node_modules/headroom.js/dist/headroom.min.js

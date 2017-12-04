@@ -2,7 +2,7 @@ var App = (function () {
 
     //Тут можно определить приватные переменные и методы
     var options = {
-        stickyClass: 'sps--blw',
+        headerHeadroom: document.querySelector('[data-headroom]'),
         readyClass: 'page--ready',
         fadeInSpeed: 1500,
         swiperConfig: {
@@ -59,7 +59,6 @@ var App = (function () {
             App.jQueryFunctions();
             App.detectPageType();
             App.detectTouch();
-            App.stickyHeader();
             App.sliderInit();
             App.mobileMenu();
             App.smoothScroll();
@@ -67,6 +66,7 @@ var App = (function () {
             App.productTableViewToggle();
             App.categoryFilter();
             App.radioDropdown();
+            App.Header();
             //App.fixScroll();
         },
 
@@ -88,13 +88,21 @@ var App = (function () {
                 $('html').addClass('mobile-safari');
             }
         },
-        stickyHeader: function () {
-            var offset = $(window).scrollTop();
-            if ($(window).scrollTop() >= 130) {
-                $('header').addClass(options.stickyClass);
+        Header: function () {
+            App.stickyHeader = new Headroom(options.headerHeadroom, {
+            offset: 150, 
+            classes: {
+              initial: "header",
+              pinned: "header--pinned",
+              unpinned: "header--unpinned",
+              top: "header--top",
+              notTop: "header--not-top",
+              bottom: "header--bottom",
+              notBottom: "header--not-bottom"
             }
+            });
+            App.stickyHeader.init();
         },
-
         mobileMenu: function () {
             //Появление меню
             $(options.burgerClass).on('click', function () {
@@ -104,7 +112,8 @@ var App = (function () {
             //Появление выпадающего меню с плюсиками
             $(options.level1MenuItem).on('click', function (e) {
                 if ($(this).data('container') == 1) {
-                    e.preventDefault();
+                    //e.preventDefault();
+                    console.log('est takoe');
                     $(this).toggleClass(options.level1MenuItemActive);
                 }
             });
@@ -166,19 +175,6 @@ var App = (function () {
                 $('.js-value').text($(this).val());
             });
         },
-        fixScroll: function () {
-            //фикс position:fixed при применении transformY для родительского элемента
-            //да, есть такой баг. Отключите функцию и зацените, охо-хо
-            $(window).on('scroll',function(){
-                var fixedMenu = $('.main-menu__submenu');
-                fixedMenu.css('position', 'absolute');
-                fixedMenu.css({
-                    top: '0px',
-                    left: '0px',
-                    width: '100vw'
-                });
-            });
-        },
         radioDropdown: function () {
             $('.dropp-header__title').on('click', function () {
                 console.log('e');
@@ -200,6 +196,7 @@ var App = (function () {
                 $('.js-value').text(value);
             });
         },
+
         jQueryFunctions: function () {
             $.fn.disableSelection = function () {
                 return this

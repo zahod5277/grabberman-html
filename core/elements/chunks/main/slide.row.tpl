@@ -15,7 +15,7 @@
                     </span>
                 </a>
                {else}
-                   <button href="{$url}" title="{$name}" class="button button--rectangle button--red main-slider__button-more button--hidden">
+                   <button title="{$name}" class="button button--rectangle button--red main-slider__button-more button--hidden">
                    </button> 
             {/if}
         </div>

@@ -49,14 +49,10 @@
     text-align: center;
 }
 
-.product-row__thumb img{
-    max-width: 150px;
-}
-
 .product-row__short-props{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-end;
     @include mq('tablet-wide',max){
         flex: 0 0 55%;   
     }
@@ -101,6 +97,6 @@
     @include mq('phablet',max){ 
         max-width: 100px;
     }
-    max-height: 120px;
-    max-width: 100%;
+    max-height: 70%;
+    max-width: 70%;
 }
