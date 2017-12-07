@@ -1,0 +1,81 @@
+@import "__vars";
+@import "__viewport.scss";
+
+/* Custom dropdown */
+.custom-select {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px; /* demo only */
+  @include mq('tablet-wide', min){
+      display: none;
+  }
+}
+
+.custom-select__text{
+    text-transform: uppercase;
+    color:$dark-grey;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.custom-select select {
+  color: black;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: .5em;
+  padding-right: 2.5em;	
+  border: 0;
+  margin: 0;
+  text-indent: 0.01px;
+  outline:none;
+  text-overflow: '';
+  background-color: white;
+  width: 224px;
+  margin: 40px 0px;
+  @include mq('phone',max){
+      width: 204px;
+  }
+  -webkit-appearance: button; /* hide default arrow in chrome OSX */
+}
+
+.custom-select::before,
+.custom-select::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.custom-select::after { /*  Custom dropdown arrow */
+  content: "";
+  background-color: black;
+  -webkit-mask-image: url('../svg/icon_arrow_bottom.svg');
+  mask-image: url('../svg/icon_arrow_bottom.svg');
+  height: 8px;
+  width: 12px;
+  font-size: .625em;
+  line-height: 1;
+  right: 1.2em;
+  top: 50%;
+  margin-top: -.5em;
+}
+
+.custom-select::before { /*  Custom dropdown arrow cover */
+  width: 2em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.custom-select select[disabled] {
+  color: rgba(0,0,0,.3);
+}
+
+.custom-select select[disabled]::after {
+  color: rgba(0,0,0,.1);
+}
+
+.custom-select::after {
+  color: rgba(0,0,0,.4);
+}

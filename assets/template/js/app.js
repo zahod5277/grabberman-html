@@ -27,6 +27,7 @@ var App = (function () {
         propertiesTableBtn: '.properties-table__button',
         propertiesTableModal: 'properties-table-modal',
         categoryRadio: '[name="fixtures"]',
+        selectFilter: '[data-select]',
         productRow: '.product-row',
     };
 
@@ -65,7 +66,7 @@ var App = (function () {
             App.mainHouse();
             App.productTableViewToggle();
             App.categoryFilter();
-            App.radioDropdown();
+            App.selectDropdown();
             App.Header();
             //App.fixScroll();
         },
@@ -175,25 +176,12 @@ var App = (function () {
                 $('.js-value').text($(this).val());
             });
         },
-        radioDropdown: function () {
-            $('.dropp-header__title').on('click', function () {
-                console.log('e');
-                $('.js-dropp-action').trigger('click');
-            });
-            //модуль дернут откуда-то, поэтому без привязки к опциям
-            $('.js-dropp-action').click(function (e) {
-                e.preventDefault();
-                $(this).toggleClass('js-open');
-                $(this).parent().next('.dropp-body').toggleClass('js-open');
-            });
-
-            $('label').click(function () {
-                $(this).addClass('js-open').siblings().removeClass('js-open');
-                $('.dropp-body,.js-dropp-action').removeClass('js-open');
-            });
-            $('input[name="dropp"]').change(function () {
-                var value = $("input[name='dropp']:checked").val();
-                $('.js-value').text(value);
+        selectDropdown: function () {
+            $(options.selectFilter).on('change', function(){
+                console.log('selectDropdown');
+                var val = $(this).val();
+                $(options.categoryRadio+'[id="'+val+'"]').prop('checked',true);
+                $(options.categoryRadio+'[id="'+val+'"]').trigger('change');
             });
         },
 

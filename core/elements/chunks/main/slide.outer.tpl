@@ -1,4 +1,4 @@
-<section id="slider" class="main-slider main-slider--first">
+<section id="slider" class="main-slider margined-block">
     <div class="swiper-container">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">

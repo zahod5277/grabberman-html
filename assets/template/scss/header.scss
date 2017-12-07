@@ -10,16 +10,16 @@
   background: $header-bg;
   color: white;
   transition: .2s; 
-  z-index: 100;
+  z-index: 8000;
   @include mq('tablet-wide',max){
-      height: 65px;
+      height: $header-height-mobile;
   }
 }
 
 .header--unpinned {
   height: $header-height-fixed;
     @include mq('tablet-wide',max){
-      height: 65px;
+      height: $header-height-mobile;
   }
 }
 
@@ -27,6 +27,9 @@
   padding: 0 2rem;
   width: 100%;
   height: 100%;
+  @include mq('tablet-wide',max){
+      padding: 0px 20px;
+  }
 }
 .header__layout {
   display: flex;
@@ -69,10 +72,11 @@
   width: 100%;
   flex: 0 0 79%;
 }
+
 .header__menu-items{ // для примера!
 /*  background: #888;*/
   width: 100%;
-  height: 20px;
+  height: 15px;
 }
 .header__top-bar {
   margin-top: 15px;

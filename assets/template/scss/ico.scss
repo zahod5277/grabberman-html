@@ -97,3 +97,22 @@
     width: 7px;
     height:10px;
 }
+
+.ico--file{
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 200px;
+    background-color: $black;
+    position: relative;
+    transition: 0.5s ease all;
+}
+
+.ico--file svg{
+    width: 15px;
+    height: 15px;
+    fill: white;
+    position: absolute;
+    top: 39%;
+    left: 38%;
+}

@@ -112,20 +112,6 @@ h6, .h6 {
     h6, .h6 {
       font-size: 12px; } }
 
-.main-slider--first {
-  margin-top: 120px; }
-  .main-slider--first::before {
-    display: block;
-    content: ' ';
-    position: absolute;
-    width: 100%;
-    height: 120px;
-    background: #231f20;
-    transform: translateY(-100%); }
-    @media only screen and (max-width: 1023px) {
-      .main-slider--first::before {
-        height: 65px; } }
-
 .swiper-container {
   width: 100%;
   height: calc( 100vh - 120px - 100px); }
@@ -144,7 +130,7 @@ h6, .h6 {
 
 .swiper-inner:before {
   content: '';
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100%;
   display: block;
@@ -236,9 +222,13 @@ h6, .h6 {
       padding: 20px; } }
   @media only screen and (min-width: 1024px) {
     .slide-content {
-      top: calc(50% - 95px);
-      /*        width: 75%;*/
-      width: 800px; } }
+      top: calc(40% - 95px);
+      width: 70%;
+      max-width: 800px;
+      margin-left: 15%; } }
+  @media only screen and (min-width: 1540px) {
+    .slide-content {
+      top: calc(50% - 95px); } }
 
 .slide-text {
   color: #fff;

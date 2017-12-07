@@ -44,6 +44,11 @@
     overflow-y: scroll;
 }
 
+.mobile-menu-level1>ul{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
 .mobile-menu--active .mobile-menu-level1{
     display: block;
     transform: translate(0px,0px);
@@ -95,7 +100,7 @@
 }
 
 .mobile-menu__tip{
-    padding: 15px 0px;
+    padding: 0px 0px;
     color:$dark-grey;
     font-size: 0.75rem;
     display: block;

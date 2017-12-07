@@ -75,6 +75,11 @@
     background-color: $redhover;
     color:$white;
     border: $redhover 2px solid;
+    @include mq('tablet-wide', max){
+        background: $white;
+        color: $black;
+        border-color: $light-grey;
+    }
 }
 
 .properties-table__button--active:hover{

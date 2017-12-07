@@ -5,23 +5,6 @@
 $headerH: 120px;
 $buttonSpace: 100px;
 
-.main-slider--first{
-    margin-top: $header-height;
-
-    &::before {
-        display: block;
-        content: ' ';
-        position: absolute;
-        width: 100%;
-        height:  $header-height;
-        background: $header-bg;
-        transform: translateY(-100%);
-        @include mq('tablet-wide',max){
-            height: 65px;
-        }
-    }
-}
-
 .swiper-container {
     width: 100%;
     height: calc( 100vh - #{$headerH} - #{$buttonSpace} );
@@ -41,7 +24,7 @@ $buttonSpace: 100px;
 
 .swiper-inner:before{
     content: '';
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.3);
     width: 100%;
     height: 100%;
     display: block;
@@ -138,9 +121,13 @@ $buttonSpace: 100px;
         padding: 20px;
     }
     @include mq('tablet-wide', min){
-        top:calc(50% - 95px);
-        /*        width: 75%;*/
-        width:800px;
+        top: calc(40% - 95px);
+        width: 70%;
+        max-width: 800px;
+        margin-left: 15%;
+    }
+    @include mq('desktop-wide', min){
+        top: calc(50% - 95px);
     }
 }
 

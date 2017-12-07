@@ -94,6 +94,11 @@
   background-color: #d61f1f;
   color: #fff;
   border: #d61f1f 2px solid; }
+  @media only screen and (max-width: 1023px) {
+    .properties-table__button--active {
+      background: #fff;
+      color: #231f20;
+      border-color: #e1e2e6; } }
 
 .properties-table__button--active:hover {
   border-color: #d61f1f; }

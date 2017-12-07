@@ -1,0 +1,22 @@
+@import "__vars.scss";
+@import "__viewport.scss";
+
+.margined-block{
+    margin-top: $header-height;
+    @include mq('tablet-wide',max){
+        margin-top: $header-height-mobile;
+    }
+
+    &::before {
+        display: block;
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height:  $header-height;
+        background: $header-bg;
+        transform: translateY(-100%);
+        @include mq('tablet-wide',max){
+            height: $header-height-mobile;
+        }
+    }
+}

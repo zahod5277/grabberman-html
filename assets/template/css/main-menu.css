@@ -91,7 +91,7 @@
   z-index: 8000;
   top: 120px; }
 
-.page--header-fixed .main-menu__item:hover .main-menu__submenu {
+.header--unpinned .main-menu__item:hover .main-menu__submenu {
   display: block;
   opacity: 1;
   visibility: visible;

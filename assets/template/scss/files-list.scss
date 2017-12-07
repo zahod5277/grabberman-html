@@ -1,0 +1,35 @@
+@import "__viewport.scss";
+@import "__vars.scss";
+@import "__fonts.scss";
+
+.files-list__item{
+    text-decoration: none;
+    color: $black;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    align-items: center;
+    border: none!important;
+}
+
+.files-list__item:hover .ico--file{
+    background: $red;
+}
+
+.files-list__ico{
+    margin-right: 20px;
+}
+
+.files-list__item-title{
+    display: block;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.files-list__item-size{
+    display: block;
+    font-size: 16px;
+    color: $dark-grey;
+    line-height: 24px;
+}

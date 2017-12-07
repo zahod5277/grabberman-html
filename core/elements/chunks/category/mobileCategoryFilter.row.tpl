@@ -1,5 +1,3 @@
 {if $parent!=$_modx->resource.id}
-<label for="fixtures_{$parent}">[[#[[+parent]].menutitle]]
-    <input type="radio" id="fixtures_{$parent}" name="dropp" value="[[#[[+parent]].pagetitle]]">
-</label>
+<option value="fixtures_{$parent}">[[#[[+parent]].menutitle]]</option>
 {/if}

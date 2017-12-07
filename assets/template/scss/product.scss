@@ -21,9 +21,12 @@
 
 .product__image img{
     display: block;
-    max-width: 300px;
+    max-width: 500px;
     height: auto;
     margin: auto;
+    @include mq('tablet-wide', max){
+        max-width: 100%;
+    }
 }
 
 .product__scheme-title{
@@ -97,29 +100,6 @@
         margin-top: 35px;
         line-height: 28px;
     }
-}
-
-.product__text-table-item li{
-    display: flex;
-    font-size: 14px;
-    margin-bottom: 12px;
-    @include mq('tablet-wide', min){
-        font-size: 18px;
-        margin-bottom: 23px;
-    }
-}
-
-.product__text-table-item ul li::before{
-    content: '';
-    width: 7px;
-    height: 10px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    flex: 0 0 2%;
-    background-image: url(../svg/icon_arrow_right_small.svg);
-    margin-right: 19px;
-    position: relative;
-    top: 8px;
 }
 
 .product__about-text{

@@ -75,10 +75,13 @@
     .product-row__thumb {
       flex: 0 0 250px; } }
 
+.product-row__thumb img {
+  max-height: 258px; }
+
 .product-row__short-props {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end; }
+  justify-content: flex-start; }
   @media only screen and (max-width: 1023px) {
     .product-row__short-props {
       flex: 0 0 55%; } }
@@ -117,7 +120,7 @@
       overflow: hidden; } }
 
 .product-row__scheme {
-  max-height: 70%;
+  height: auto;
   max-width: 70%; }
   @media only screen and (max-width: 559px) {
     .product-row__scheme {
