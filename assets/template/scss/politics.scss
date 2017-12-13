@@ -1,0 +1,21 @@
+@import "__viewport.scss";
+@import "__vars.scss";
+
+.politics{
+    @include mq('tablet-wide',max){
+        margin-bottom: 20px;
+    }
+}
+
+.politics p{
+    font-size: 14px;
+    color: $dark-grey;
+}
+
+.politics a{
+    color: $black;
+}
+
+.politics a:hover{
+    color: $black;
+}

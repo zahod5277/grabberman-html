@@ -1,0 +1,13 @@
+@media only screen and (max-width: 1023px) {
+  .politics {
+    margin-bottom: 20px; } }
+
+.politics p {
+  font-size: 14px;
+  color: #999999; }
+
+.politics a {
+  color: #231f20; }
+
+.politics a:hover {
+  color: #231f20; }

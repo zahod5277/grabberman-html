@@ -7,6 +7,7 @@
     margin-bottom: 15px;
     cursor:pointer;
     transition: 0.2s ease all;
+    min-height: 52px;
 }
 
 .fixture-item a{
@@ -16,6 +17,7 @@
     justify-content: space-between;
     align-items: center;
     color: inherit;
+    min-height: 52px;
     @include mq('tablet-wide', max){
         display: flex;
         position: relative;
@@ -92,8 +94,9 @@
 .fixture-item__img{
     display: block;
     flex: 0 0 30%;
-    max-height: 59px;
-    max-width: 152px;
+    max-height: 40px;
+    max-width: 125px;
+    margin-right: 30px;
     @include mq('tablet-wide', max){
         display: inline-block;
         width: 30%;
@@ -101,6 +104,7 @@
         margin-right: 19px;
         flex: 0 0 30%;
         text-align: right;
+        margin-right: 10px;
     }
 }
 

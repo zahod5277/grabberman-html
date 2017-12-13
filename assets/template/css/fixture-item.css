@@ -3,7 +3,8 @@
   padding: 5px 0px;
   margin-bottom: 15px;
   cursor: pointer;
-  transition: 0.2s ease all; }
+  transition: 0.2s ease all;
+  min-height: 52px; }
 
 .fixture-item a {
   text-decoration: none;
@@ -11,7 +12,8 @@
   align-items: baseline;
   justify-content: space-between;
   align-items: center;
-  color: inherit; }
+  color: inherit;
+  min-height: 52px; }
   @media only screen and (max-width: 1023px) {
     .fixture-item a {
       display: flex;
@@ -79,8 +81,9 @@
 .fixture-item__img {
   display: block;
   flex: 0 0 30%;
-  max-height: 59px;
-  max-width: 152px; }
+  max-height: 40px;
+  max-width: 125px;
+  margin-right: 30px; }
   @media only screen and (max-width: 1023px) {
     .fixture-item__img {
       display: inline-block;
@@ -88,7 +91,8 @@
       vertical-align: middle;
       margin-right: 19px;
       flex: 0 0 30%;
-      text-align: right; } }
+      text-align: right;
+      margin-right: 10px; } }
 
 .fixture-item__bullet--yellow {
   background-color: #fecd08; }

@@ -156,7 +156,7 @@ footer{
     }
 }
 
-.politics{
+.footer__politics{
     padding-left: 30px;
     @include mq('tablet-wide', max){
         display: block;
@@ -164,7 +164,7 @@ footer{
     }
 }
 
-.politics,.politics a{
+.footer__politics,.footer__politics a{
     color:$dark-grey;
     text-decoration: none;
 }

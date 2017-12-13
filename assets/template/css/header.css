@@ -76,6 +76,9 @@
   background: #231f20;
   width: 200px;
   flex-shrink: 0; }
+  @media only screen and (max-width: 1023px) {
+    .header__logo-box {
+      width: 160px; } }
 
 .header__logo {
   width: 100%;
@@ -133,7 +136,7 @@
   transition: 0.5s ease all;
   top: 0px;
   flex: 1 0 27%; }
-  @media only screen and (max-width: 1247px) {
+  @media only screen and (max-width: 1099px) {
     .header-phones-cta {
       flex: 1 0 18%; } }
   @media only screen and (max-width: 1023px) {

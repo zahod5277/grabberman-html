@@ -1,0 +1,62 @@
+@import "__vars.scss";
+@import "__fonts.scss";
+@import "__viewport.scss";
+
+.text-content{
+    max-width: 850px;
+    margin: auto;
+}
+
+.text-content p{
+    margin-bottom: 30px;
+    @include mq('tablet-wide', max){
+        margin-bottom: 25px;
+    }
+}
+
+.text-content ul, .text-content ol{
+    margin-bottom: 50px;
+    @include mq('tablet-wide', max){
+        margin-bottom: 25px;
+    }
+}
+
+.text-content img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.text-content a{
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 28px;
+    color: $black;
+    padding-bottom: 3px;
+    border-bottom: 2px solid $red;
+}
+
+.text-content a:hover{
+    border-bottom-color: $black;
+}
+
+.text-content h2{
+    margin-bottom: 70px;
+    @include mq('tablet-wide', max){
+        margin-bottom: 25px;
+    }
+}
+
+.text-content h3{
+    margin-bottom: 36px;
+    @include mq('tablet-wide', max){
+        margin-bottom: 16px;
+    }
+}
+
+.text-content h4{
+    margin-bottom: 34px;
+    @include mq('tablet-wide', max){
+        margin-bottom: 14px;
+    }
+}

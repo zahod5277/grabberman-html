@@ -8,8 +8,14 @@
                 info@grabberman.ru
             </a>
         </p>
-        <p class="mobile-menu-info__item"><a href="tel:88007077645">8 (800) 707 76 45</a></p>
-        <p class="mobile-menu-info__item"><a href="tel:+74993224943">+7 (499) 322 49 43</a></p>
-        <p class="mobile-menu-info__item"><a href="tel:+78126112596">+7 (812) 611 25 96</a></p>
+        <p class="mobile-menu-info__item">
+            <span data-phone-link>8 (800) 707 76 45</span>
+        </p>
+        <p class="mobile-menu-info__item">
+            <span data-phone-link>+7 (499) 322 49 43</span>
+        </p>
+        <p class="mobile-menu-info__item">
+            <span data-phone-link>+7 (812) 611 25 96</span>>
+        </p>
     </div>
 </nav>

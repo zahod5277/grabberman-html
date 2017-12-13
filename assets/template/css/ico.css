@@ -53,7 +53,7 @@
   @media only screen and (max-width: 1023px) {
     .ico--arrow-more {
       padding-left: 25px; } }
-  @media only screen and (max-width: 1247px) {
+  @media only screen and (max-width: 1099px) {
     .ico--arrow-more {
       padding-left: 25px; } }
   @media only screen and (max-width: 1023px) {
@@ -89,6 +89,10 @@
   background-color: #231f20;
   position: relative;
   transition: 0.5s ease all; }
+  @media only screen and (max-width: 1023px) {
+    .ico--file {
+      width: 40px;
+      height: 40px; } }
 
 .ico--file svg {
   width: 15px;
@@ -97,3 +101,7 @@
   position: absolute;
   top: 39%;
   left: 38%; }
+  @media only screen and (max-width: 1023px) {
+    .ico--file svg {
+      top: 34%;
+      left: 33%; } }

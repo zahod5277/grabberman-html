@@ -87,7 +87,7 @@
   position: relative;
   width: 105%;
   display: block; }
-  @media (orientation: landscape) and (max-width: 1247px) {
+  @media (orientation: landscape) and (max-width: 1099px) {
     .mobile-menu-level1__item, .mobile-menu-level1__item > a {
       width: 103%; } }
 

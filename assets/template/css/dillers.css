@@ -1,0 +1,34 @@
+.dillers__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.dillers__item {
+  margin-top: 60px; }
+  @media only screen and (max-width: 1023px) {
+    .dillers__item {
+      margin-top: 40px; } }
+  @media only screen and (max-width: 1023px) {
+    .dillers__item:first-child {
+      margin-top: 20px; } }
+  @media only screen and (max-width: 1023px) {
+    .dillers__item:last-child {
+      margin-bottom: 100px; } }
+
+.dillers__item h4 {
+  text-transform: uppercase; }
+
+.dillers__item-adress {
+  margin: 20px 0px; }
+
+.dillers__item-contacts-item {
+  color: #231f20; }
+
+.dillers__item-contacts-item span {
+  color: #999999;
+  min-width: 80px;
+  display: inline-block; }
+
+.dillers__item-description {
+  margin-top: 20px;
+  color: #999999; }

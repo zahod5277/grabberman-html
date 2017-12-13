@@ -79,7 +79,7 @@
   -moz-transform: translateY(0px);
   -o-transform: translateY(0px);
   -ms-transform: translateY(0px); }
-  @media only screen and (max-width: 1247px) {
+  @media only screen and (max-width: 1099px) {
     .main-menu__submenu {
       top: 111px; } }
 

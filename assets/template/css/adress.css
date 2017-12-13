@@ -1,0 +1,25 @@
+.adress {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.adress__item {
+  margin-bottom: 50px; }
+  @media only screen and (max-width: 1023px) {
+    .adress__item {
+      margin-bottom: 30px; } }
+
+.adresses__item-heading {
+  font-size: 18px;
+  line-height: 28px;
+  color: #999999;
+  margin-bottom: 10px;
+  font-weight: 300; }
+
+.adress__item p {
+  font-size: 18px;
+  line-height: 28px;
+  color: black; }
+  @media only screen and (max-width: 1023px) {
+    .adress__item p {
+      font-size: 14px; } }

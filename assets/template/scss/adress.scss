@@ -1,0 +1,32 @@
+@import "__viewport.scss";
+@import "__vars.scss";
+
+.adress{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.adress__item{
+    margin-bottom: 50px;
+    @include mq('tablet-wide', max){
+        margin-bottom: 30px;
+    }
+}
+
+.adresses__item-heading{
+    font-size: 18px;
+    line-height: 28px;
+    color: $dark-grey;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.adress__item p{
+    font-size: 18px;
+    line-height: 28px;
+    color: black;
+    @include mq('tablet-wide', max){
+        font-size: 14px;
+    }
+}

@@ -4,6 +4,7 @@
 
 .category-title{
     overflow-x: hidden;
+    margin-bottom: 40px;
     @include mq('tablet-wide',min){
         margin-bottom: 80px;
     }

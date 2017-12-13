@@ -2,7 +2,13 @@
     <div class="header__wrapper">
         <div class="header__layout">
             <div class="header__logo-box">
-                <img class="header__logo" src="assets/template/svg/grabberman_logo.svg" alt="">
+                {if $_modx->resource.id==1}
+                <span><img class="header__logo" src="assets/template/svg/grabberman_logo.svg" alt="Grabber Россия"></span>
+                {else}
+                    <a href="{'1'|url}" title="На главную страницу">
+                        <img class="header__logo" src="assets/template/svg/grabberman_logo.svg" alt="Grabber Россия">
+                    </a>
+                {/if}
             </div>
             <div class="header__bars">
                 <div class="header__top-bar" data-header-hide-bar>
@@ -13,10 +19,14 @@
                                 <use xlink:href="#svg-symbol--icon_phone" />
                                 </svg>
                             </i>
-                            <a href="tel:88007077645">8 (800) 707 76 45</a>
+                            <span data-phone-link>{$_modx->config.phoneRussia}</span>
                         </span>
-                        <span class="header__phone-item"><a href="tel:+74993224943">+7 (499) 322 49 43</a></span>
-                        <span class="header__phone-item"><a href="tel:+78126112596">+7 (812) 611 25 96</a></span>
+                        <span class="header__phone-item">
+                            <span data-phone-link>{$_modx->config.phoneMoscow}</span>
+                        </span>
+                        <span class="header__phone-item">
+                            <span data-phone-link>{$_modx->config.phoneSpb}</span>
+                        </span>
                     </div>
                 </div>
                 <div class="header__menu-bar">

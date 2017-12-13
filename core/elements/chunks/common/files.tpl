@@ -5,7 +5,7 @@
             {var $filesize = $_modx->runSnippet('@FILE:snippets/getFilesize.php',[
                 'input' => $file.file
             ])}
-            <a class="files-list__item" title="{$file.title}" href="{$file.file}">
+            <a class="files-list__item" title="{$file.title}" href="files/{$file.file}">
                 <span class="files-list__ico">
                     <i class="ico ico--file">
                         <svg class="svg-symbol svg-symbol--icon_download">

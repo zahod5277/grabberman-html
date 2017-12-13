@@ -1,0 +1,12 @@
+@import "__viewport.scss";
+@import "__vars.scss";
+
+.contacts a{
+    color: $black;
+    text-decoration: none;
+}
+
+.contacts a:hover{
+    color: $black;
+    text-decoration: underline;
+}

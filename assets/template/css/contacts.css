@@ -1,0 +1,7 @@
+.contacts a {
+  color: #231f20;
+  text-decoration: none; }
+
+.contacts a:hover {
+  color: #231f20;
+  text-decoration: underline; }

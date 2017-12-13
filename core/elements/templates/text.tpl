@@ -8,7 +8,7 @@
                 </div>
             </div>
         </div>
-       <div class="text__content container">
+       <div class="text-content container">
             {$_modx->resource.content}
             {include 'file:chunks/common/files.tpl'}
         </div>

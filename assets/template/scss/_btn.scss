@@ -67,3 +67,10 @@
 .button--hidden{
     visibility: hidden;
 }
+
+.button--right{
+    float:right;
+    @include mq('tablet-wide',max){
+        float:none;
+    }
+}

@@ -1,0 +1,33 @@
+@import "__viewport.scss";
+@import "__vars.scss";
+
+.workers{
+    margin-bottom: 120px;
+    @include mq('tablet-wide', max){
+        margin-bottom: 60px;
+        margin-top: 30px;
+    }
+}
+
+.workers__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.workers__item{
+    margin-top: 60px;
+    @include mq('tablet-wide', max){
+        margin-top: 30px;
+    }
+}
+
+.workers__item h4{
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.worker__item-position{
+    color: $dark-grey;
+    margin: 20px 0px 30px;
+}

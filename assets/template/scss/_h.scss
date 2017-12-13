@@ -42,7 +42,6 @@ h6, .h6 {
         font-size: 32px;
         letter-spacing: 0.5px;
     }
-  
 }
 
 @mixin h3 {
@@ -62,7 +61,7 @@ h6, .h6 {
     font-weight: bold;
     letter-spacing: 0.7px;
     @include mq('tablet', max){
-        font-size: 12px;
+        font-size: 13px;
     }
 }
 
@@ -73,6 +72,13 @@ h1, .h1 {
 
 h2, .h2 {
     @include h2;
+}
+
+.h2--s{
+  font-size: 40px;
+  @include mq('tablet-wide',max){
+      font-size: 24px;
+  }
 }
 
 h3, .h3 {

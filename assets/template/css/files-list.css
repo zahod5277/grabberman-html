@@ -53,9 +53,16 @@
   display: block;
   text-transform: uppercase;
   padding-bottom: 5px; }
+  @media only screen and (max-width: 1023px) {
+    .files-list__item-title {
+      font-size: 12px;
+      padding-bottom: 0px; } }
 
 .files-list__item-size {
   display: block;
   font-size: 16px;
   color: #999999;
   line-height: 24px; }
+  @media only screen and (max-width: 1023px) {
+    .files-list__item-size {
+      font-size: 12px; } }

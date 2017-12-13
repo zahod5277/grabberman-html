@@ -1,7 +1,7 @@
 <div class="footer-mobile-logo">
     <div class="footer-mobile-logo-red-inner">
         <div class="container">
-            <img src="assets/template/svg/grabberman_logo_footer.svg" alt="" class="footer-mobile-logo-img">
+            <img src="assets/template/svg/grabberman_logo_footer.svg" alt="Grabber logo" class="footer-mobile-logo-img">
         </div>
     </div>
     <div class="black-bg">
@@ -15,18 +15,18 @@
         <div class="container footer-container">
             <div class="footer__text-block">
                 <h3 class="footer-text__heading">Адрес</h3>
-                <p class="footer-text__paragraph">195273, Санкт-Петербург, Пискарёвский проспект, 150, корпус 2, литера «О», офис 421</p>
+                <p class="footer-text__paragraph">{$_modx->config.companyAdress}</p>
                 <div class="footer-workhours">
-                    <p>Пн-Пт: 09.00 - 18.00</p>
-                    <p>Сб-Вс: Выходной</p>
+                    <p>{$_modx->config.workHours}</p>
+                    <p>{$_modx->config.holidays}</p>
                 </div>
             </div>
             <div class="footer__text-block footer__text-block--contacts">
                 <h3 class="footer-text__heading">Контакты</h3>
                 <p class="footer-text__paragraph">
-                    <span> <a href="tel:88007077645">8 (800) 707 76 45</a> (звонок по России бесплатный)</span>
-                    <span><a href="tel:+74993224943">+7 (499) 322 49 43</a> (Москва) </span>
-                    <span><a href="tel:+78126112596">+7 (812) 611 25 96</a> (Санкт-Петербург)</span>
+                    <span><span data-phone-link>{$_modx->config.phoneRussia}</span> (звонок по России бесплатный)</span>
+                    <span><span data-phone-link>{$_modx->config.phoneMoscow}</span> (Москва) </span>
+                    <span><span data-phone-link>{$_modx->config.phoneSpb}</span> (Санкт-Петербург)</span>
                 </p>
                 <p class="footer-text__paragraph">
                     <i class="ico ico--mail">
@@ -34,7 +34,7 @@
                         <use xlink:href="#svg-symbol--icon_mail" />
                         </svg> 
                     </i>
-                    info@grabberman.ru
+                    {$_modx->config.contactMail}
                 </p>
             </div>
             <div class="footer__text-block footer__text-block--empty"></div>
@@ -50,7 +50,7 @@
         <div class="container">
             <p class="copyright">
                 © 2017 ООО «ГРАББЕР-РУС»
-                <span class="politics">
+                <span class="footer__politics">
                     <a href="#">
                         Политика конфиденциальности
                     </a>

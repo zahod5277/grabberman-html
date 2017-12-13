@@ -34,7 +34,8 @@
   font-style: italic; }
 
 .category-title {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  margin-bottom: 40px; }
   @media only screen and (min-width: 1024px) {
     .category-title {
       margin-bottom: 80px; } }
