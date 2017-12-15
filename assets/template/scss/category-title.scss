@@ -13,7 +13,7 @@
 .category-title__inner{
     width: 100%;
     @include mq('tablet-wide',max){
-        padding: 103px 20px 43px;
+        padding: 103px 0px 43px;
     }
     @include mq('tablet-wide',min){
         padding: 212px 51px 78px;

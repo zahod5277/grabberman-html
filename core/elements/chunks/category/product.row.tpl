@@ -8,9 +8,9 @@
         {/if}
         <div class="product-row__short-props">
             <div class="product-row__short-props-text">
-                {if $tv_article?}
+                {if $article?}
                     <h4 class="product-article product-article--catalog-article">
-                        #{$tv_article}
+                        #{$article}
                     </h4>
                 {/if}
                 <h3 class="product-row__title">

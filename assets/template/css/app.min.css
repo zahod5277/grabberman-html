@@ -232,9 +232,10 @@ ul {
       line-height: 28px; } }
 
 .margined-block ul li {
-  display: flex;
   font-size: 14px;
-  margin-bottom: 12px; }
+  margin-bottom: 12px;
+  padding-left: 2em;
+  position: relative; }
   @media only screen and (min-width: 1024px) {
     .margined-block ul li {
       font-size: 18px;
@@ -246,11 +247,11 @@ ul {
   height: 10px;
   display: inline-block;
   background-repeat: no-repeat;
-  flex: 0 0 2%;
   background-image: url(../svg/icon_arrow_right_small.svg);
   margin-right: 19px;
-  position: relative;
-  top: 8px; }
+  position: absolute;
+  top: 0.55em;
+  left: 0px; }
 
 .margined-block ol {
   line-height: 28px;
@@ -260,25 +261,27 @@ ul {
     .margined-block ol {
       padding-left: 35px; } }
   .margined-block ol li {
-    display: flex;
     font-size: 14px;
-    margin-bottom: 12px; }
+    margin-bottom: 12px;
+    padding-left: 2em;
+    position: relative; }
     @media only screen and (min-width: 1024px) {
       .margined-block ol li {
         font-size: 18px;
         margin-bottom: 23px; } }
     .margined-block ol li::before {
       margin-right: 19px;
-      position: relative;
       font-size: 14px;
       top: 2px;
       color: #f22c2c;
       display: inline-block;
       background-repeat: no-repeat;
-      flex: 0 0 2%;
       content: counter(li, decimal-leading-zero);
       counter-increment: li;
-      font-weight: bold; }
+      font-weight: bold;
+      position: absolute;
+      top: 0px;
+      left: 0px; }
 
 @font-face {
   font-family: "Futura";
@@ -356,6 +359,9 @@ h2, .h2 {
     h2, .h2 {
       font-size: 32px;
       letter-spacing: 0.5px; } }
+  @media only screen and (max-width: 399px) {
+    h2, .h2 {
+      font-size: 25px; } }
 
 .h2--s {
   font-size: 40px; }
@@ -372,6 +378,9 @@ h3, .h3 {
       font-size: 24px;
       line-height: 30px;
       letter-spacing: 0.5px; } }
+  @media only screen and (max-width: 399px) {
+    h3, .h3 {
+      font-size: 18px; } }
 
 h4, .h4 {
   font-size: 18px;
@@ -1088,24 +1097,30 @@ body {
   transform: translate(0px, 0px);
   opacity: 1; }
 
-.mobile-menu-level1__item, .mobile-menu-level1__item > a {
+.mobile-menu-level1__item {
+  padding-bottom: 30px;
   font-size: 1rem;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  line-height: 2.625rem;
   letter-spacing: 1.1px;
   position: relative;
   width: 105%;
   display: block; }
   @media (orientation: landscape) and (max-width: 1099px) {
-    .mobile-menu-level1__item, .mobile-menu-level1__item > a {
+    .mobile-menu-level1__item {
       width: 103%; } }
+
+.mobile-menu-level1__item > a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.1px; }
 
 .mobile-menu-collapse {
   position: absolute;
   right: 0;
-  top: -4px; }
+  top: -17px; }
 
 .mobile-menu-collapse i {
   height: 2px;
@@ -1130,18 +1145,22 @@ body {
   padding: 0px 0px;
   color: #999999;
   font-size: 0.75rem;
-  display: block; }
+  display: block;
+  padding: 30px 0px 14px; }
 
 .mobile-menu-level2 {
   display: none;
   padding-left: 20px; }
 
 .mobile-menu-level2 > ul > li > a {
-  font-size: 0.75rem;
   line-height: 1.125rem;
+  font-size: 0.75rem;
   letter-spacing: 0.9px;
   padding-bottom: 10px;
   display: inline-block; }
+
+.mobile-menu-level2 > ul > li:last-child > a {
+  padding-top: 30px; }
 
 .mobile-menu-info {
   margin: 60px 0px; }
@@ -1283,6 +1302,9 @@ h2, .h2 {
     h2, .h2 {
       font-size: 32px;
       letter-spacing: 0.5px; } }
+  @media only screen and (max-width: 399px) {
+    h2, .h2 {
+      font-size: 25px; } }
 
 .h2--s {
   font-size: 40px; }
@@ -1299,6 +1321,9 @@ h3, .h3 {
       font-size: 24px;
       line-height: 30px;
       letter-spacing: 0.5px; } }
+  @media only screen and (max-width: 399px) {
+    h3, .h3 {
+      font-size: 18px; } }
 
 h4, .h4 {
   font-size: 18px;
@@ -2376,7 +2401,7 @@ footer {
   width: 100%; }
   @media only screen and (max-width: 1023px) {
     .category-title__inner {
-      padding: 103px 20px 43px; } }
+      padding: 103px 0px 43px; } }
   @media only screen and (min-width: 1024px) {
     .category-title__inner {
       padding: 212px 51px 78px;
@@ -2974,11 +2999,12 @@ footer {
 
 .contacts a {
   color: #231f20;
-  text-decoration: none; }
+  text-decoration: none;
+  padding-bottom: 2px; }
 
 .contacts a:hover {
   color: #231f20;
-  text-decoration: underline; }
+  border-bottom: 2px solid #231f20; }
 
 /**
  * Swiper 3.4.2
