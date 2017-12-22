@@ -19,6 +19,7 @@
             {include 'file:chunks/main/fixture-list.tpl'}
             <div class="fixture__main-text">
                 {$_modx->resource.content}
+                {include 'file:chunks/common/files.tpl'}
             </div>
         </div>
     </div>

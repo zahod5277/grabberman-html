@@ -2,12 +2,13 @@
 @import "__viewport.scss";
 
 .radio__wrapper{
-    margin-top: 82px;
-    margin-bottom: 63px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     @include mq('tablet-wide', max){
         display: none;
     }
 }
+    
 
 .radio{
     vertical-align: top;

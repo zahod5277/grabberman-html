@@ -45,6 +45,12 @@ footer {
   color: #fff;
   text-decoration: none; }
 
+.footer-text__paragraph--hovered-link a {
+  padding-bottom: 2px; }
+
+.footer-text__paragraph--hovered-link a:hover {
+  border-bottom: #f22c2c 2px solid; }
+
 .footer-workhours {
   margin-top: 28px;
   color: #999999;

@@ -19,12 +19,16 @@
   padding: 16px 0px 16px 27px;
   color: black;
   border: 2px solid #e1e2e6;
-  font-size: 18px;
-  margin-bottom: 30px;
+  font-size: 16px;
   display: block;
   width: 100%;
   line-height: 26px;
   outline: none; }
+
+.contact-form__label {
+  display: block;
+  margin-bottom: 30px;
+  position: relative; }
 
 .contact-form__input:focus {
   border-color: #231f20; }
@@ -46,5 +50,5 @@
   color: #231f20; }
 
 .contact-form__input--textarea {
-  height: 240px;
+  height: 245px;
   overflow: hidden; }

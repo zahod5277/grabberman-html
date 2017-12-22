@@ -1,6 +1,6 @@
 .radio__wrapper {
-  margin-top: 82px;
-  margin-bottom: 63px; }
+  margin-top: 50px;
+  margin-bottom: 30px; }
   @media only screen and (max-width: 1023px) {
     .radio__wrapper {
       display: none; } }

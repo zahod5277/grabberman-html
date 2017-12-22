@@ -167,8 +167,8 @@ strong {
   font-weight: bold; }
 
 p {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: 0.5px; }
   @media only screen and (max-width: 1023px) {
     p {
@@ -183,8 +183,8 @@ label {
   font-family: 'Roboto', 'Open Sans', 'Arial', sans-serif; }
 
 .text {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: 0.5px; }
   @media only screen and (max-width: 1023px) {
     .text {
@@ -199,8 +199,8 @@ label {
   color: #fff; }
 
 .text--l {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 24px;
   letter-spacing: 0.5px; }
   @media only screen and (max-width: 1023px) {
     .text--l {
@@ -209,8 +209,8 @@ label {
       letter-spacing: 0.4px; } }
 
 .text--s {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 21px;
   letter-spacing: 1px; }
   @media only screen and (max-width: 1023px) {
     .text--s {
@@ -238,8 +238,8 @@ ul {
   position: relative; }
   @media only screen and (min-width: 1024px) {
     .margined-block ul li {
-      font-size: 18px;
-      margin-bottom: 23px; } }
+      font-size: 16px;
+      margin-bottom: 15px; } }
 
 .margined-block ul li::before {
   content: '';
@@ -267,8 +267,8 @@ ul {
     position: relative; }
     @media only screen and (min-width: 1024px) {
       .margined-block ol li {
-        font-size: 18px;
-        margin-bottom: 23px; } }
+        font-size: 16px;
+        margin-bottom: 15px; } }
     .margined-block ol li::before {
       margin-right: 19px;
       font-size: 14px;
@@ -338,7 +338,7 @@ h6, .h6 {
     margin-top: 0; }
 
 h1, .h1 {
-  font-size: 90px;
+  font-size: 46px;
   font-weight: bold;
   margin-bottom: 50px;
   line-height: 1.08em;
@@ -350,7 +350,7 @@ h1, .h1 {
       margin-bottom: 36px; } }
 
 h2, .h2 {
-  font-size: 60px;
+  font-size: 46px;
   font-weight: bold;
   letter-spacing: 0.9px;
   line-height: 1.08;
@@ -370,7 +370,7 @@ h2, .h2 {
       font-size: 24px; } }
 
 h3, .h3 {
-  font-size: 36px;
+  font-size: 30px;
   letter-spacing: 0.8px;
   font-weight: bold; }
   @media only screen and (max-width: 767px) {
@@ -1281,7 +1281,7 @@ h6, .h6 {
     margin-top: 0; }
 
 h1, .h1 {
-  font-size: 90px;
+  font-size: 46px;
   font-weight: bold;
   margin-bottom: 50px;
   line-height: 1.08em;
@@ -1293,7 +1293,7 @@ h1, .h1 {
       margin-bottom: 36px; } }
 
 h2, .h2 {
-  font-size: 60px;
+  font-size: 46px;
   font-weight: bold;
   letter-spacing: 0.9px;
   line-height: 1.08;
@@ -1313,7 +1313,7 @@ h2, .h2 {
       font-size: 24px; } }
 
 h3, .h3 {
-  font-size: 36px;
+  font-size: 30px;
   letter-spacing: 0.8px;
   font-weight: bold; }
   @media only screen and (max-width: 767px) {
@@ -1604,6 +1604,9 @@ i.fixture-hover {
     .fixture__main-text {
       margin-bottom: 200px; } }
 
+.fixture__main-text .files-list {
+  margin-top: 50px; }
+
 .fixture-item {
   border: solid 2px #e6e6e6;
   padding: 5px 0px;
@@ -1770,6 +1773,12 @@ footer {
 .footer-text__paragraph a {
   color: #fff;
   text-decoration: none; }
+
+.footer-text__paragraph--hovered-link a {
+  padding-bottom: 2px; }
+
+.footer-text__paragraph--hovered-link a:hover {
+  border-bottom: #f22c2c 2px solid; }
 
 .footer-workhours {
   margin-top: 28px;
@@ -2007,6 +2016,10 @@ footer {
     .product__image img {
       max-width: 100%; } }
 
+@media (min-height: 600px) and (max-height: 800px) and (min-width: 400px) {
+  .product__image img {
+    max-width: 55vh; } }
+
 .product__scheme-title {
   margin-top: 48px;
   margin-bottom: 30px;
@@ -2023,13 +2036,25 @@ footer {
     .product__scheme {
       margin-bottom: 40px; } }
 
-.product__scheme-icon {
+.product__scheme-icon-outer {
   display: flex;
-  align-items: center;
+  justify-content: baseline;
   margin-bottom: 15px; }
 
+.product__scheme-icon {
+  flex: 0 0 33.3%;
+  max-width: 65px;
+  margin-right: 40px; }
+  @media only screen and (max-width: 1023px) {
+    .product__scheme-icon {
+      flex: 0 0 100%; } }
+  .product__scheme-icon:last-child {
+    margin-right: 0px; }
+
 .product__scheme-text {
-  padding-left: 25px; }
+  font-size: 13px;
+  padding-top: 10px;
+  display: inline-block; }
 
 @media only screen and (max-width: 1023px) {
   .product__order-btn-outer {
@@ -2264,16 +2289,14 @@ footer {
 
 .product-row {
   border: 2px solid #e1e2e6;
-  transition: 0.2s ease all;
-  padding: 20px 10px; }
+  transition: 0.2s ease all; }
   @media only screen and (max-width: 1023px) {
     .product-row {
       margin-bottom: 20px; } }
   @media only screen and (min-width: 1024px) {
     .product-row {
       margin-bottom: 60px;
-      max-height: 320px;
-      padding: 35px 20px; } }
+      max-height: 320px; } }
 
 .product-row:hover {
   border-color: #231f20; }
@@ -2284,7 +2307,11 @@ footer {
   justify-content: space-between;
   margin-bottom: 20px;
   color: #231f20;
-  text-decoration: none; }
+  text-decoration: none;
+  padding: 20px 10px; }
+  @media only screen and (min-width: 1024px) {
+    .product-row > a {
+      padding: 35px 20px; } }
 
 .product-row__thumb {
   text-align: center; }
@@ -2392,7 +2419,7 @@ footer {
 
 .category-title {
   overflow-x: hidden;
-  margin-bottom: 40px; }
+  margin-bottom: 8vh; }
   @media only screen and (min-width: 1024px) {
     .category-title {
       margin-bottom: 80px; } }
@@ -2404,8 +2431,12 @@ footer {
       padding: 103px 0px 43px; } }
   @media only screen and (min-width: 1024px) {
     .category-title__inner {
-      padding: 212px 51px 78px;
-      position: relative; } }
+      height: 35vh;
+      max-height: 320px;
+      position: relative;
+      display: flex;
+      padding-top: 10vh;
+      min-height: 200px; } }
 
 @media only screen and (min-width: 1024px) {
   .category-title__inner::after {
@@ -2423,8 +2454,8 @@ footer {
     width: 75%; } }
 
 .radio__wrapper {
-  margin-top: 82px;
-  margin-bottom: 63px; }
+  margin-top: 50px;
+  margin-bottom: 30px; }
   @media only screen and (max-width: 1023px) {
     .radio__wrapper {
       display: none; } }
@@ -2892,12 +2923,16 @@ footer {
   padding: 16px 0px 16px 27px;
   color: black;
   border: 2px solid #e1e2e6;
-  font-size: 18px;
-  margin-bottom: 30px;
+  font-size: 16px;
   display: block;
   width: 100%;
   line-height: 26px;
   outline: none; }
+
+.contact-form__label {
+  display: block;
+  margin-bottom: 30px;
+  position: relative; }
 
 .contact-form__input:focus {
   border-color: #231f20; }
@@ -2919,7 +2954,7 @@ footer {
   color: #231f20; }
 
 .contact-form__input--textarea {
-  height: 240px;
+  height: 245px;
   overflow: hidden; }
 
 @media only screen and (max-width: 1023px) {

@@ -35,16 +35,14 @@
 
 .product-row {
   border: 2px solid #e1e2e6;
-  transition: 0.2s ease all;
-  padding: 20px 10px; }
+  transition: 0.2s ease all; }
   @media only screen and (max-width: 1023px) {
     .product-row {
       margin-bottom: 20px; } }
   @media only screen and (min-width: 1024px) {
     .product-row {
       margin-bottom: 60px;
-      max-height: 320px;
-      padding: 35px 20px; } }
+      max-height: 320px; } }
 
 .product-row:hover {
   border-color: #231f20; }
@@ -55,7 +53,11 @@
   justify-content: space-between;
   margin-bottom: 20px;
   color: #231f20;
-  text-decoration: none; }
+  text-decoration: none;
+  padding: 20px 10px; }
+  @media only screen and (min-width: 1024px) {
+    .product-row > a {
+      padding: 35px 20px; } }
 
 .product-row__thumb {
   text-align: center; }

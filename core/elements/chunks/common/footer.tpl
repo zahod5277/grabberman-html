@@ -28,13 +28,13 @@
                     <span><span data-phone-link>{$_modx->config.phoneMoscow}</span> (Москва) </span>
                     <span><span data-phone-link>{$_modx->config.phoneSpb}</span> (Санкт-Петербург)</span>
                 </p>
-                <p class="footer-text__paragraph">
+                <p class="footer-text__paragraph footer-text__paragraph--hovered-link">
                     <i class="ico ico--mail">
                         <svg class="svg-symbol svg-symbol--icon_mail">
                         <use xlink:href="#svg-symbol--icon_mail" />
                         </svg> 
                     </i>
-                    {$_modx->config.contactMail}
+                    <a href="mailto:{$_modx->config.contactMail}">{$_modx->config.contactMail}</a>
                 </p>
             </div>
             <div class="footer__text-block footer__text-block--empty"></div>
@@ -51,7 +51,7 @@
             <p class="copyright">
                 © 2017 ООО «ГРАББЕР-РУС»
                 <span class="footer__politics">
-                    <a href="#">
+                    <a href="{'35'|url}">
                         Политика конфиденциальности
                     </a>
                 </span>

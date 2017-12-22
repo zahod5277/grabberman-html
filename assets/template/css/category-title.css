@@ -35,7 +35,7 @@
 
 .category-title {
   overflow-x: hidden;
-  margin-bottom: 40px; }
+  margin-bottom: 8vh; }
   @media only screen and (min-width: 1024px) {
     .category-title {
       margin-bottom: 80px; } }
@@ -47,8 +47,12 @@
       padding: 103px 0px 43px; } }
   @media only screen and (min-width: 1024px) {
     .category-title__inner {
-      padding: 212px 51px 78px;
-      position: relative; } }
+      height: 35vh;
+      max-height: 320px;
+      position: relative;
+      display: flex;
+      padding-top: 10vh;
+      min-height: 200px; } }
 
 @media only screen and (min-width: 1024px) {
   .category-title__inner::after {

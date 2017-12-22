@@ -84,3 +84,6 @@ i.fixture-hover {
   @media only screen and (min-width: 1024px) {
     .fixture__main-text {
       margin-bottom: 200px; } }
+
+.fixture__main-text .files-list {
+  margin-top: 50px; }

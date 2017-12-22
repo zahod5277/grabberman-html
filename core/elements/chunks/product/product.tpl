@@ -49,6 +49,7 @@
                 </div>
             {/if}
             {if $_modx->resource.productIcons?}
+                <div class="product__scheme-icon-outer">
                 {var $productIcons = $_modx->resource.productIcons|split:'||'}
                 {foreach $productIcons as $ico}
                     <div class="product__scheme-icon">
@@ -57,6 +58,7 @@
                         <span class="product__scheme-text">{$spIco['0']}</span>
                     </div>
                 {/foreach}
+                </div>
             {/if}
             <div class="product__order-btn-outer">
                 <button data-remodal-target="order" class="button button--rectangle button--black product__order-btn">

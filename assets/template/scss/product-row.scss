@@ -5,14 +5,12 @@
 .product-row{
     border: 2px solid $light-grey;
     transition: 0.2s ease all;
-    padding: 20px 10px;
     @include mq('tablet-wide', max){
         margin-bottom: 20px;
     }
     @include mq('tablet-wide',min){
         margin-bottom: 60px;
         max-height: 320px;
-        padding: 35px 20px;
     }
 }
 
@@ -28,6 +26,10 @@
     margin-bottom: 20px;
     color: $black;
     text-decoration: none;
+    padding: 20px 10px;
+    @include mq('tablet-wide',min){
+        padding: 35px 20px;
+    }
 }
 
 .product-row__thumb{

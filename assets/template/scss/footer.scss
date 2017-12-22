@@ -56,6 +56,14 @@ footer .black-bg{
     text-decoration: none;
 }
 
+.footer-text__paragraph--hovered-link a{
+    padding-bottom: 2px;
+}
+
+.footer-text__paragraph--hovered-link a:hover{
+   border-bottom: $red 2px solid;
+}
+
 .footer-workhours{
     margin-top: 28px;
     color:$dark-grey;
