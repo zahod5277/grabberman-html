@@ -8,6 +8,9 @@
     <title>{$title}</title>
     <base href="{$_modx->config.site_url}">
     <meta charset="UTF-8">
+    {if $_modx->resource.description?}
+    <meta name="description" content="{$_modx->resource.content}">
+    {/if}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/template/css/app.min.css?{$timestamp}">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
