@@ -2,6 +2,9 @@
   .politics {
     margin-bottom: 20px; } }
 
+.politics--margined {
+  padding: 20px 0px; }
+
 .politics p {
   font-size: 14px;
   color: #999999; }

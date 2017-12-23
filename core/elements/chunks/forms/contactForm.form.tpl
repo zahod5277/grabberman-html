@@ -18,9 +18,10 @@
             </label>
         </div>
         <div class="flex-container col-xs-12">
-            <div class="col-lg-6 col-lg-6--45percent politics">
-                <p>Нажимая кнопку Отправить, я соглашаюсь с <a href="{'35'|url}">Политикой конфиденциальности</a></p>
-            </div>
+            {$_modx->getChunk('@FILE:chunks/common/politics.tpl',[
+                'class' => ' col-lg-6 col-lg-6--45percent',
+                'button' => 'Отправить'
+            ])}
             <div class="col-lg-6 col-lg-6--45percent">
                 <button type="submit" class="button button--rectangle button--black button--right">Отправить</button>
             </div>

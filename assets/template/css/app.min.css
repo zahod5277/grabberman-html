@@ -661,8 +661,8 @@ body {
       top: 34%;
       left: 33%; } }
 
-.callback-form {
-  margin-top: 20px; }
+.remodal {
+  max-height: 302px; }
 
 .remodal-close {
   right: 0 !important;
@@ -2919,6 +2919,10 @@ footer {
     .contact-form__form {
       margin-top: 30px; } }
 
+.contact-form__form--modal {
+  margin-top: 20px;
+  display: block; }
+
 .contact-form__input {
   padding: 16px 0px 16px 27px;
   color: black;
@@ -2929,10 +2933,24 @@ footer {
   line-height: 26px;
   outline: none; }
 
+.contact-form__input--inline {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 11px 0px 13px 27px; }
+
 .contact-form__label {
   display: block;
   margin-bottom: 30px;
   position: relative; }
+
+.contact-form__label--inline {
+  display: inline-block;
+  padding-right: 20px;
+  width: 40%; }
+  @media only screen and (max-width: 1023px) {
+    .contact-form__label--inline {
+      display: block;
+      width: 100%; } }
 
 .contact-form__input:focus {
   border-color: #231f20; }
@@ -2960,6 +2978,9 @@ footer {
 @media only screen and (max-width: 1023px) {
   .politics {
     margin-bottom: 20px; } }
+
+.politics--margined {
+  padding: 20px 0px; }
 
 .politics p {
   font-size: 14px;

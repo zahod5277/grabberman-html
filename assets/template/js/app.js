@@ -68,6 +68,7 @@ var App = (function () {
             App.categoryFilter();
             App.selectDropdown();
             App.Header();
+            App.modalSuccess();
             //App.fixScroll();
 
             App.phoneLinks('[data-phone-link]');
@@ -205,6 +206,17 @@ var App = (function () {
                         .attr('href', 'tel:' + phone);
 
                 self.wrapInner(link);
+            });
+        },
+        modalSuccess: function () {
+            $(document).on('af_complete', function (event, response) {
+                var form = response.form;
+                if (response.success){
+                    var callback = $('[data-remodal-id="callback"]').remodal(),
+                        order = $('[data-remodal-id="order"]').remodal();
+                    callback.close();
+                    order.close();
+                }
             });
         }
 

@@ -20,6 +20,11 @@
     }
 }
 
+.contact-form__form--modal{
+    margin-top: 20px;
+    display: block;
+}
+
 .contact-form__input{
     padding: 16px 0px 16px 27px;
     color:black;
@@ -31,10 +36,26 @@
     outline:none;
 }
 
+.contact-form__input--inline{
+    display: inline-block;
+    margin-right: 20px;
+    padding: 11px 0px 13px 27px;
+}
+
 .contact-form__label{
     display: block;
     margin-bottom: 30px;
     position: relative;
+}
+
+.contact-form__label--inline{
+    display: inline-block;
+    padding-right: 20px;
+    width: 40%;
+    @include mq('tablet-wide',max){
+        display: block;
+        width: 100%;
+    }
 }
 
 .contact-form__input:focus{
