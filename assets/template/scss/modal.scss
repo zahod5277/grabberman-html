@@ -1,7 +1,10 @@
 @import "__vars.scss";
+@import "__viewport.scss";
 
 .remodal{
-    max-height: 302px;
+    @include mq('tablet-wide',min){
+        max-height: 302px;   
+    }
 }
 
 .remodal-close{

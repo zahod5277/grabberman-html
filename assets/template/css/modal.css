@@ -1,5 +1,6 @@
-.remodal {
-  max-height: 302px; }
+@media only screen and (min-width: 1024px) {
+  .remodal {
+    max-height: 302px; } }
 
 .remodal-close {
   right: 0 !important;
