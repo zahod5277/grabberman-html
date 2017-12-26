@@ -16,7 +16,7 @@
             {include 'file:chunks/common/footer.tpl'}
         {/block}
         {block 'SCRIPTS'}
-            <script src="assets/template/js/app.min.js?{''|date_format:'%s'}"></script>
+            <script src="assets/template/js/app.min.js"></script>
         {/block}
         {block 'MODALS'}
             {include 'file:chunks/modal/callback.tpl'}

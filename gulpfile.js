@@ -64,14 +64,14 @@ gulp.task('scripts', function() {
         templatePath + 'js/app.js'
     ])
         .pipe(concat('app.min.js')) // Собираем их в кучу в новом файле libs.min.js
-        //.pipe(uglify()) // Сжимаем JS файл
+        .pipe(uglify()) // Сжимаем JS файл
         .pipe(gulp.dest(templatePath + 'js')); // Выгружаем в папку app/js
 });
 
 gulp.task('cssLibs', ['sass'], function(){
    return gulp.src([templatePath + 'libs/libs.css']) //Найдем наш main файл
         .pipe(rigger()) //Прогоним через rigger
-        //.pipe(cleanCSS({compatibility: '*'})) //Сожмем наш css
+        .pipe(cleanCSS({compatibility: '*'})) //Сожмем наш css
         .pipe(gulp.dest(templatePath + 'css')); //Выплюнем готовый файл в build 
 });
 
@@ -81,7 +81,7 @@ gulp.task('css', ['cssLibs'], function(){
         templatePath + 'css/libs.css',
     ])
         .pipe(concat('app.min.css')) // Собираем их в кучу в новом файле libs.min.js
-        //.pipe(cleanCSS({compatibility: '*'})) // Сжимаем JS файл
+        .pipe(cleanCSS({compatibility: '*'})) // Сжимаем JS файл
         .pipe(gulp.dest(templatePath + 'css/')); // Выгружаем в папку app/js 
 });
 

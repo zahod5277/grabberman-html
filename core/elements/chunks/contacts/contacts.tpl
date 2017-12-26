@@ -65,6 +65,11 @@
                             <span data-phone-link>
                                 {$diller.phone}
                             </span>
+                            {if $diller.phone2!=''}
+                                <span data-phone-link>
+                                {$diller.phone2}
+                                </span>
+                            {/if}
                         </p>
                     {/if}
                     {if $diller.email!=''}
@@ -76,7 +81,7 @@
                     {if $diller.site!=''}
                         <p class="text dillers__item-contacts-item">
                             <span>Сайт: </span>
-                            <a href="{$diller.site}" target="_blank" title="{$diller.title}">{$diller.site}</a>
+                            <a href="http://{$diller.site}" target="_blank" title="{$diller.title}">{$diller.site}</a>
                         </p>
                     {/if}
                     <p class="text dillers__item-description">{$diller.descr}</p>
