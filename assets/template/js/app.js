@@ -29,6 +29,7 @@ var App = (function () {
         categoryRadio: '[name="fixtures"]',
         selectFilter: '[data-select]',
         productRow: '.product-row',
+        backLink: '[data-backlink]'
     };
 
     //Объект, содержащий публичное API
@@ -69,6 +70,7 @@ var App = (function () {
             App.selectDropdown();
             App.Header();
             App.modalSuccess();
+            App.lastCategory();
             //App.fixScroll();
 
             App.phoneLinks('[data-phone-link]');
@@ -207,6 +209,14 @@ var App = (function () {
 
                 self.wrapInner(link);
             });
+        },
+        lastCategory: function(){
+            var fallbackPageUrl = $(this).attr('href'),
+            prevPageUrl = localStorage.lastCategory || fallbackPageUrl, // если нет сохраненной категории то возьмем адрес из href
+            prevPageTitle = localStorage.lastCategoryTitle || 'Назад';
+            $('span',options.backLink).text(prevPageTitle);
+            $(options.backLink).attr('href',prevPageUrl);
+
         },
         modalSuccess: function () {
             $(document).on('af_complete', function (event, response) {

@@ -3,13 +3,13 @@
         <div class="breadcrumbs__inner red-bg">
             <div class="container">
                 <p class="breadcrumbs__item text text--s">
-                    <a href="{$_modx->resource.parent|url}">
+                    <a href="{$_modx->resource.parent|url}" data-backlink title="[[#[[#[[*id]].parent]].pagetitle]]">
                         <i class="ico ico--breadcrumbs">
                             <svg class="svg-symbol svg-symbol--icon_arrow_left">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-symbol--icon_arrow_left"></use>
                             </svg>
                         </i>
-                        [[#[[#[[*id]].parent]].pagetitle]]
+                        <span>Назад</span>
                     </a>
                 </p>
             </div>

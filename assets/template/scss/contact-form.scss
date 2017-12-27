@@ -52,10 +52,12 @@
     display: inline-block;
     padding-right: 20px;
     width: 40%;
-    margin-bottom: 0px;
     @include mq('tablet-wide',max){
         display: block;
         width: 100%;
+    }
+    @include mq('tablet-wdie',min){
+        margin-bottom: 0px;
     }
 }
 
