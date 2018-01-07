@@ -33,32 +33,24 @@
   font-weight: bold;
   font-style: italic; }
 
-.tech-doc {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center; }
+.video__item {
+  margin-bottom: 20px; }
+  @media only screen and (min-width: 1024px) {
+    .video__item {
+      margin-bottom: 70px; } }
 
-.tech-doc__item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px;
-  border: 2px solid #e1e2e6;
-  margin-bottom: 30px; }
-  @media only screen and (min-width: 1540px) {
-    .tech-doc__item {
-      margin-bottom: 50px; } }
-  @media (orientation: landscape) and (min-width: 560px) {
-    .tech-doc__item {
-      flex: 0 0 48%; } }
+.video__item:hover .video__button {
+  background: #f22c2c; }
 
-.tech-doc__item-img {
-  flex: 0 0 30%; }
+.video__heading {
+  text-transform: uppercase;
+  margin-top: 20px; }
 
-.tech-doc__item-descr {
-  flex: 0 0 55%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between; }
+.video__link {
+  position: relative;
+  display: block; }
+
+.video__button {
+  position: absolute;
+  top: 42%;
+  left: 43%; }

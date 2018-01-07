@@ -1,0 +1,23 @@
+@import "__vars";
+@import "__viewport.scss";
+@import "__fonts.scss";
+
+.projects__item{
+    margin-bottom: 20px;
+    @include mq('tablet-wide',min){
+        margin-bottom: 70px;   
+    }
+}
+
+.projects__heading{
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.projects__description{
+    color: $dark-grey;
+}
+
+.projects__location{
+    margin-top: 50px;
+}

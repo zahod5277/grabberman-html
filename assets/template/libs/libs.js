@@ -5,3 +5,4 @@
 //= ../../../node_modules/smooth-scroll/dist/js/smooth-scroll.polyfills.min.js
 //= ../../../node_modules/remodal/dist/remodal.min.js
 //= ../../../node_modules/headroom.js/dist/headroom.min.js
+//= ../../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js

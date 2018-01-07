@@ -29,7 +29,9 @@
 }
 
 .tech-doc__item-descr{
-    flex: 0 0 60%;
+    flex: 0 0 55%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
 }

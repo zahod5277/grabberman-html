@@ -1,0 +1,30 @@
+@import "__vars";
+@import "__viewport.scss";
+@import "__fonts.scss";
+
+.video__item{
+    margin-bottom: 20px;
+    @include mq('tablet-wide',min){
+        margin-bottom: 70px;   
+    }
+}
+
+.video__item:hover .video__button{
+    background: $red;
+}
+
+.video__heading{
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.video__link{
+    position: relative;
+    display: block;
+}
+
+.video__button{
+    position: absolute;
+    top: 42%;
+    left: 43%;
+}
