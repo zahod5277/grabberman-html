@@ -1,0 +1,35 @@
+@import "__vars";
+@import "__viewport.scss";
+@import "__fonts.scss";
+
+.tech-doc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.tech-doc__item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    border: 2px solid $light-grey;
+    margin-bottom: 30px;
+    @include mq('desktop-wide',min){
+        margin-bottom: 50px;
+    }
+    @include mq-landscape('phablet',min){
+        flex: 0 0 48%;
+    }
+}
+
+.tech-doc__item-img{
+    flex: 0 0 30%;
+}
+
+.tech-doc__item-descr{
+    flex: 0 0 60%;
+    display: flex;
+    flex-wrap: wrap;
+}

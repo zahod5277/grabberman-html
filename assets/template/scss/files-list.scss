@@ -25,9 +25,13 @@
     display: block;
     text-transform: uppercase;
     padding-bottom: 5px;
+    font-size: 14px;
     @include mq('tablet-wide', max){
         font-size: 12px;
         padding-bottom: 0px;
+    }
+    @include mq-landscape('tablet',max){
+        font-size: 9px;
     }
 }
 
