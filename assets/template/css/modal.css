@@ -21,10 +21,12 @@
   background-color: #231f20; }
 
 .remodal-close span:nth-child(1) {
-  transform: rotate(-45deg); }
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
 
 .remodal-close span:nth-child(2) {
-  transform: rotate(45deg); }
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
 
 .remodal__content {
   margin-top: 35px; }

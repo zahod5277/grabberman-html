@@ -10,7 +10,11 @@
                 <a href="{$video.link}" title="{$video.title}" data-fancybox="gallery" class="video__link">
                     <img src="{$image}" alt="{$video.title}" class="img img-responsive">
                     <button class="button button--square button--black video__button">
-                        
+                        <i class="ico ico--video-play">
+                            <svg class="svg-symbol svg-symbol--icon_arrow_bottom">
+                            <use xlink:href="#svg-symbol--icon_arrow_bottom" />
+                            </svg>
+                        </i>
                     </button>
                 </a>
                 <h3 class="h4 video__heading">{$video.title}</h3>

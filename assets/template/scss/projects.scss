@@ -19,5 +19,10 @@
 }
 
 .projects__location{
-    margin-top: 50px;
+    @include mq('tablet-wide',min){
+        margin-top: 50px;
+    }
+    @include mq('tablet-wide',max){
+        margin-top: 20px;
+    }
 }

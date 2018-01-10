@@ -50,6 +50,8 @@
       height: 35vh;
       max-height: 320px;
       position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       padding-top: 10vh;
       min-height: 200px; } }

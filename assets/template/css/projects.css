@@ -46,5 +46,10 @@
 .projects__description {
   color: #999999; }
 
-.projects__location {
-  margin-top: 50px; }
+@media only screen and (min-width: 1024px) {
+  .projects__location {
+    margin-top: 50px; } }
+
+@media only screen and (max-width: 1023px) {
+  .projects__location {
+    margin-top: 20px; } }

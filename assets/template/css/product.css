@@ -41,17 +41,25 @@
       margin-bottom: 40px; } }
 
 .product__scheme-icon-outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: baseline;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
   margin-bottom: 15px; }
 
 .product__scheme-icon {
-  flex: 0 0 33.3%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.3%;
+          flex: 0 0 33.3%;
   max-width: 65px;
   margin-right: 40px; }
   @media only screen and (max-width: 1023px) {
     .product__scheme-icon {
-      flex: 0 0 100%; } }
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%; } }
   .product__scheme-icon:last-child {
     margin-right: 0px; }
 

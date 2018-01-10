@@ -19,6 +19,7 @@
   transform-origin: 50% 50%;
   -webkit-transform: translateZ(0) rotate(0deg);
   transform: translateZ(0) rotate(0deg);
+  -webkit-transition: .4s ease-out .2s;
   transition: .4s ease-out .2s; }
   @media only screen and (max-width: 1023px) {
     .can__cap {
@@ -45,4 +46,5 @@
   transform: translate3d(3px, -5px, 0) rotate(22deg);
   -webkit-transform-origin: right;
   transform-origin: right;
+  -webkit-transition: .3s;
   transition: .3s; }

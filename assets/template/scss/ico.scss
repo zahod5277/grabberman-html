@@ -124,3 +124,21 @@
         left: 33%;
     }    
 }
+
+.ico--marker svg{
+    position: relative;
+    top:3px;
+    width: 16px;
+    height: 16px;
+    fill: $red;
+}
+
+.ico--video-play svg{
+    width: 16px;
+    height: 16px;
+    fill: #fff;
+    transform: rotate(-90deg);
+    position: relative;
+    top: 2px;
+    left: 2px;
+}

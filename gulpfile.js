@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
     cleanCSS = require('gulp-clean-css'),
     rigger = require('gulp-rigger'),
+    prefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'); // Подключаем gulp-uglifyjs (для сжатия JS)
 
 gulp.task('svgstore', function () {
@@ -50,6 +51,7 @@ gulp.task('svgstore', function () {
 gulp.task('sass', function(){ // Создаем таск Sass
     return gulp.src(templatePath + 'scss/**/*.scss') // Берем источник
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
+        .pipe(prefixer())
         .pipe(gulp.dest(templatePath + 'css/')); // Выгружаем результата в папку app/css
 });
 

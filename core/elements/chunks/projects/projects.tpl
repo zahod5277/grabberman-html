@@ -12,7 +12,14 @@
                 </a>
                 <h3 class="h4 projects__heading">{$project.title}</h3>
                 <p class="text projects__description">{$project.descr}</p>
-                <p class="projects__location">{$project.location}</p>
+                <p class="projects__location">
+                    <i class="ico ico--marker">
+                        <svg class="svg-symbol svg-symbol--icon_marker">
+                        <use xlink:href="#svg-symbol--icon_marker" />
+                        </svg>
+                    </i>
+                    {$project.location}
+                </p>
             </div>
         {/foreach}
     </div>
