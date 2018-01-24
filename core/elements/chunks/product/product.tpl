@@ -9,7 +9,7 @@
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-symbol--icon_arrow_left"></use>
                             </svg>
                         </i>
-                        <span>Назад</span>
+                        <span></span>
                     </a>
                 </p>
             </div>

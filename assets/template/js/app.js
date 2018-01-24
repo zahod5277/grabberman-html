@@ -74,6 +74,15 @@ var App = (function () {
             //App.fixScroll();
 
             App.phoneLinks('[data-phone-link]');
+            App.fancybox();
+        },
+
+        fancybox: function () {
+            $("[data-fancybox]").fancybox({
+                buttons: [
+                    'close'
+                ],
+            });
         },
 
         load: function () {
@@ -210,22 +219,24 @@ var App = (function () {
                 self.wrapInner(link);
             });
         },
-        lastCategory: function(){
+        lastCategory: function () {
             var fallbackPageUrl = $(this).attr('href'),
-            prevPageUrl = localStorage.lastCategory || fallbackPageUrl, // если нет сохраненной категории то возьмем адрес из href
-            prevPageTitle = localStorage.lastCategoryTitle || 'Назад';
-            $('span',options.backLink).text(prevPageTitle);
-            $(options.backLink).attr('href',prevPageUrl);
+                    prevPageUrl = localStorage.lastCategory || fallbackPageUrl, // если нет сохраненной категории то возьмем адрес из href
+                    prevPageTitle = localStorage.lastCategoryTitle || 'Назад';
+            $('span', options.backLink).text(prevPageTitle);
+            $(options.backLink).attr('href', prevPageUrl);
 
         },
         modalSuccess: function () {
             $(document).on('af_complete', function (event, response) {
                 var form = response.form;
-                if (response.success){
-                    var callback = $('[data-remodal-id="callback"]').remodal(),
-                        order = $('[data-remodal-id="order"]').remodal();
-                    callback.close();
-                    order.close();
+                if (response.success) {
+                    if (response.message === 'modal') {
+                        var callback = $('[data-remodal-id="callback"]').remodal(),
+                                order = $('[data-remodal-id="order"]').remodal();
+                        callback.close();
+                        order.close();
+                    }
                 }
             });
         }

@@ -35,5 +35,3 @@
         </div>
     </div>
 {/if}
-
-{include 'file:chunks/common/consultForm.tpl'}
