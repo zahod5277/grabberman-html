@@ -25,13 +25,31 @@
 }
 
 .tech-doc__item-img{
-    flex: 0 0 30%;
+    @include mq('tablet-wide',max){
+        flex: 0 0 100%;
+    }
+    @include mq('tablet-wide',min){
+        flex: 0 0 30%;
+    }
+    
 }
 
 .tech-doc__item-descr{
-    flex: 0 0 55%;
+    @include mq('tablet-wide',max){
+        margin-top: 20px;
+        flex: 0 0 100%;
+    }
+    @include mq('tablet-wide',min){
+        flex: 0 0 55%;
+    }
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.tech-doc__item-descr h3{
+    @include mq('desktop-wide',max){
+        margin: 20px 0px;
+    }
 }

@@ -84,6 +84,9 @@ h2, .h2 {
     .h2--s {
       font-size: 24px; } }
 
+.h2--centered {
+  text-align: center; }
+
 h3, .h3 {
   font-size: 30px;
   letter-spacing: 0.8px;

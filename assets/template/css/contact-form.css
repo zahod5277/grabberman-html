@@ -5,6 +5,26 @@
       margin-bottom: 60px;
       margin-top: 30px; } }
 
+@media only screen and (max-width: 1023px) {
+  .contact-form--consult {
+    margin-top: 50px; } }
+
+@media only screen and (min-width: 1024px) {
+  .contact-form--consult {
+    width: 80%;
+    margin: auto;
+    margin-top: 120px; } }
+
+.contact-form__group--inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 .contact-form__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,6 +74,9 @@
     .contact-form__label--inline {
       display: block;
       width: 100%; } }
+
+.contact-form__label--inline-large {
+  width: 50%; }
 
 .contact-form__input:focus {
   border-color: #231f20; }

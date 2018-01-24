@@ -384,6 +384,9 @@ h2, .h2 {
     .h2--s {
       font-size: 24px; } }
 
+.h2--centered {
+  text-align: center; }
+
 h3, .h3 {
   font-size: 30px;
   letter-spacing: 0.8px;
@@ -523,6 +526,9 @@ h6, .h6 {
   @media only screen and (max-width: 1023px) {
     .button--right {
       float: none; } }
+
+.button--margin-auto {
+  margin: auto; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -1399,6 +1405,9 @@ h2, .h2 {
   @media only screen and (max-width: 1023px) {
     .h2--s {
       font-size: 24px; } }
+
+.h2--centered {
+  text-align: center; }
 
 h3, .h3 {
   font-size: 30px;
@@ -3110,6 +3119,26 @@ footer {
       margin-bottom: 60px;
       margin-top: 30px; } }
 
+@media only screen and (max-width: 1023px) {
+  .contact-form--consult {
+    margin-top: 50px; } }
+
+@media only screen and (min-width: 1024px) {
+  .contact-form--consult {
+    width: 80%;
+    margin: auto;
+    margin-top: 120px; } }
+
+.contact-form__group--inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 .contact-form__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3160,6 +3189,9 @@ footer {
       display: block;
       width: 100%; } }
 
+.contact-form__label--inline-large {
+  width: 50%; }
+
 .contact-form__input:focus {
   border-color: #231f20; }
 
@@ -3199,6 +3231,11 @@ footer {
 
 .politics a:hover {
   color: #231f20; }
+
+.politics--centered {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px; }
 
 .workers {
   margin-bottom: 120px; }
@@ -3349,15 +3386,19 @@ footer {
           -ms-flex: 0 0 48%;
               flex: 0 0 48%; } }
 
-.tech-doc__item-img {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 30%;
-          flex: 0 0 30%; }
+@media only screen and (max-width: 1023px) {
+  .tech-doc__item-img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%; } }
+
+@media only screen and (min-width: 1024px) {
+  .tech-doc__item-img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%; } }
 
 .tech-doc__item-descr {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 55%;
-          flex: 0 0 55%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3370,6 +3411,21 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media only screen and (max-width: 1023px) {
+    .tech-doc__item-descr {
+      margin-top: 20px;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%; } }
+  @media only screen and (min-width: 1024px) {
+    .tech-doc__item-descr {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 55%;
+              flex: 0 0 55%; } }
+
+@media only screen and (max-width: 1539px) {
+  .tech-doc__item-descr h3 {
+    margin: 20px 0px; } }
 
 @font-face {
   font-family: "Futura";

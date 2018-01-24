@@ -9,6 +9,23 @@
     }
 }
 
+.contact-form--consult{
+    @include mq('tablet-wide', max){
+        margin-top: 50px;
+    }
+    @include mq('tablet-wide', min){
+        width: 80%;
+        margin: auto;
+        margin-top: 120px;
+    }    
+}
+
+.contact-form__group--inline{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .contact-form__form{
     display: flex;
     flex-wrap: wrap;
@@ -59,6 +76,10 @@
     @include mq('tablet-wdie',min){
         margin-bottom: 0px;
     }
+}
+
+.contact-form__label--inline-large{
+    width: 50%; 
 }
 
 .contact-form__input:focus{

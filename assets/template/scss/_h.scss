@@ -87,6 +87,10 @@ h2, .h2 {
   }
 }
 
+.h2--centered{
+    text-align: center;
+}
+
 h3, .h3 {
     @include h3;
 }

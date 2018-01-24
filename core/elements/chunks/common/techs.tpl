@@ -12,7 +12,7 @@
             ])}
                 <div class="col-lg-6 tech-doc__item">
                     <div class="tech-doc__item-img">
-                        <img src="{$image}" alt="{$file.title}">
+                        <img src="{$image}" class="img img-responsive" alt="{$file.title}">
                     </div>
                     <div class="tech-doc__item-descr">
                         <h3 class="h4">{$file.title}</h3>
@@ -35,3 +35,5 @@
         </div>
     </div>
 {/if}
+
+{include 'file:chunks/common/consultForm.tpl'}
