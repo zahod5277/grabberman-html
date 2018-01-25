@@ -1,5 +1,5 @@
-<li class="mobile-menu-level1__item" data-container="{$isfolder}">
-    {if $link_attributes!='data-noclick="noclick"'}
+<li class="mobile-menu-level1__item" {$link_attributes} data-container="{$isfolder}">
+    {if $isfolder!='1'}
     <a href="{$uri}" title="{$pagetitle}">
     {/if}
         {$pagetitle}                            

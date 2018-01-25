@@ -1249,7 +1249,7 @@ body {
   padding-bottom: 10px;
   display: inline-block; }
 
-.mobile-menu-level2 > ul > li:last-child > a {
+[data-tip] .mobile-menu-level2 > ul > li:last-child > a {
   padding-top: 30px; }
 
 .mobile-menu-info {

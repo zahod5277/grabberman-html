@@ -17,6 +17,7 @@ var App = (function () {
         },
         burgerClass: '.navbar__burger',
         burderSwitchSelector: '[data-navbar-open]',
+        menuItem: '.main-menu__item',
         mobileMenuWrapper: '.mobile-menu',
         mobileMenu: 'mobile-menu-level1',
         mobileMenuActive: 'mobile-menu--active',
@@ -116,9 +117,15 @@ var App = (function () {
                     notBottom: "header--not-bottom"
                 }
             });
+            $(options.menuItem).each(function(){
+                $('.main-menu__tip',this).html($(this).data('tip'));
+            });
             App.stickyHeader.init();
         },
         mobileMenu: function () {
+            $(options.level1MenuItem).each(function(){
+                $('.mobile-menu__tip', this).html($(this).data('tip'));
+            });
             //Появление меню
             $(options.burgerClass).on('click', function () {
                 $(options.mobileMenuWrapper).toggleClass(options.mobileMenuActive);
