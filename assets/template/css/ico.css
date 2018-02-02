@@ -123,3 +123,15 @@
   position: relative;
   top: 2px;
   left: 2px; }
+
+.ico--fancy_arrow_right svg {
+  fill: white;
+  width: 20px;
+  height: 20px; }
+
+.ico--fancy_arrow_left svg {
+  fill: white;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg); }

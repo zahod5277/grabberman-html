@@ -83,6 +83,23 @@ var App = (function () {
                 buttons: [
                     'close'
                 ],
+                btnTpl: {
+                    arrowLeft: '<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left" title="{{PREV}}">' +
+                            '<i class="ico ico--fancy_arrow_left">'+
+                            '<svg class="svg-symbol svg-symbol--icon_arrow_right">'+
+                            '<use xlink:href="#svg-symbol--icon_arrow_right" />'+
+                            '</svg>'+
+                            '</i>'+
+                            '</button>',
+
+                    arrowRight: '<button data-fancybox-next class="fancybox-button fancybox-button--arrow_right" title="{{NEXT}}">' +
+                            '<i class="ico ico--fancy_arrow_right">'+
+                            '<svg class="svg-symbol svg-symbol--icon_arrow_right">'+
+                            '<use xlink:href="#svg-symbol--icon_arrow_right" />'+
+                            '</svg>'+
+                            '</i>'+
+                            '</button>'
+                }
             });
         },
 
@@ -117,13 +134,13 @@ var App = (function () {
                     notBottom: "header--not-bottom"
                 }
             });
-            $(options.menuItem).each(function(){
-                $('.main-menu__tip',this).html($(this).data('tip'));
+            $(options.menuItem).each(function () {
+                $('.main-menu__tip', this).html($(this).data('tip'));
             });
             App.stickyHeader.init();
         },
         mobileMenu: function () {
-            $(options.level1MenuItem).each(function(){
+            $(options.level1MenuItem).each(function () {
                 $('.mobile-menu__tip', this).html($(this).data('tip'));
             });
             //Появление меню

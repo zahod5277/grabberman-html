@@ -48,7 +48,8 @@
 
 .video__link {
   position: relative;
-  display: block; }
+  display: block;
+  outline: none; }
 
 .video__button {
   position: absolute;
